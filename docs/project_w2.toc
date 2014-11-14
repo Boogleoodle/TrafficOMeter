@@ -1,9 +1,0 @@
-\contentsline {section}{\numberline {1}Bakgrund}{2}
-\contentsline {section}{\numberline {2}M\IeC {\r a}l}{2}
-\contentsline {section}{\numberline {3}Deltagare}{2}
-\contentsline {subsection}{\numberline {3.1}Produkt\IeC {\"a}gare}{2}
-\contentsline {subsection}{\numberline {3.2}Utvecklare}{3}
-\contentsline {section}{\numberline {4}Stakeholders}{3}
-\contentsline {section}{\numberline {5}Planerade aktiviteter}{3}
-\contentsline {section}{\numberline {6}Leverabler}{3}
-\contentsline {section}{\numberline {7}Tidsuppskattning}{3}
