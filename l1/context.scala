@@ -3,4 +3,4 @@ Model(
 		User("Staten"),
 		User("Slutanvändare"),
 		System("GPS"),
-		System("Kollektivtrafiksystem)))
+		System("Kollektivtrafiksystem")))
