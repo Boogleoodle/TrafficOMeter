@@ -2,6 +2,39 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
+\usepackage{graphicx}
+
+
+
+%%%reqt stuff
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{entityColor}{RGB}{0,100,200}
+\definecolor{attributeColor}{RGB}{0,100,50}
+\definecolor{relationColor}{RGB}{160,0,30}
+\usepackage{listings}
+\lstdefinestyle{reqT}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  showstringspaces=false,
+  basicstyle=\footnotesize\sffamily,
+  emph={Ent,Meta,Item,Label,Section,Term,Actor,App,Component,Domain,Module,Product,Release,Resource,Risk,Service,Stakeholder,System,User,Class,Data,Input,Member,Output,Relationship,Design,Screen,MockUp,Function,Interface,State,Event,Epic,Feature,Goal,Idea,Issue,Req,Ticket,WorkPackage,Breakpoint,Barrier,Quality,Target,Scenario,Task,Test,Story,UseCase,VariationPoint,Variant},
+  emphstyle=\bfseries\color{entityColor},
+  emph={[2]has,is,superOf,binds,deprecates,excludes,helps,hurts,impacts,implements,interactsWith,precedes,requires,relatesTo,verifies},
+  emphstyle={[2]\bfseries\color{relationColor}},
+  emph={[3]Attr,Code,Constraints,Comment,Deprecated,Example,Expectation,FileName,Gist,Image,Spec,Text,Title,Why,Benefit,Capacity,Cost,Damage,Frequency,Min,Max,Order,Prio,Probability,Profit,Value,Status},
+  emphstyle={[3]\color{attributeColor}},  
+}
+\lstset{style=reqT}
+
+
+
+
+%%%end reqt stuff
+
+
+
 
 \title{System Requirements}
 \author{Group D}
@@ -18,8 +51,21 @@
 	% section background (end)
 
 	\section{System Purpose} % (fold)
+	\section{Domain}
+		\begin{figure}[h]
+				\includegraphics[scale=0.65]{Context-v1.png}
+			\caption{Context Diagram for the system}
+		\end{figure}
+	\newpage
+	\section{Data Requirements}
+		\begin{figure}[h]
+			\includegraphics[scale=0.50]{Datamodel-v1.png}
+			\caption{Data Model for the system}
+		\end{figure}	
 	\section{Applications and Functional Requirements}
-	\subsection{subrequirement 1}
+	\subsection{Tasks}
+		\input{task1.tex}	
+	\subsection{Feature Requirements}
 	\begin{itemize}
 			\item The System should support both Android and iOS units.
 			\item You should be able to search for destinations and save them.
