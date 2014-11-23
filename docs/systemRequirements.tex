@@ -3,12 +3,13 @@
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{graphicx}
-
+\usepackage[nottoc]{tocbibind}
+\usepackage[utf8]{inputenc}
 
 
 %%%reqt stuff
 \usepackage{hyperref}
-\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \definecolor{entityColor}{RGB}{0,100,200}
 \definecolor{attributeColor}{RGB}{0,100,50}
@@ -51,6 +52,7 @@
 	% section background (end)
 
 	\section{System Purpose} % (fold)
+	The purpose of the system is to make everyday travels an easier task for people using public transportation. The users of this application will have an easily accessible overview over how long time it will take them to get to their favourite locations. These locations can be their work, home, the gym etc.
 	\section{Domain}
 		\begin{figure}[h]
 				\includegraphics[scale=0.65]{Context-v1.png}
@@ -60,7 +62,7 @@
 	\section{Data Requirements}
 		The data in the data model should be stored by the system.	
 		\begin{figure}[h]
-			\includegraphics[scale=0.50]{Datamodel-v1.png}
+			\includegraphics[scale=0.50]{datamodel-v1.png}
 			\caption{Data Model for the system}
 		\end{figure}	
 	\section{Applications and Functional Requirements}
@@ -69,17 +71,19 @@
 	\subsection{Feature Requirements}
 	\begin{itemize}
 			\item The System should support both Android and iOS units.
-			\item You should be able to search for destinations and save them.
-			\item The System should support several saved destinations.
-			\item The System should be able to use the user's geografical position as a starting point.
+			\item The User should be able to search for destinations and save them.
+			\item The User should be able to modify and remove saved destinations.
+			\item The System should support multiple saved destinations.
+			\item The System should be able to set the user's geografical position as a starting point.
 			\item The System should support bus-, train- and ferry-travels in Sweden.
-			\item The User should be able to specify, which types of transportation the user would like to use. 
-			\item The System should automatically show the fastest travel option
-			\item It should be possible to reach saved destinations from different devices.
+			\item The User should be able to specify which types of transportation it would like to use. 
+			\item The System should automatically show the fastest travel option.
+			\item The User should be able to select another travel option if the shown alternative does not fit its needs. This 				is preferrably done by swiping through different available alternatives.
+			\item The User should be able to reach its saved destinations from different devices.
 			\item The User should be able to see the time to reach it's saved destinations on the Mainscreen of the device.
 		\end{itemize}
-	\section{Operations}
-	\section{Interfaces}
+	\section{Operation Requirements}
+	\section{Interface Requirements}
 	\section{Quality Properties}
 	\section{Documentation}
 	
