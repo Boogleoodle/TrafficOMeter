@@ -14,6 +14,13 @@ Model(
     	Spec("The system should be able to get the current geographical position of the user"),
     	Why("The position is used as the starting point when determining the route speeds"),
     	Example("Use native GPS or WiFi-positioning feature of plattforms")
-    )
+    ), 
+	Feature("FastestOption") has (
+		Spec("The system should show the total travel time of the fastest trip"),
+		Why("So the user can see how long time it takes to travel to the saved destinations"), 
+		Example("Show a list of saved destinations and in this list show the time it takes to get to the different locations")
+	)
+		
+		
   )
 )
