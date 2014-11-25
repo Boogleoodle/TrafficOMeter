@@ -23,7 +23,18 @@ Model(
   		Why("So the user can see how long time it takes to travel to the saved destinations"), 
   		Example("Show a list of saved destinations and in this list show the time it takes to get to the different locations"),
       Status(ELICITED)
-  	)
+  	),
+    Feature("SaveLocation") has (
+      Spec("The user can add a location to its saved locations for easy access"),
+      Why("To populate the list of saved locations"),
+      Example("Add button in the application")
+    ),
+    Feature("SpecifyByMap") has (
+      Spec("The user can specify the location by using a map by moving a target"),
+      Why("A map gives more information to the user and makes is easier to communicate its wishes"),
+      Example("Use third party map software (google maps)")
+
+    )
 		
 		
   )
