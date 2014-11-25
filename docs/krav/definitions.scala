@@ -3,7 +3,8 @@ Model(
 		Term("Route") has Spec("The path between two different stops. Consists of one or more 'sub-trip's"),
 		Term("Trip") has (
 			Spec("A specific travel between two geographical (GPS) points"),
-			Example("Between a users current position and one of its saved destinations")
+			Example("Between a users current position and one of its saved destinations"),
+			Status(STATUS.ELICITATED)
 		),
 		Term("Line") has (
 			Spec("A set of 'stop's that is served by the same vehicle"),
