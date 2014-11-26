@@ -59,32 +59,47 @@
 			\caption{Context Diagram for the system}
 		\end{figure}
 	\newpage
-	\section{Data Requirements}
-		The data in the data model should be stored by the system.	
-		\begin{figure}[h]
-			\includegraphics[scale=0.50]{datamodel-v1.png}
-			\caption{Data Model for the system}
-		\end{figure}	
-	\section{Applications and Functional Requirements}
-	\subsection{Tasks}
-		\input{task1.tex}	
-	\subsection{Feature Requirements}
-	\begin{itemize}
-			\item The System should support both Android and iOS units.
-			\item The User should be able to search for destinations and save them.
-			\item The User should be able to modify and remove saved destinations.
-			\item The System should support multiple saved destinations.
-			\item The System should be able to set the user's geografical position as a starting point.
-			\item The System should support bus-, train- and ferry-travels in Sweden.
-			\item The User should be able to specify which types of transportation it would like to use. 
-			\item The System should automatically show the fastest travel option.
-			\item The User should be able to select another travel option if the shown alternative does not fit its needs. This 				is preferrably done by swiping through different available alternatives.
-			\item The User should be able to reach its saved destinations from different devices.
-			\item The User should be able to see the time to reach it's saved destinations on the Mainscreen of the device.
-		\end{itemize}
-	\section{Operation Requirements}
-	\section{Interface Requirements}
-	\section{Quality Properties}
-	\section{Documentation}
+	
+	\section{Requirements}
+		\subsection{Goal Level Requirements}
+			\input{krav/goals.tex}
+		\subsection{Domain Level Requirements}
+		\subsection{Product Level Requirements}		
+			\subsubsection{Data Requirements}
+				The data in the data model should be stored by the system.	
+				\begin{figure}[h]
+					\includegraphics[scale=0.50]{datamodel-v1.png}
+					\caption{Data Model for the system}
+				\end{figure}
+				
+				
+				\input{krav/definitions.tex}
+			\subsubsection{Functional Requirements}
+				\subsubsection{Tasks}
+					\input{task1.tex}
+		
+			\subsubsection{Feature Requirements}
+				\input{krav/features.tex}			
+			
+				\begin{itemize}
+					\item The System should support both Android and iOS units.
+					\item The User should be able to search for destinations and save them.
+					\item The User should be able to modify and remove saved destinations.
+					\item The System should support multiple saved destinations.
+					\item The System should be able to set the user's geografical position as a starting point.
+					\item The System should support bus-, train- and ferry-travels in Sweden.
+					\item The User should be able to specify which types of transportation it would like to use. 
+					\item The System should automatically show the fastest travel option.
+					\item The User should be able to select another travel option if the shown alternative does not fit its needs. This 				is preferrably done by swiping through different available alternatives.
+					\item The User should be able to reach its saved destinations from different devices.
+					\item The User should be able to see the time to reach it's saved destinations on the Mainscreen of the device.
+				\end{itemize}
+	\subsection{Design Level Requirements}
+	\section{Quality Requirements}
+		\subsection{Goal Level Requirements}
+		\subsection{Domain Level Requirements}
+		\subsection{Product Level Requirements}
+			\input{krav/goals.tex}		
+		\subsection{Design Level Requirements}	
 	
 \end{document}
