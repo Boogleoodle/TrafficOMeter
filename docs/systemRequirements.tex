@@ -60,6 +60,7 @@
 		\end{figure}
 	\newpage
 	
+	
 	\section{Requirements}
 		\subsection{Goal Level Requirements}
 			\input{krav/goals.tex}
@@ -96,10 +97,46 @@
 				\end{itemize}
 	\subsection{Design Level Requirements}
 	\section{Quality Requirements}
+		When it comes to quality we consider the issues prioritized in the following way:
+		
+		\begin{tabular}{|l|c|c|c|c|c|}
+			\hline
+			& Critical & Important & As usual & Unimportant & Ignore \\
+			\hline			
+			\multicolumn{6}{|l|}{\textbf{Operation}} \\	
+			\hline
+			Integrity/Security & & 1 & & & \\
+			\hline
+			Correctness & & & x & & \\			
+			\hline
+			Reliability/Availability & & 2 & & & \\
+			\hline
+			Usability & 3 & & & & \\
+			\hline
+			Efficiency & & 4 & & & \\
+			\hline
+			\multicolumn{6}{|l|}{\textbf{Revision}} \\
+			\hline
+			Maintainability & & & x & & \\
+			\hline
+			Testability & & & x & & \\
+			\hline
+			Flexibility & & & & 5 & \\
+			\hline
+			\multicolumn{6}{|l|}{\textbf{Transition}} \\
+			\hline
+			Portability & 6 & & & & \\
+			\hline
+			Interoperability & & 7 & & & \\
+			\hline
+			Reusability & & & x & & \\
+			\hline
+		\end{tabular}
+
 		\subsection{Goal Level Requirements}
 		\subsection{Domain Level Requirements}
 		\subsection{Product Level Requirements}
-			\input{krav/goals.tex}		
+			\input{krav/quality.tex}		
 		\subsection{Design Level Requirements}	
 	
 \end{document}
