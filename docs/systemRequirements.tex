@@ -53,11 +53,36 @@
 
 	\section{System Purpose} % (fold)
 	The purpose of the system is to make everyday travels an easier task for people using public transportation. The users of this application will have an easily accessible overview over how long time it will take them to get to their favourite locations. These locations can be their work, home, the gym etc.
+	//
+	The project goal is to develop an app and/or widget where the user can see how to get to their favorite destinations in the shortest time possible. The shown travel alternatives shall be adjusted according to the current position of the user, such as the starting point is set to the users graphical location.
 	\section{Domain}
 		\begin{figure}[h]
 				\includegraphics[scale=0.65]{Context-v1.png}
 			\caption{Context Diagram for the system}
 		\end{figure}
+		\subsection{Parts of the context diagram} % (fold)
+		\label{sub:parts_of_the_context_diagram}
+		\begin{itemize}
+			\item[Government agency] The part of the government that is interested in public transport. 
+			\item[User] Anyone using the app.
+			\item[GPS system] The native GPS of the device or WI-FI location services.
+			\item[RPTD] Regional public transport databases, provides information regarding time tables and delays.
+			\item[TrafficOmeter] This is the product.
+		\end{itemize}
+		\subsection{Transitions} % (fold)
+		\label{sub:transitions}
+			\subsubsection{Traffic information} % (fold)
+			\label{ssub:traffic_information}
+			This section covers the different traffic information that is sent from the regional public transport databases to the TrafficOmeter system.
+			\begin{itemize}
+				\item[Stops] The geographical positions where it is possible to get on and off public transportations.
+				\item[GiveTimes] The time table for the routes included in the updated trips.
+				\item[MeansOfTransport] The means of transportations that are represented in the updates trips.
+			\end{itemize}
+			% subsubsection traffic_information (end)
+		% subsection transitions (end)
+		% subsection parts_of_the_context_diagram (end)
+		
 	\newpage
 	
 	
@@ -83,17 +108,17 @@
 				\input{krav/features.tex}			
 			
 				\begin{itemize}
-					\item The System should support both Android and iOS units.
-					\item The User should be able to search for destinations and save them.
-					\item The User should be able to modify and remove saved destinations.
-					\item The System should support multiple saved destinations.
-					\item The System should be able to set the user's geografical position as a starting point.
-					\item The System should support bus-, train- and ferry-travels in Sweden.
-					\item The User should be able to specify which types of transportation it would like to use. 
-					\item The System should automatically show the fastest travel option.
-					\item The User should be able to select another travel option if the shown alternative does not fit its needs. This 				is preferrably done by swiping through different available alternatives.
-					\item The User should be able to reach its saved destinations from different devices.
-					\item The User should be able to see the time to reach it's saved destinations on the Mainscreen of the device.
+					\item The System shall support both Android and iOS units.
+					\item The User shall be able to search for destinations and save them.
+					\item The User shall be able to modify and remove saved destinations.
+					\item The System shall support multiple saved destinations.
+					\item The System shall be able to set the user's geographical position as a starting point.
+					\item The System shall support bus-, train- and ferry-travels in Sweden.
+					\item The User shall be able to specify which types of transportation it would like to use. 
+					\item The System shall automatically show the fastest travel option.
+					\item The User shall be able to select another travel option if the shown alternative does not fit its needs. This 				is preferably done by swiping through different available alternatives.
+					\item The User shall be able to reach its saved destinations from different devices.
+					\item The User shall be able to see the time to reach it's saved destinations on the main screen of the device.
 				\end{itemize}
 	\subsection{Design Level Requirements}
 	\section{Quality Requirements}
