@@ -1,0 +1,27 @@
+lowfi prototyp - metafor mobil. (med postits)
+
+
+huvudfråga - skulle du vara intresserad av detta systemet, skulle du vara intresserad av att betala pengar för ett sådant system?
+
+1. vad är viktigt att ett sånt här system innehåller?
+
+2. vad ska visas för varje plats?
+	2.1 namn på plats
+	2.2 nästa transportmedel
+	2.3 avgångstid för nästa transportmedel
+	2.4 antal byten
+	2.5 ankomsttid
+	2.6 till från nu till ankomst
+	2.7 riktning till nästa hållplats
+	2.8 riktigt av transportmedel (t.ex tåg mot malmö)
+	2.9 läge för transportmedel
+
+	prioritera?
+
+3. hur många platser är det relevant att visa?
+
+4. i vilken ordning ska platserna visas?
+	4.1 prio?
+
+5. 
+	
