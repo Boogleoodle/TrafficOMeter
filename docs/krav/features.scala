@@ -41,6 +41,13 @@ Model(
       Why("Not all users want to use the same means of travel"),
       Example("This can be implemented using a settings dialog"),
       Status(ELICITED)
-    )	
+    ),
+    Feature("SearchDestination") has (
+      Spec("The user skall be able to search for destinations"),
+      Why("To find a destination to travel to"),
+      Example("Add an button for opening a search field"),
+      Status(ELICITED)
+    ),
+    	
   )
 )
