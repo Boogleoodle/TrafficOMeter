@@ -27,15 +27,20 @@ Model(
     Feature("SaveLocation") has (
       Spec("The user can add a location to its saved locations for easy access"),
       Why("To populate the list of saved locations"),
-      Example("Add button in the application")
+      Example("Add button in the application"),
+      Status(ELICITED)
     ),
     Feature("SpecifyByMap") has (
       Spec("The user can specify the location by using a map by moving a target"),
       Why("A map gives more information to the user and makes is easier to communicate its wishes"),
-      Example("Use third party map software (google maps)")
-
-    )
-		
-		
+      Example("Use third party map software (google maps)"),
+      Status(ELICITED)
+    ),
+    Feature("SpecifyMeansOfTravel") has (
+      Spec("The user can specify what means of travel it wants to use"),
+      Why("Not all users want to use the same means of travel"),
+      Example("This can be implemented using a settings dialog"),
+      Status(ELICITED)
+    )	
   )
 )
