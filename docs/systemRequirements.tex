@@ -57,18 +57,20 @@
 	The project goal is to develop an app and/or widget where the user can see how to get to their favorite destinations in the shortest time possible. The shown travel alternatives shall be adjusted according to the current position of the user, such as the starting point is set to the users graphical location.
 	\section{Domain}
 		\begin{figure}[h]
-				\includegraphics[scale=0.65]{Context-v1.png}
+			\includegraphics[scale=0.65]{Context-v1.png}
 			\caption{Context Diagram for the system}
 		\end{figure}
+
 		\subsection{Parts of the context diagram} % (fold)
 		\label{sub:parts_of_the_context_diagram}
-		\begin{itemize}
-			\item[Government agency] The part of the government that is interested in public transport. 
-			\item[User] Anyone using the app.
-			\item[GPS system] The native GPS of the device or WI-FI location services.
-			\item[RPTD] Regional public transport databases, provides information regarding time tables and delays.
-			\item[TrafficOmeter] This is the product.
-		\end{itemize}
+			\begin{itemize}
+				\item[Government agency] The part of the government that is interested in public transport. 
+				\item[User] Anyone using the app.
+				\item[GPS system] The native GPS of the device or WI-FI location services.
+				\item[RPTD] Regional public transport databases, provides information regarding time tables and delays.
+				\item[TrafficOmeter] This is the product.
+			\end{itemize}
+
 		\subsection{Transitions} % (fold)
 		\label{sub:transitions}
 			\subsubsection{Traffic information} % (fold)
@@ -83,17 +85,20 @@
 		% subsection transitions (end)
 		% subsection parts_of_the_context_diagram (end)
 		
-	\newpage
 	
 	
 	\section{Requirements}
 		\subsection{Goal Level Requirements}
 			\input{krav/goals.tex}
+
 		\subsection{Domain Level Requirements}
-		\subsection{Product Level Requirements}		
+
+		\subsection{Product Level Requirements}
+
 			\subsubsection{Data Requirements}
+
 				The data in the data model should be stored by the system.	
-				\begin{figure}[h]
+				\begin{figure}[ht]
 					\includegraphics[scale=0.50]{datamodel-v1.png}
 					\caption{Data Model for the system}
 				\end{figure}
@@ -106,7 +111,7 @@
 		
 			\subsubsection{Feature Requirements}
 				\input{krav/features.tex}			
-			
+
 				\begin{itemize}
 					\item The System shall support both Android and iOS units.
 					\item The User shall be able to search for destinations and save them.
