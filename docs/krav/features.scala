@@ -48,6 +48,25 @@ Model(
       Example("Add an button for opening a search field"),
       Status(ELICITED)
     ),
-    	
+    Feature("ChangeNameOnSavedLocation") has (
+      Spec("It shall be possible to change the name of a location"),
+      Why("To make it easier to tell the different location appart"),
+      Example("An EDIT button besides the field the name of the location"),
+      Status(ELICITED),
+    ),
+    Feature("GuideME") has (
+      Spec("It shall be possible to see ones current location and a route to the next transport"),
+      Why("If one does not know exacly where the next transport is located"),
+      Example("When the location in pusched, a new window appears that contains a map and a guided route"),
+      Status(ELICITED),
+    ),
+    Feature("RemoveLocation") has (
+      Spec("It shall be possible for the user to remove a previously added location"),
+      Why("It that location no longer is in the intress of the user"),
+      Example("An EDIT button besides the field the name of the location"),
+      Status(ELICITED),
+    ),
+    
+    
   )
 )
