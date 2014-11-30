@@ -71,8 +71,18 @@ Model(
       Why("It is useless if one can have only one location at a time"),
       Example("Multiple fields of locations"),
       Status(ELICITED)
-    )
-    
-    
+    ),
+    Feature("NameLocation") has (
+      Spec("The user can specify the name of its saved locations"),
+      Why("The user needs to be able to differentiate the saved locations. It also makes it possible to actually focus on the goal (home or work) rather than GPS-coordinates or a bus stop"),
+      Example("Editable textfield"),
+      Status(ELICITED)
+    ),
+    Feature("ShowRouteToFirstStop") has (
+      Spec("When the user wants to use a specific travel option the route between the current position and the first stop will be accessable"),
+      Why("The user might not find its way in the current area, and still should be able to get to the first stop quickly"),
+      Example("Show the route between current position and first stop ion a map."),
+      Status(ELICITED)
+      )
   )
 )
