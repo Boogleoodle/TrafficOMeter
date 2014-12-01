@@ -1,7 +1,7 @@
 Model(
   Product("Our Product") has (
     Feature("Visibility") has (
-      Spec("The user has to have easy access to the travel information at all times"), 
+      Spec("The user has to have easy access to the travel information at all times"),  
       Why("The travel information provided by the solution is supposed to give the user a good overview of the possible travel opportunities at the current time. It is mainly a 'passive' information search (in contrast to todays 'active' search tools"), 
       Example("This could easily be achieved by using the 'widget' feature on the different mobile plattforms. Wearables are also a possibility"),
       Status(ELICITED)
