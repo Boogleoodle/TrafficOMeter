@@ -2,7 +2,7 @@ Model(
 	Stakeholder("user") has (
 		Prio(1),
 		Req("visibility") has Benefit(13),
-		Req("viewOnOtherDevice") Benefit(2),
+		Req("viewOnOtherDevice") has Benefit(2),
 		Req("geographicalLocation") has Benefit(9),
 		Req("fastestTrip") has Benefit(9),
 		Req("saveLocation") has Benefit(15),
@@ -20,7 +20,7 @@ Model(
 	Stakeholder("Staten") has (
 		Prio(2),
 		Req("visibility") has Benefit(7),
-                Req("viewOnOtherDevice") Benefit(2),
+                Req("viewOnOtherDevice") has Benefit(2),
                 Req("geographicalLocation") has Benefit(4),
                 Req("fastestTrip") has Benefit(10),
                 Req("saveLocation") has Benefit(7),
