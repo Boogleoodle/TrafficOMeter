@@ -34,5 +34,5 @@ Model(
                 Req("statExtraction") has Benefit(25),
                 Req("uptime") has Benefit(14),
                 Req("gpsAcc") has Benefit(5)
-	),
+	)
 )
