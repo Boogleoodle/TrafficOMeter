@@ -37,7 +37,7 @@ Model(
       Status(ELICITED)
     ),
     Feature("SpecifyMeansOfTravel") has (
-      Spec("The user can specify what means of travel it wants to use"),
+      Spec("The user can specify what means of travel to use"),
       Why("Not all users want to use the same means of travel"),
       Example("This can be implemented using a settings dialog"),
       Status(ELICITED)
@@ -54,12 +54,6 @@ Model(
       Example("An EDIT button besides the field the name of the location"),
       Status(ELICITED)
     ),
-    Feature("GuideME") has (
-      Spec("It shall be possible to see ones current location and a route to the next transport"),
-      Why("If one does not know exacly where the next transport is located"),
-      Example("When the location in pusched, a new window appears that contains a map and a guided route"),
-      Status(ELICITED)
-    ),
     Feature("RemoveLocation") has (
       Spec("It shall be possible for the user to remove a previously added location"),
       Why("It that location no longer is in the intress of the user"),
@@ -70,12 +64,6 @@ Model(
       Spec("The system shall have support for storing multiple locations"),
       Why("It is useless if one can have only one location at a time"),
       Example("Multiple fields of locations"),
-      Status(ELICITED)
-    ),
-    Feature("NameLocation") has (
-      Spec("The user can specify the name of its saved locations"),
-      Why("The user needs to be able to differentiate the saved locations. It also makes it possible to actually focus on the goal (home or work) rather than GPS-coordinates or a bus stop"),
-      Example("Editable textfield"),
       Status(ELICITED)
     ),
     Feature("ShowRouteToFirstStop") has (
