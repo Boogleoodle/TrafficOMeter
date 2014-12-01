@@ -37,10 +37,40 @@ Model(
       Status(ELICITED)
     ),
     Feature("SpecifyMeansOfTravel") has (
-      Spec("The user can specify what means of travel it wants to use"),
+      Spec("The user can specify what means of travel to use"),
       Why("Not all users want to use the same means of travel"),
       Example("This can be implemented using a settings dialog"),
       Status(ELICITED)
-    )	
+    ),
+    Feature("SearchDestination") has (
+      Spec("The user skall be able to search for destinations"),
+      Why("To find a destination to travel to"),
+      Example("Add an button for opening a search field"),
+      Status(ELICITED)
+    ),
+    Feature("ChangeNameOnSavedLocation") has (
+      Spec("It shall be possible to change the name of a location"),
+      Why("To make it easier to tell the different location appart"),
+      Example("An EDIT button besides the field the name of the location"),
+      Status(ELICITED)
+    ),
+    Feature("RemoveLocation") has (
+      Spec("It shall be possible for the user to remove a previously added location"),
+      Why("It that location no longer is in the intress of the user"),
+      Example("An EDIT button besides the field the name of the location"),
+      Status(ELICITED)
+    ),
+    Feature("MultipleLocations") has (
+      Spec("The system shall have support for storing multiple locations"),
+      Why("It is useless if one can have only one location at a time"),
+      Example("Multiple fields of locations"),
+      Status(ELICITED)
+    ),
+    Feature("ShowRouteToFirstStop") has (
+      Spec("When the user wants to use a specific travel option the route between the current position and the first stop will be accessable"),
+      Why("The user might not find its way in the current area, and still should be able to get to the first stop quickly"),
+      Example("Show the route between current position and first stop ion a map."),
+      Status(ELICITED)
+      )
   )
 )

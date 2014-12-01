@@ -4,7 +4,7 @@ Lägga till Task description i experiences för vi har använt den.
 
 Något kvalitetskrav på hur mkt batteri appen får dra.
 
-SOrtera in krav på rätt rubriker, tror inte att alla ligger rätt
+SOrtera in krav på rätt rubriker, tror inte att alla ligger rätt - Philip
 
 Lägga till task: 
 	Välj färdmedel (lägg till och ta bort)
@@ -13,5 +13,28 @@ Lägga till task:
 	Uppdatera rese"alternativ"
 
 Kvar för att få trea (förutom att lägga till massa krav):
+Fler goal level reqs
+Design level reqs
+3B system boundraries? lägga till något
+Lite mer om 3C - reason about choices of specification methods in relation to different context
+3f,3g,3h om validering men kan inte göras just nu
+3i - use more than one prioritization technique in a relevant way.
+3j - reflect on prioritization experiences
 
+Kvar för att få fyra:
+4a - combine different degrees of completeness and different levels of abstraction
+4b - use at least 4 different specification techniques adequately tailored to the context.
+4c - provide explicit requirements rationale that reduce risks of misinterpretation
+4d - use hierarchies and requirements relations to manage evolving requirements structures.
+4e - reason about the need for further elicitation in relation to specification quality
+4f - to find, prioritize and discuss requirements quality problems of different types, while reaching beyond form issues
+4g - adapt the validation to the context and provide rationale for the chosen validation techniques
+4h - create a release plan for a subset of prioritized features, while taking into account precedence constraints
+5a - combine specification techniques in an explicitly motivated trade off between qualities and costs, where a high degree of specification completeness is achived for a carefully selected subset of requirements
+5b - provide motivated estimations of target quality levels using well-defined scales
+5c - go beyond initial stakeholders and given frames, while challenging the domain boundaries and eliciting creative ideas and deep domain knowledge in real-world contexts.
+5d - reason about the relation between requirements quality problems and risks, both from a customer and developer viewpoint.
+5e - utilize links among different types of specifications in validation efforts to find and address potential harmful inconsistencies
+5f - combine priorities from several stakeholders and use priorities and scheduling constraints to iteratively create a relevant release plan
+5g - use prioritization to focus improvements of specification quality and elicitation effort for a well motivated subset of requirements
 
