@@ -23,7 +23,7 @@ Model(
                 Req("viewOnOtherDevice") Benefit(2),
                 Req("geographicalLocation") has Benefit(4),
                 Req("fastestTrip") has Benefit(10),
-                Req("saveLocation) has Benefit(7),
+                Req("saveLocation") has Benefit(7),
                 Req("locationByMap") has Benefit(1),
                 Req("modeOfTransport") has Benefit(4),
                 Req("multiplePlatform") has Benefit(14),
