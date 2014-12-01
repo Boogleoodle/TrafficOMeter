@@ -9,7 +9,7 @@ Model(
 		Req("locationByMap") has Benefit(3),
 		Req("modeOfTransport") has Benefit(9),
 		Req("multiplePlatform") has Benefit(10),
-		Req("removeSavedLocation") has Benefit(2)
+		Req("removeSavedLocation") has Benefit(2),
 		Req("multipleSavedLocations") has Benefit(7),
 		Req("renameSavedLocation") has Benefit(1),
 		Req("showRoutetoFirstStop") has Benefit(8),
@@ -20,19 +20,19 @@ Model(
 	Stakeholder("Staten") has (
 		Prio(2),
 		Req("visibility") has Benefit(7),
-                Req("viewOnOtherDevice") has Benefit(2),
-                Req("geographicalLocation") has Benefit(4),
-                Req("fastestTrip") has Benefit(10),
-                Req("saveLocation") has Benefit(7),
-                Req("locationByMap") has Benefit(1),
-                Req("modeOfTransport") has Benefit(4),
-                Req("multiplePlatform") has Benefit(14),
-                Req("removeSavedLocation") has Benefit(0)
-                Req("multipleSavedLocations") has Benefit(3),
-                Req("renameSavedLocation") has Benefit(0),
-                Req("showRoutetoFirstStop") has Benefit(4),
-                Req("statExtraction") has Benefit(25),
-                Req("uptime") has Benefit(14),
-                Req("gpsAcc") has Benefit(5)
+		Req("viewOnOtherDevice") has Benefit(2),
+		Req("geographicalLocation") has Benefit(4),
+		Req("fastestTrip") has Benefit(10),
+		Req("saveLocation") has Benefit(7),
+		Req("locationByMap") has Benefit(1),
+		Req("modeOfTransport") has Benefit(4),
+		Req("multiplePlatform") has Benefit(14),
+		Req("removeSavedLocation") has Benefit(0),
+		Req("multipleSavedLocations") has Benefit(3),
+		Req("renameSavedLocation") has Benefit(0),
+		Req("showRoutetoFirstStop") has Benefit(4),
+		Req("statExtraction") has Benefit(25),
+		Req("uptime") has Benefit(14),
+		Req("gpsAcc") has Benefit(5)
 	)
 )
