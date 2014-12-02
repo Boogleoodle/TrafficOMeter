@@ -17,9 +17,9 @@ Model(
       Spec("The system should have an uptime of 99%")
       ),
     Section("Security") has (
-      Quality("personal-Security") has Spec("The system will not connect position with person")
-      )
-
-    
+      Quality("UserIntegrity") has (
+        Spec("The system should not provide any statistics that could be used to track a single users travel routines or positions")
+        )
     )
+  )
   )
