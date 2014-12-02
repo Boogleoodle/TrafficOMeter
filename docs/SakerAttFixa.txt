@@ -4,7 +4,7 @@ Emma: Lägga till Task description i experiences för vi har använt den.
 
 Något kvalitetskrav på hur mkt batteri appen får dra.
 
-SOrtera in krav på rätt rubriker, tror inte att alla ligger rätt - Philip (inte färdigt)
+Sortera in krav på rätt rubriker, tror inte att alla ligger rätt - Philip (inte färdigt)
 
 Lägga till designkrav
 
