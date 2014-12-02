@@ -1,10 +1,12 @@
-Lägga till Quper i experiences och förklara att det var svårt att få det vettigt för oss för vi inte kan komma på någon som är vår konkurent
+Emma: Lägga till Quper i experiences och förklara att det var svårt att få det vettigt för oss för vi inte kan komma på någon som är vår konkurent
 
-Lägga till Task description i experiences för vi har använt den.
+Emma: Lägga till Task description i experiences för vi har använt den.
 
 Något kvalitetskrav på hur mkt batteri appen får dra.
 
-SOrtera in krav på rätt rubriker, tror inte att alla ligger rätt - Philip
+SOrtera in krav på rätt rubriker, tror inte att alla ligger rätt - Philip (inte färdigt)
+
+Lägga till designkrav
 
 Lägga till task: 
 	Välj färdmedel (lägg till och ta bort)
@@ -38,3 +40,6 @@ Kvar för att få fyra:
 5f - combine priorities from several stakeholders and use priorities and scheduling constraints to iteratively create a relevant release plan
 5g - use prioritization to focus improvements of specification quality and elicitation effort for a well motivated subset of requirements
 
+Nässlan:
+Fixa Virtual windows: Ta bort alla knappar. Skapa nytt window med destinationer settings (ska vara till för att lägga till ta bort och rangordna- men inga knappar utan bara hur destinatinoerna ska visas). Nytt window för transport medel, inga knappar men hur de ska visas. Vill ha beskrivning för vad varje virtual window ska användas till så man förstår vad man ska contexten är.
+Lägga till virtual windows i project experiences.

@@ -19,6 +19,13 @@ Model(
         Example("Show a list of saved destinations and in this list show the time it takes to get to the different locations"),
         Status(ELICITED)
         ),
+      Feature("GeographicStartingPoint") has (
+        Spec("The user shall be able to use its geographical location as a starting point for a trip"),
+        Why("The position is used as the starting point when determining the route"),
+        Example("Use native GPS or WiFi-positioning feature of plattforms"),
+        Status(ELICITED)
+        ),
+
       Feature("ShowRouteToFirstStop") has (
         Spec("When the user wants to use a specific travel option the route between the current position and the first stop will be accessable"),
         Why("The user might not find its way in the current area, and still should be able to get to the first stop quickly"),
@@ -29,7 +36,7 @@ Model(
 Section("Maintenance") has (
   Feature("GeographicLocation") has (
    Spec("The system should be able to get the current geographical position of the user"),
-   Why("The position is used as the starting point when determining the route speeds"),
+   Why("The position is used to calculate the whole trip since the system is suppose to say "to home 20 minutes" "),
    Example("Use native GPS or WiFi-positioning feature of plattforms"),
    Status(ELICITED)
    ), 
