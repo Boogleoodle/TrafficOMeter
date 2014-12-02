@@ -98,6 +98,26 @@ Section("ServerToClientCommunication") has (
     Status(ELICITED)
     )
   ),
+Section("Statistics") has (
+  Feature("ExtractStatistics") has (
+      Spec("It should be possible for [WHO] to extract statistics from the system"),
+      Why("This information is used to get information to plan future infrastructure"),
+      Example("The statistics could be extracted using a web interface"),
+      Status(ELICITED)
+    ),
+  Feature("GetPopularDestinationsStatistics") has (
+      Spec("The system should be able to provide statistics about how which 'GeographicLocation':s are popular"),
+      Why("?"),
+      Example("?"),     
+      Status(ELICITED)
+    ),
+    Feature("GetRoutesStatistics") has (
+      Spec("The system should be able to provide statistics about which routes that all users has at a specific time"),
+      Why("This information could be used to extract information about the quality of the infrastructure (?) in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc."),
+      Example("?"),     
+      Status(ELICITED)
+    )
+  ),
 Section("Interfaces") has (
   Feature("ExtractDataFromProviders") has (
     Spec("Extract travel data from regional public transportation administrators"),
