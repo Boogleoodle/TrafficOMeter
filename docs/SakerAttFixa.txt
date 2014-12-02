@@ -2,6 +2,8 @@ Emma: Lägga till Quper i experiences och förklara att det var svårt att få det v
 
 Emma: Lägga till Task description i experiences för vi har använt den.
 
+Lägga till text-motiveringar för critical/important etc. i kvalitetsmatrisen
+
 Något kvalitetskrav på hur mkt batteri appen får dra.
 
 Sortera in krav på rätt rubriker, tror inte att alla ligger rätt - Philip (inte färdigt)
