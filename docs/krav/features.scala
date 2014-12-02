@@ -36,7 +36,7 @@ Model(
 Section("Maintenance") has (
   Feature("GeographicLocation") has (
    Spec("The system should be able to get the current geographical position of the user"),
-   Why("The position is used to calculate the whole trip since the system is suppose to say "to home 20 minutes" "),
+   Why("The position is used to calculate the whole trip since the system is suppose to say 'to home 20 minutes' "),
    Example("Use native GPS or WiFi-positioning feature of plattforms"),
    Status(ELICITED)
    ), 
