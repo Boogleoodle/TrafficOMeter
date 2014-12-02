@@ -1,6 +1,8 @@
 Model(
 	Product("Design") has (
+
         Section("Visual") has (
+
         	Section("Widget") has (
         		Feature("") has (
         			Spec(""),
@@ -82,5 +84,9 @@ Model(
         		)
     		)
     	)
+
+		Section("något annat designmässigt") has (
+
+		)
     )
 )
