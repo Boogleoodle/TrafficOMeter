@@ -1,10 +1,12 @@
-Lägga till Quper i experiences och förklara att det var svårt att få det vettigt för oss för vi inte kan komma på någon som är vår konkurent
+Emma: Lägga till Quper i experiences och förklara att det var svårt att få det vettigt för oss för vi inte kan komma på någon som är vår konkurent
 
-Lägga till Task description i experiences för vi har använt den.
+Emma: Lägga till Task description i experiences för vi har använt den.
 
 Något kvalitetskrav på hur mkt batteri appen får dra.
 
-SOrtera in krav på rätt rubriker, tror inte att alla ligger rätt - Philip
+SOrtera in krav på rätt rubriker, tror inte att alla ligger rätt - Philip (inte färdigt)
+
+Lägga till designkrav
 
 Lägga till task: 
 	Välj färdmedel (lägg till och ta bort)
