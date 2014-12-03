@@ -1,5 +1,4 @@
 Model(
-  Product("Our Product") has (
     Section("Usability") has (
       Quality("UpdateStartview") has 
       Spec("Updating startview shall be possible with one buttonclick per time")
@@ -21,5 +20,4 @@ Model(
         Spec("The system should not provide any statistics that could be used to track a single users travel routines or positions")
         )
     )
-  )
   )

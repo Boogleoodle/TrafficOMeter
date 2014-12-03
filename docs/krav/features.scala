@@ -1,5 +1,4 @@
 Model(
-  Product("Our Product") has (
     Section("Usage") has (
       Feature("Visibility") has (
         Spec("The user has to have easy access to the travel information at all times"),  
@@ -96,6 +95,31 @@ Section("ServerToClientCommunication") has (
     Why("User might want to use multiple devies, or have obtained a new device"),
     Example("The system could support a user profile and a server storage solution"),
     Status(ELICITED)
+    ),
+	Feature("KeepAcountPrivate") has (
+		Spec("A user can only access its own destinations"),
+		Why("The data is private and should not be viewed or changed by someone else"),
+		Example("The system could provide a login system that protects the data")
+	)
+  ),
+Section("Statistics") has (
+  Feature("ExtractStatistics") has (
+      Spec("It should be possible for [WHO] to extract statistics from the system"),
+      Why("This information is used to get information to plan future infrastructure"),
+      Example("The statistics could be extracted using a web interface"),
+      Status(ELICITED)
+    ),
+  Feature("GetPopularDestinationsStatistics") has (
+      Spec("The system should be able to provide statistics about how which 'GeographicLocation':s are popular"),
+      Why("?"),
+      Example("?"),     
+      Status(ELICITED)
+    ),
+    Feature("GetRoutesStatistics") has (
+      Spec("The system should be able to provide statistics about which routes that all users has at a specific time"),
+      Why("This information could be used to extract information about the quality of the infrastructure (?) in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc."),
+      Example("?"),     
+      Status(ELICITED)
     )
   ),
 Section("Interfaces") has (
@@ -107,6 +131,6 @@ Section("Interfaces") has (
     )
   )
 
-)
+
 )
 
