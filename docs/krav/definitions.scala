@@ -1,6 +1,4 @@
 Model(
-
- Product("Our Product") has (
     Term("Modes of tranportation") has (
       Spec("Type of vehicle in which the public transport takes place in"),
       Example("Bus, train, and ferry.")
@@ -45,6 +43,5 @@ Model(
       Example("Bus 3, stop #4 to stop #9")
     )
 
-  )
 )
 

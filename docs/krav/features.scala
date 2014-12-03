@@ -1,5 +1,4 @@
 Model(
-  Product("Our Product") has (
     Section("Usage") has (
       Feature("Visibility") has (
         Spec("The user has to have easy access to the travel information at all times"),  
@@ -96,7 +95,12 @@ Section("ServerToClientCommunication") has (
     Why("User might want to use multiple devies, or have obtained a new device"),
     Example("The system could support a user profile and a server storage solution"),
     Status(ELICITED)
-    )
+    ),
+	Feature("KeepAcountPrivate") has (
+		Spec("A user can only access its own destinations"),
+		Why("The data is private and should not be viewed or changed by someone else"),
+		Example("The system could provide a login system that protects the data")
+	)
   ),
 Section("Statistics") has (
   Feature("ExtractStatistics") has (
@@ -127,6 +131,6 @@ Section("Interfaces") has (
     )
   )
 
-)
+
 )
 
