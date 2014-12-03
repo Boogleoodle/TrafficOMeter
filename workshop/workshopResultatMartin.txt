@@ -1,0 +1,29 @@
+Fråga: Skulle du vara intresserad av en sådan här tjänst?
+Överlag ja, MEN bara om jag skulle åka buss/tåg ofta.
+Slutsats: användargrupp=folk som åker mycket (pendlare/folk som ej cyklar mycket).
+
+Fråga: Antal destinationer som du tycker behöver visas?
+3-4, någon sa ännu färre. Överlag vill de ha väldigt begränsat antal.
+
+Mycket diskussion var kring en smart app som lär sig var man åker och vilka destinationer som bör visas.
+Alla var överens om att den bör uppdatera "favoritdestinationer" beroende på var man befinner sig.
+Om man t ex är i Göteborg så borde den endast visa lokala platser i Göteborg och inte LTH t ex.
+Den borde också lära sig olika destinationer och föreslå dem, till exempel hemma & jobbet. (Tänk google now)
+Någon föreslog att man kunde ha olika profiler, t ex en Stockholmsprofil.
+
+Fråga: Vilken ordning vill du se destinationerna?
+Dynamisk ordning som ändras var alla överens om! Till exempel positionen jag befinner mig på/vilka destinationer jag ofta åker till.
+
+I workshopen fick de rita/skriva hur de tänker att widgeten/appen skulle se ut.
+Gemensamt var att de ritade väldigt få destinationer, någon till och med bara en.
+Vad som var viktigt att visa i widgeten var nästa hållplats, hur man tar sig dit och tid till avgång.
+Mindre viktigt var: tid för ankomst och restid. Detta var information som kunde finnas i appen istället.
+I appen kunde även mer avancerad information som förseningar, nästa byte och prisinformation.
+
+
+
+TLDR, viktigaste:
+Visa få destinationer, ca 3.
+Smart app som lär sig var hem/arbete är.
+Smart app som visar destinationer beroende på nuvarande position.
+Att visa: hållplats, avgångsinformation. Ej viktigt att visa: restid, ankomsttid.
