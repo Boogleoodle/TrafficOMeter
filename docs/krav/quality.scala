@@ -1,17 +1,17 @@
 Model(
     Section("Usability") has (
-      Quality("UpdateStartview") has (
-      Spec("Updating startview shall be possible with one buttonclick per time"),
+      Quality("UpdateStartView") has (
+      Spec("Updating start view shall be possible with one press of a button per time"),
 		Stakeholder("Customer") has Prio(2)
 		)
       ),
     Section("Efficiency") has (
       Quality("GPS-position") has (
-      Spec("The system should give a GPS-position correct within a 50 m radius"),
+      Spec("The system shall give a GPS-position correct within a 50 meter radius"),
 		Stakeholder("Customer") has Prio(4)
 		),	
-      Quality("Bytestid") has (
-      Spec("The product will not have byten of less than 5 min?????"),
+      Quality("TransferTime") has (
+      Spec("The product will not have transfers of less than 5 minutes"),
 		Stakeholder("Customer") has Prio(3)
 		),
       Quality("requestCapacity") has (
@@ -24,7 +24,7 @@ Model(
       ),
     Section("Security") has (
       Quality("UserIntegrity") has (
-        Spec("The system should not provide any statistics that could be used to track a single users travel routines or positions")
+        Spec("The system should not provide any statistics that could be used to track a single users travel habits or specific user positions")
 			Stakeholder("Customer") has Prio(5)
         )
     )

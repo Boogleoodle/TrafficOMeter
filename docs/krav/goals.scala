@@ -9,7 +9,7 @@ Model(
 			),
 		Stakeholder("User") has (
 			Goal("travelOverview") has (
-				Spec("The user wants to have an overview over the shortest possible trips to their frequently visited destinations")
+				Spec("The user wants to have an overview over the fastest possible trips to their frequently visited destinations")
 				),
 			Goal("minimalUserMaintenance") has (
 				Spec("The user wants to know the total time to get to a frequently visited destinations without having to manually insert information every time")
@@ -17,7 +17,7 @@ Model(
 			),
 		Stakeholder("ProductOwner") has (
 			Goal("returnOnInvestment") has (
-				Spec("The product needs to be create enough value for the users for the product owner to get a return on their investment")
+				Spec("The product needs to create enough value for the users for the product owner to get a return on their investment")
 				)
 
 		),
@@ -25,7 +25,7 @@ Model(
 			
 				
 			Goal("userTravelStatistics") has (
-				Spec("The system will provide data about the users possible travels that can be analysed to reveal flaws in the local transportation system")
+				Spec("The system will provide data about the users' possible travels that can be analysed to reveal flaws in the local transportation systems")
 				)
 			)
 )

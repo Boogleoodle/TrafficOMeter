@@ -1,0 +1,92 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage[nottoc]{tocbibind}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+	\thispagestyle{empty}
+	\setcounter{page}{0}
+	\pagebreak
+	\tableofcontents
+	\pagebreak
+
+\section{Allmänt}
+\begin{itemize}
+
+	\item Ska vi kalla det locations eller destination det som sparas, tror vi har olika lite överallt - se kommentar under tasks
+	\item samma med alla former av resa, vi är inte konsekventa med ordvalet
+	\item means och modes av travels, välj ett
+
+	\item Lägga till prio från fler stakeholders på kraven
+	\item krav på att plats ska gå att koppla med namn, har att går att byta men borde få in nåonstans att det innehåller ett namn när man lägger in det? har nog typ det i task iofs.. 
+	\item \textbf{identifiers för krav är inte unika}
+	\item byta namn på saker i vårt context diagram så det stämmer överens med de ord vi väljer ovan. även i transitions
+	\item ord som används i förklaringarna av context diagrammet förklars inte förän vi data modelen senare.. göra om detta på vettigt sätt
+\end{itemize}
+
+\section{design}
+\begin{itemize}
+	\item ska verkligen language kraven ligga där?, tycker att det känns mer som en feature
+\end{itemize}
+
+\section{features}
+	\subsection{visibility}
+		\begin{itemize}
+			\item Visibility bör skrivas om eller delas upp
+			\item Det med passiv och aktiv i why, är det fortfarande sant?, i vilket fall tror jag inte det ska bo i why
+			\item \textbf{Har inte kunderna i princip sagt att det måste vara en widget?, isf kanske det ska bli ett krav istället}
+
+		\end{itemize}
+	\subsection{Geographicstartingpoint - Geographic location}
+		\begin{itemize}
+			\item ska vi bara välja ett av dem kanske?
+			\item eller göra skillnaden tydligare.. det vi väljer behöver förtydligas
+		\end{itemize}
+
+	\subsection{searchdestination}
+		\begin{itemize}
+			\item välj om det ska heta location och sen gör denna tydligare. 
+			\item är det bara för att man ska kunna lägga till genom att söka efter den?, och isf har vi något annat krav för nån annan möjlighet eller är detta enda sättet att lägga till? har för mig att vi har ett till, kan man inte gruppera dem tillsammans på något sätt
+		\end{itemize}
+		
+	\subsection{multiplelocations}
+		\begin{itemize}
+			\item skriva att det är per användare??, eller menar vi på hela systemet i detta kravet. 
+			\item förtydliga why också när vi har bestämt oss
+		\end{itemize}
+		
+		
+	\subsection{orderdestinations}
+		\begin{itemize}
+			\item välj om locations eller dest
+			\item Här antar vi att vi har en widget, så antingen göra krav på det eller skriva om detta krav
+			\item här är example ett exempel och inte förslag på lösning, välj hur vi ska ha det och gör det konsekvent
+ 		
+		\end{itemize}
+		
+	\subsection{extractstatistics}
+vi får antingen specificera vilken typ av statistik  här eller bygga på med  fler specifika som vi redan har några. nu är det skumt med ett övergripande och några specifika
+		
+	\subsection{getroutestatistics}
+	detta borde förtydligas och vi borde ha ett för de resor som man faktiskt har klickat upp för att man vill ta dem så att staten kan se vad som ör interessant när man är på en speciell plats. Tycker att det ska vara ett separat.
+	
+	\subsection{getdatafromproviders}
+	ska det vara att producten ska göra detta?
+	
+\section{goals}
+stakeholder regional... usertravelstatistics - är detta inte ett mål för staten??
+
+\section{Tasks}
+
+\begin{itemize}
+	\item vi använder destination och location olika här också, men mest har vi det som location är det utan ett namn och destination med. jag tycker detta är bra men då måste de förklaras någonstans i vårt dokument
+
+	\item Vi säger tåg, bus och färja här, men det är ju inte säkert att alla dessa kommer med.. man kanske borde göra på annat sätt?
+
+
+\end{itemize}
+
+\end{document}

@@ -1,22 +1,22 @@
 Model(
-    Term("Modes of tranportation") has (
-      Spec("Type of vehicle in which the public transport takes place in"),
+    Term("Mode of transportation") has (
+      Spec("Type of vehicle in which the public transport takes place"),
       Example("Bus, train, and ferry.")
     ),
     Term("User") has (
       Spec("An individual who uses the system"),
-      Example("Person A looks att A's mobile device and wants to see the fastes way home.")
+      Example("Person A looks at A's mobile device and wants to see the fastest way home.")
     ),
-   Term("Saved Locations") has (
-      Spec("A graphical location that has been saved by the user"),
+   Term("Saved Location") has (
+      Spec("A geographic location that has been saved by the user."),
       Example("User A want to go home but doesn't want to search for the location again")
     ),
     Term("Time") has (
       Spec("Time of departure"),
       Example("Mode of transportation A departs at time B")
     ),
-    Term("Lines of Transportation") has (
-      Spec("A set of 'stop's that is served by the same vehicle"), 
+    Term("Line of Transportation") has (
+      Spec("A set of 'stop's that is served by the same vehicle. There is one line for each direction between the stops."), 
       Example("Bus 6 between X and Y")
     ),
     Term("Geographic Location") has (
@@ -35,7 +35,7 @@ Model(
       Spec("The path between two different stops. Consists of one or more 'sub-trip's")
     ),
     Term("Timetable") has(
-      Spec("The predefined departure times for a specific bus"),
+      Spec("The predefined departure times for a specific mode of transportation"),
       Example("Bus A departs at time X")
     ),
     Term("Sub-trip") has (

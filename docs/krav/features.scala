@@ -1,16 +1,16 @@
 Model(
     Section("Usage") has (
       Feature("Visibility") has (
-        Spec("The user has to have easy access to the travel information at all times"),  
+        Spec("The user shall have easy access to the travel information at all times"),  
         Why("The travel information provided by the solution is supposed to give the user a good overview of the possible travel opportunities at the current time. It is mainly a 'passive' information search (in contrast to todays 'active' search tools"), 
-          Example("This could easily be achieved by using the 'widget' feature on the different mobile plattforms. Wearables are also a possibility"),
+          Example("This could easily be achieved by using the 'widget' feature on the different mobile platforms. Wearables are also a possibility"),
           Status(ELICITED),
 			Stakeholder("Customer") has Prio(1)
           ),
       Feature("ViewNextOption") has (
-       Spec("There should be an option for the user to skip the current fastest route, and instead get the second best"),
-       Why("Basically a snooze button for the user"),
-       Example("Get the second best option by swiping the current option off the screen"),
+       Spec("There should be an option for the user to skip the current fastest route to one of the saved destinations, and instead get the second fastest"),
+       Why("Because the time to the fastest alternative may not be enough for the user to get ready to leave"),
+       Example("Get the second fastest option by swiping the current option for the destination off the screen"),
        Status(ELICITED),
 		Stakeholder("Customer") has Prio(2)
        ),
@@ -22,17 +22,17 @@ Model(
 		Stakeholder("Customer") has Prio(1)
         ),
       Feature("GeographicStartingPoint") has (
-        Spec("The user shall be able to use its geographical location as a starting point for a trip"),
-        Why("The position is used as the starting point when determining the route"),
-        Example("Use native GPS or WiFi-positioning feature of plattforms"),
+        Spec("The system shall be able to use the user's geographical location as a starting point for a trip"),
+        Why("The position should be used as the starting point when determining the route"),
+        Example("Use native GPS or WiFi-positioning feature of platforms"),  
         Status(ELICITED),
 		Stakeholder("Customer") has Prio(3)
         ),
 
       Feature("ShowRouteToFirstStop") has (
-        Spec("When the user wants to use a specific travel option the route between the current position and the first stop will be accessable"),
-        Why("The user might not find its way in the current area, and still should be able to get to the first stop quickly"),
-        Example("Show the route between current position and first stop ion a map."),
+        Spec("When the user selects a specific travel option the route between the current position and the first stop shall be accessible"),
+        Why("The user might not find its way in the current area, and should be able to get to the first stop quickly"),
+        Example("Show the route between current position and first stop on a map."),
         Status(ELICITED),
 		Stakeholder("Customer") has Prio(3)
 		
@@ -41,8 +41,8 @@ Model(
 Section("Maintenance") has (
   Feature("GeographicLocation") has (
    Spec("The system should be able to get the current geographical position of the user"),
-   Why("The position is used to calculate the whole trip since the system is suppose to say 'to home 20 minutes' "),
-   Example("Use native GPS or WiFi-positioning feature of plattforms"),
+   Why("The position is used to calculate the whole trip since the system is supposed to say 'to home in 20 minutes' "),
+   Example("Use native GPS or WiFi-positioning feature of platforms"),
    Status(ELICITED),
 	Stakeholder("Customer") has Prio(1)
    ), 
@@ -55,21 +55,21 @@ Section("Maintenance") has (
 	Stakeholder("Customer") has Prio(1)
     ),
   Feature("SpecifyByMap") has (
-    Spec("The user can specify the location by using a map by moving a target"),
-    Why("A map gives more information to the user and makes is easier to communicate its wishes"),
+    Spec("The user can specify the location by by moving a target on a map"),
+    Why("A map gives more information to the user and makes is easier for the user to communicate its wishes"),
     Example("Use third party map software (google maps)"),
     Status(ELICITED),
 	Stakeholder("Customer") has Prio(4)
     ),
-  Feature("SpecifyMeansOfTravel") has (
-    Spec("The user can specify what means of travel to use"),
-    Why("Not all users want to use the same means of travel"),
+  Feature("SpecifyModesOfTravel") has (
+    Spec("The user can specify what modes of travel to use from the modes of travel supported by the system"),
+    Why("Not all users want to use the same modes of travel"),
     Example("This can be implemented using a settings dialog"),
     Status(ELICITED),
 	Stakeholder("Customer") has Prio(2)
     ),
   Feature("SearchDestination") has (
-    Spec("The user skall be able to search for destinations"),
+    Spec("The user shall be able to search for destinations"),
     Why("To find a destination to travel to"),
     Example("Add an button for opening a search field"),
     Status(ELICITED),
@@ -77,14 +77,14 @@ Section("Maintenance") has (
     ),
   Feature("ChangeNameOnSavedLocation") has (
     Spec("It shall be possible to change the name of a location"),
-    Why("To make it easier to tell the different location appart"),
-    Example("An EDIT button besides the field the name of the location"),
+    Why("To make it easier to tell the different location apart"),
+    Example("An EDIT button besides the field for the name of the location"),
     Status(ELICITED)
     ),
   Feature("RemoveLocation") has (
     Spec("It shall be possible for the user to remove a previously added location"),
-    Why("If that location no longer is in the interest of the user"),
-    Example("An EDIT button besides the field the name of the location"),
+    Why("If that location no longer is in the interest of the user it should be possible to remove it"),
+    Example("An Delete button besides the name of the location"),
     Status(ELICITED),
 Stakeholder("Customer") has Prio(2)
     ),
@@ -96,8 +96,8 @@ Stakeholder("Customer") has Prio(2)
 Stakeholder("Customer") has Prio(2)	
     ),
   Feature("OrderDestinations") has (
-    Spec("It shall be possible for the user to order it's destinations in a priority order"),
-    Why("Since the display window in the widget will only fit a few destinations, the user needs to be able to prioritize its destinations to chose which ones are displayer"),
+    Spec("It shall be possible for the user to order its destinations in a priority order"),
+    Why("Since the display window in the widget will only fit a few destinations, the user needs to be able to prioritize its destinations to chose which ones are displayed"),
     Example("If the latest added destination is the most frequently used, the user might want to set the top priority for this destination so that it is always visible"),
     Status(ELICITED),
 Stakeholder("Customer") has Prio(1)
@@ -105,34 +105,35 @@ Stakeholder("Customer") has Prio(1)
   ),
 Section("ServerToClientCommunication") has (
   Feature("MultiAccessibleUserData") has (
-    Spec("A single user shall be able to access its information from multiple devices automaticly"),
-    Why("User might want to use multiple devies, or have obtained a new device"),
+    Spec("A single user shall be able to access its information from multiple devices automatically"),
+    Why("User might want to use multiple devices, or have obtained a new device"),
     Example("The system could support a user profile and a server storage solution"),
     Status(ELICITED)
     ),
 	Feature("KeepAcountPrivate") has (
 		Spec("A user can only access its own destinations"),
-		Why("The data is private and should not be viewed or changed by someone else"),
+		Why("The data is private and should not be possible view or change by someone else"),
 		Example("The system could provide a login system that protects the data")
 	)
   ),
 Section("Statistics") has (
   Feature("ExtractStatistics") has (
-      Spec("It should be possible for [WHO] to extract statistics from the system"),
-      Why("This information is used to get information to plan future infrastructure"),
+      Spec("It shall be possible for [WHO] to extract statistics from the system"),
+      Why("The statistics are used to get useful information for planning future infrastructure"),
       Example("The statistics could be extracted using a web interface"),
       Status(ELICITED),
 		Stakeholder("Customer") has Prio(4)
     ),
   Feature("GetPopularDestinationsStatistics") has (
-      Spec("The system should be able to provide statistics about how which 'GeographicLocation':s are popular"),
-      Why("?"),
+      Spec("The system should be able to provide statistics about which 'GeographicLocation':s are popular"),
+      Why("The Swedish government hopes to be able to use this and other statistics as decision basis when planning infrastructure"),
       Example("?"),     
       Status(ELICITED)
+	  Stakeholder("Customer") has Prio(4)
     ),
     Feature("GetRoutesStatistics") has (
       Spec("The system should be able to provide statistics about which routes that all users has at a specific time"),
-      Why("This information could be used to extract information about the quality of the infrastructure (?) in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc."),
+      Why("This information could be used to extract information about the quality of the infrastructure (?) in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc. could be useful"),
       Example("?"),     
       Status(ELICITED)
     )
@@ -141,7 +142,7 @@ Section("Interfaces") has (
   Feature("ExtractDataFromProviders") has (
     Spec("Extract travel data from regional public transportation administrators"),
     Why("Obtaining travel data from this source is a vital part of our system, since it is used in all calculations"),
-    Example("If the user wants toknow the fastest trip to it's home, the system will need the timetables of all the transportation means involved"),
+    Example("If the user wants to know the fastest trip to its home, the system will need the timetables of all the transportation modes involved"),
     Status(ELICITED)
     )
   )
