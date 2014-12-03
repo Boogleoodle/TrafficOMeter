@@ -8,7 +8,7 @@ Något kvalitetskrav på hur mkt batteri appen får dra.
 
 Sortera in krav på rätt rubriker, tror inte att alla ligger rätt - Philip (inte färdigt)
 
-Lägga till designkrav
+Philip och Johan: Lägga till designkrav - När bilderna är fixade så ska det i princip vara klart. I design.scala ska rätt siffror sättas så att bilderna blir länkade till scala filen.
 
 Lägga till task: 
 	Välj färdmedel (lägg till och ta bort)
