@@ -10,10 +10,7 @@ Model(
 			Spec("The system shall give a GPS-position correct within a 50 meter radius"),
 			Stakeholder("Customer") has Prio(4)
 		),	
-		Quality("TransferTime") has (
-			Spec("The product will not have transfers of less than 5 minutes"),
-			Stakeholder("Customer") has Prio(3)
-		),
+		
 		Quality("requestCapacity") has (
 			Spec("The system needs to be able to process at least 20000 update requests per minute")
 		) 
