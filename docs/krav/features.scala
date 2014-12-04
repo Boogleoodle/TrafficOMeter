@@ -36,6 +36,20 @@ Model(
 			Stakeholder("Customer") has Prio(3)
 		)
 	),
+	Section("Means of transportation") has (
+		Feature("SupportBuses") has (
+			Spec("The System shall support all bus lines in all the commuting services in Sweden"),
+			Stakeholder("Customer") has Prio(1)
+		),
+		Feature("SupportTrains") has (
+			Spec("The System shall support all train lines in all the commuting services in Sweden"),
+			Stakeholder("Customer") has Prio(1)
+		),
+		Feature("SupportFerrys") has (
+			Spec("The System shall support all ferry lines in all the commuting services in Sweden"),
+			Stakeholder("Customer") has Prio(1)
+		)
+	),
 	Section("Maintenance") has (
 		Feature("SaveLocation") has (
 			Spec("The user can add a location to its saved locations for easy access"),
