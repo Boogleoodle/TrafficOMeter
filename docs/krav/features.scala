@@ -16,12 +16,12 @@ Model(
        ),
       Feature("FastestOption") has (
         Spec("The system should automatically show the total travel time of the fastest trip"),
-        Why("So the user can see how long time it takes to travel to the saved destinations"), 
-        Example("Show a list of saved destinations and in this list show the time it takes to get to the different locations"),
+        Why("So the user can see how long time it takes to travel to its destinations"), 
+        Example("Show a list of saved destinations and in this list show the time it takes to get to the different alternatives"),
         Status(ELICITED),
 		Stakeholder("Customer") has Prio(1)
         ),
-      Feature("GeographicStartingPoint") has (
+      Feature("GeographicalStartingPoint") has (
         Spec("The system shall be able to use the user's geographical location as a starting point for a trip"),
         Why("The position should be used as the starting point when determining the route"),
         Example("Use native GPS or WiFi-positioning feature of platforms"),  
@@ -39,7 +39,7 @@ Model(
         )
       ),
 Section("Maintenance") has (
-  Feature("GeographicLocation") has (
+  Feature("GeographicalLocation") has (
    Spec("The system should be able to get the current geographical position of the user"),
    Why("The position is used to calculate the whole trip since the system is supposed to say 'to home in 20 minutes' "),
    Example("Use native GPS or WiFi-positioning feature of platforms"),
@@ -48,14 +48,14 @@ Section("Maintenance") has (
    ), 
 
   Feature("SaveLocation") has (
-    Spec("The user can add a location to its saved locations for easy access"),
-    Why("To populate the list of saved locations"),
+    Spec("The user can add a geographical location to its destinationss for easy access"),
+    Why("To populate the list of destinations"),
     Example("Add button in the application"),
     Status(ELICITED),
 	Stakeholder("Customer") has Prio(1)
     ),
   Feature("SpecifyByMap") has (
-    Spec("The user can specify the location by by moving a target on a map"),
+    Spec("The user can specify the geographical location by by moving a target on a map"),
     Why("A map gives more information to the user and makes is easier for the user to communicate its wishes"),
     Example("Use third party map software (google maps)"),
     Status(ELICITED),
@@ -68,36 +68,36 @@ Section("Maintenance") has (
     Status(ELICITED),
 	Stakeholder("Customer") has Prio(2)
     ),
-  Feature("SearchDestination") has (
-    Spec("The user shall be able to search for destinations"),
-    Why("To find a destination to travel to"),
+  Feature("SearchLocation") has (
+    Spec("The user shall be able to search for geographical locations"),
+    Why("To find a geographical location to save as a destination"),
     Example("Add an button for opening a search field"),
     Status(ELICITED),
 	Stakeholder("Customer") has Prio(1)
     ),
-  Feature("ChangeNameOnSavedLocation") has (
-    Spec("It shall be possible to change the name of a location"),
-    Why("To make it easier to tell the different location apart"),
-    Example("An EDIT button besides the field for the name of the location"),
+  Feature("ChangeNameOnDestination") has (
+    Spec("It shall be possible to change the name of a destination"),
+    Why("To make it easier to tell the different destinations apart"),
+    Example("An EDIT button besides the field for the name of the destination"),
     Status(ELICITED)
     ),
-  Feature("RemoveLocation") has (
-    Spec("It shall be possible for the user to remove a previously added location"),
-    Why("If that location no longer is in the interest of the user it should be possible to remove it"),
-    Example("An Delete button besides the name of the location"),
+  Feature("RemoveDestination") has (
+    Spec("It shall be possible for the user to remove a previously added destination"),
+    Why("If that destination no longer is in the interest of the user it should be possible to remove it"),
+    Example("An Delete button besides the name of the destination"),
     Status(ELICITED),
 Stakeholder("Customer") has Prio(2)
     ),
-  Feature("MultipleLocations") has (
-    Spec("The system shall have support for storing multiple locations"),
-    Why("It is useless if one can have only one location at a time"),
-    Example("Multiple fields of locations"),
+  Feature("MultipleDestinations") has (
+    Spec("The system shall have support for storing multiple destinations"),
+    Why("It is useless if the user can have only one destination at a time"),
+    Example("Multiple fields of destinations"),
     Status(ELICITED),
 Stakeholder("Customer") has Prio(2)	
     ),
   Feature("OrderDestinations") has (
     Spec("It shall be possible for the user to order its destinations in a priority order"),
-    Why("Since the display window in the widget will only fit a few destinations, the user needs to be able to prioritize its destinations to chose which ones are displayed"),
+    Why("Since the display window in the widget will only fit a few destinations, the user needs to be able to prioritize them to chose which ones are displayed"),
     Example("If the latest added destination is the most frequently used, the user might want to set the top priority for this destination so that it is always visible"),
     Status(ELICITED),
 Stakeholder("Customer") has Prio(1)
@@ -124,8 +124,8 @@ Section("Statistics") has (
       Status(ELICITED),
 		Stakeholder("Customer") has Prio(4)
     ),
-  Feature("GetPopularDestinationsStatistics") has (
-      Spec("The system should be able to provide statistics about which 'GeographicLocation':s are popular"),
+  Feature("GetPopularLocationStatistics") has (
+      Spec("The system should be able to provide statistics about which geographical locations are popular"),
       Why("The Swedish government hopes to be able to use this and other statistics as decision basis when planning infrastructure"),
       Example("?"),     
       Status(ELICITED)
