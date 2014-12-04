@@ -2,51 +2,43 @@
 
 
 \begin{lstlisting}
-Task findLocation
-  Spec Locacte a location to travel to
-  Variant Select current GPS-coordinates as location
-  Variant Desiered location does not exist
-  Variant Multiple matches for location query
-  Frequency 5
-Task nameLocation
-  Spec Names a location
-  Frequency 1
-Task saveLocation
-  Spec Save location to device and database
-  Frequency 1
 Task addDestination
   Spec User saves a location
 Trigger: User want another destination to travel to
   Task Find Location
+    Spec Locate a location to travel to
+    Variant Select current GPS-coordinates as location
+    Variant Desired location does not exist
+    Variant Multiple matches for location query
+    Frequency 5
   Task Name Location
+    Spec Give a name to a location
+    Frequency 1
   Task Save Location
-  Why The user shall not have to search for a destination he/she might visit.
+    Spec Save a location to the device and database
+    Frequency 1
+  Why The user shall not have to search for a destination he/she might visit multiple times.
   Frequency 3
-Task toggleTrain
-  Spec Toggles wheter the or not user wants to go by train.
-  Frequency 2
-Task toggleBus
-  Spec Toggles wheter or not the user wants to go by bus.
-  Frequency 2
-Task toggleFerry
-  Spec Toggles wheter or not the user wants to go by bus.
-  Frequency 1
-Task chooseTransportationMode
-  Spec User specifies what mode of transportation he/she wants to use.
+Task chooseTransportationMeans
+  Spec User specifies what/which means of transportation/-s he/she wants to use.and then the system uses it
   Task toggleTrain
+    Spec Toggles whether or not the user wants to go by train.
+    Frequency 2
   Task toggleBus
+    Spec Toggles whether or not the user wants to go by bus.
+    Frequency 2
   Task toggleFerry
-  Frequency 1
-Task selectSavedLocation
-  Spec Select a location from a list of saved locations
-  Frequency 1
-Task deleteSelectedLocation
-  Spec Removes a selected location
+    Spec Toggles whether or not the user wants to go by ferry.
+    Frequency 1
   Frequency 1
 Task removeDestination
   Spec Remove a previously saved location
   Task SelectSavedLocation
+    Spec Select a location from a list of saved locations
+    Frequency 1
   Task deleteSelectedLocation
+    Spec Remove a selected location
+    Frequency 1
   Frequency 1
 
 \end{lstlisting}
