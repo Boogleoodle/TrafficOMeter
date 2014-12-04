@@ -1,5 +1,14 @@
 Model(
-	Product("Design") has (
+	Section("Structure") has (
+                Feature("Widget") has (
+                    Spec("There shall be a widget that displays information about the user's saved destinations"),
+                    Status(ELICITED)
+                ),
+                Feature("MobileApplication") has (
+                    Spec("There should be an app where the user can view more information about the user's saved destinations than in the widget and change settings"),
+                    Status(ELICITED)
+                )
+            ),
 
         Section("Visual") has (
 
@@ -36,5 +45,5 @@ Model(
     		)
     	)
 		
-    )
+    
 )

@@ -36,14 +36,21 @@ Model(
 			Stakeholder("Customer") has Prio(3)
 		)
 	),
-	Section("Maintenance") has (
-		Feature("GeographicLocation") has (
-			Spec("The system should be able to get the current geographical position of the user"),
-			Why("The position is used to calculate the whole trip since the system is supposed to say 'to home in 20 minutes' "),
-			Example("Use native GPS or WiFi-positioning feature of platforms"),
-			Status(ELICITED),
+	Section("Means of transportation") has (
+		Feature("SupportBuses") has (
+			Spec("The System shall support all bus lines in all the commuting services in Sweden"),
 			Stakeholder("Customer") has Prio(1)
-		), 
+		),
+		Feature("SupportTrains") has (
+			Spec("The System shall support all train lines in all the commuting services in Sweden"),
+			Stakeholder("Customer") has Prio(1)
+		),
+		Feature("SupportFerrys") has (
+			Spec("The System shall support all ferry lines in all the commuting services in Sweden"),
+			Stakeholder("Customer") has Prio(1)
+		)
+	),
+	Section("Maintenance") has (
 		Feature("SaveLocation") has (
 			Spec("The user can add a location to its saved locations for easy access"),
 			Why("To populate the list of saved locations"),
