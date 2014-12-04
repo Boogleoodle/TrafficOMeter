@@ -48,6 +48,14 @@ Model(
 		Feature("SupportFerrys") has (
 			Spec("The System shall support all ferry lines in all the commuting services in Sweden"),
 			Stakeholder("Customer") has Prio(1)
+		),
+		Feature("MaxDistToStop") has ( 
+			Spec("The user shall be able to specify the maximum distance between two intermediate stops."),
+			Stakeholder("Customer") has Prio(2)
+		),
+		Feature("MinWaitTime") has (
+			Spec("The user shall be able to specify the minimum waiting time between two intermediate stops."),
+			Stakeholder("Customer") has Prio(2)
 		)
 	),
 	Section("Maintenance") has (
