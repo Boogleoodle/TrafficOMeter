@@ -7,8 +7,8 @@ Model(
       Spec("An individual who uses the system"),
       Example("Person A looks at A's mobile device and wants to see the fastest way home.")
     ),
-   Term("Saved Location") has (
-      Spec("A geographic location that has been saved by the user."),
+   Term("Destination") has (
+      Spec("A geographical location that has been saved and given a name by the user."),
       Example("User A want to go home but doesn't want to search for the location again")
     ),
     Term("Time") has (
@@ -19,13 +19,13 @@ Model(
       Spec("A set of 'stop's that is served by the same vehicle. There is one line for each direction between the stops."), 
       Example("Bus 6 between X and Y")
     ),
-    Term("Geographic Location") has (
+    Term("Geographical Location") has (
       Spec("Consists of GPS coordinates"),
       Example("lat: 55.71037075564825, lon: 13.208270072937012")
     ),
     Term("Trip") has (
       Spec("A specific travel between two geographical (GPS) points"), 
-      Example("Between a users current position and one of its saved destinations")
+      Example("Between a users current position and one of its destinations")
     ),
     Term("Stop") has (
       Spec("Place where a public transportation vehicle stop to pick up and let off passengers."),
