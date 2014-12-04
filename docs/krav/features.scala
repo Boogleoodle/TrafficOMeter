@@ -37,13 +37,6 @@ Model(
 		)
 	),
 	Section("Maintenance") has (
-		Feature("GeographicLocation") has (
-			Spec("The system should be able to get the current geographical position of the user"),
-			Why("The position is used to calculate the whole trip since the system is supposed to say 'to home in 20 minutes' "),
-			Example("Use native GPS or WiFi-positioning feature of platforms"),
-			Status(ELICITED),
-			Stakeholder("Customer") has Prio(1)
-		), 
 		Feature("SaveLocation") has (
 			Spec("The user can add a location to its saved locations for easy access"),
 			Why("To populate the list of saved locations"),
