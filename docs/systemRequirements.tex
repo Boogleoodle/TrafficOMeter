@@ -49,6 +49,18 @@
 	\tableofcontents
 	\pagebreak
 	
+
+
+
+	\section{Background} % (fold)
+	\label{sec:background}
+	
+		\subsection{Costumer relationship}
+			We have a close relationship to our costumers, with frekvent meatings at least once a week. Outside theese, most of the communication is done by mail. The meetings are done with open discussions and not to formal. 
+
+			The costumer is the product owner for the system.
+
+
 	% section background (end)
 
 	\section{System Purpose} % (fold)
@@ -111,23 +123,21 @@ The project goal is to develop an app and/or widget where the user can see how t
 				\textbf{låg under feature innan, men har nog aldrig sorteras så dessa ska in under rätt rubriker sen}
 			
 				\begin{itemize}
-					\item Req("BusSupport") has (Spec("The System shall support bus-travels in Sweden")), \textbf{all trafik, en linje??, behöver fixas till}
-					\item Req("TrainSupport") has (Spec("The System shall support train-travels in Sweden")), \textbf{all trafik, en linje??, behöver fixas till}
-					\item Req("FerrySupport") has (Spec("The System shall support ferry-travels in Sweden")), \textbf{all trafik, en linje??, behöver fixas till}
-					\item Req("ModesOfTransportation") has (Spec("The User shall be able to specify which of the supported modes of transportation it would like to use")), \textbf{finns typ i features. Vi behöver formulera om detta så att det säger att appen då måste bara använda detta eller om det är en rekommendation till appen osv. Finns typ ett task om detta som måste förtydligast, men tror att krav på om användarens val måste respekteras av systemet. Vi kanske vill att användaren ska kunna säga max antal min att gå mellan olika hållplatser?}. 
-					\item The System shall automatically show the fastest travel option. \textbf{har vi inte ett sånt här i features också??, i vilket fall så måste det göras om om det ska vara kvar}
-					\item The User shall be able to select another travel option if the shown alternative does not fit its needs. This 				is preferably done by swiping through different available alternatives. \textbf{finns typ samma i features, ta bort detta?}
-					\item Req("viewSavedOnOtherDevice") has (Spec("Reach saved destinations from other devices")),
+					\item Req("BusSupport") has (Spec("The System shall support all bus lines in all the commuting services in Sweden")),
+					\item Req("TrainSupport") has (Spec("The System shall support all train lines in all the commuting services in Sweden")),
+					\item Req("FerrySupport") has (Spec("The System shall support all ferry lines in all the commuting services in Sweden")),
+					\item Req("MeansOfTransportation") has (Spec("The User shall be able to specify which of the supported means of transportation it would like to use and then the system shall use the selected means of transportation")), \textbf{Kanske borde göras om till ett subkrav, om någon vet hur man gör detta}. 
+					\item Req(''MaxDistBetweenStops'') has (Spec(''The user shall be able to specify the max distance between stops that the system shall take in to acount when calculating the route. If no route can be found, the system can ignore the contraint'')), \textbf{var ska denna vara, kan behövas finslipas}
+
+
+					\item The User shall be able to select another travel option if the shown alternative does not fit its needs. This 				is preferably done by swiping through different available alternatives. \textbf{Det fanns in feature, och är nu ändrat där för att passa bättre, den heter ViewNextOption, kolla och kommentera om nödvändigt."})),
 					\item Req("TimeToDestinationsOnMainScreen") has (Spec("The User shall be able to see the time to reach it's saved destinations on the main screen of the device.")), \textbf{har ett liknande i features, men borde formulera till nåt mellanting}
 				\end{itemize}	
 					
 					
 				\textbf{Det här hör förmodligen inte hemma här men måste finnas med någonstans på något sätt.}
 				\begin{itemize}
-					\item The User shall be able to choose modes of transportation from ferry, bus and train. They must choose at least one. \textbf{lägga till krav på minst en någonstans och ta bort resten?, finns i princip i tasks men måste skrivas om till något tydligt}
-					\item The User shall be able to add Destinations\textbf{ finns?, samma som savedestinations?}
-					\item The User shall be able to remove Destinations , \textbf{finns som ett task och feature, skiljer sig lite, vad ska vi ha}
-					\item The User shall be able to change the name of a destination \textbf{har inget task på detta, ska vi ha det?, men vi har det som feature.}
+					\item The User shall be able to choose means of transportation from ferry, bus and train. They must choose at least one. \textbf{lägga till krav på minst en någonstans och ta bort resten?, finns i princip i tasks men måste skrivas om till något tydligt}
 					\item A destination consists of a name (lägga till i data modellen), gps-position \textbf{finns detta i datamodel nu??}
 				\end{itemize}
 	\subsection{Design Level Requirements}
