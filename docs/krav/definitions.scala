@@ -1,5 +1,5 @@
 Model(
-    Term("Mode of transportation") has (
+    Term("Means of transportation") has (
       Spec("Type of vehicle in which the public transport takes place"),
       Example("Bus, train, and ferry.")
     ),
@@ -13,7 +13,7 @@ Model(
     ),
     Term("Time") has (
       Spec("Time of departure"),
-      Example("Mode of transportation A departs at time B")
+      Example("Means of transportation A departs at time B")
     ),
     Term("Line of Transportation") has (
       Spec("A set of 'stop's that is served by the same vehicle. There is one line for each direction between the stops."), 
@@ -35,7 +35,7 @@ Model(
       Spec("The path between two different stops. Consists of one or more 'sub-trip's")
     ),
     Term("Timetable") has(
-      Spec("The predefined departure times for a specific mode of transportation"),
+      Spec("The predefined departure times for a specific means of transportation"),
       Example("Bus A departs at time X")
     ),
     Term("Sub-trip") has (
