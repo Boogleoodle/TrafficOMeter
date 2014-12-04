@@ -8,7 +8,7 @@ Model(
 			Stakeholder("Customer") has Prio(1)
           ),
       Feature("ViewNextOption") has (
-       Spec("The user shall be able to choose to discard the displayed route to a destination and instead get the route of the next departure to the same desination"),
+       Spec("The user shall be able to choose to discard the displayed route to a destination and instead get the trip of the next departure to the same desination"),
        Why("Because the time to the fastest alternative may not be enough for the user to get ready to leave"),
        Example("Get the second fastest option by swiping the current option for the destination off the screen"),
        Status(ELICITED),

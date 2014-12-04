@@ -29,3 +29,18 @@ Model(
         )
     )
   )
+
+
+
+  Quality("SupportBuses") has (
+    Spec("The System shall support all bus lines in all the commuting services in Sweden"),
+    Stakeholder("Customer") has Prio(?)
+    ),
+  Quality("SupportTrains") has (
+    Spec("The System shall support all train lines in all the commuting services in Sweden"),
+    Stakeholder("Customer") has Prio(?)
+    ),
+  Quality("SupportFerrys") has (
+    Spec("The System shall support all ferry lines in all the commuting services in Sweden"),
+    Stakeholder("Customer") has Prio(?)
+    ),
