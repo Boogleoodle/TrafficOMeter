@@ -20,19 +20,7 @@ Model(
 		Frequency(3)
 	),
 	Task("chooseTransportationMeans") has (
-		Spec("User specifies what/which means of transportation/-s he/she wants to use.and then the system uses it"),
-		Task("toggleTrain") has (
-			Spec("Toggles whether or not the user wants to go by train."),
-			Frequency(2)
-		),
-		Task("toggleBus") has (
-			Spec("Toggles whether or not the user wants to go by bus."),
-			Frequency(2)
-		),
-		Task("toggleFerry") has (
-			Spec("Toggles whether or not the user wants to go by ferry."),
-			Frequency(1)
-		),
+		Spec("User specifies which means of transportation(s) that the system shall use for calculating the fastest trip"),
 		Frequency(1)
 	),
 	Task("removeDestination") has (
