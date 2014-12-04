@@ -145,8 +145,16 @@ Section("Interfaces") has (
     Example("If the user wants to know the fastest trip to its home, the system will need the timetables of all the transportation modes involved"),
     Status(ELICITED)
     )
-  )
-
+  ),
+  
+Section("Support") has (
+	Feature("Language") has (
+        Spec("The system shall have support for both Swedish and English"),
+        Why("To make the product available for more people"),
+        Example("A setting where one can use the language to be used"), 
+        Status(ELICITED)
+    )
+)
 
 )
 
