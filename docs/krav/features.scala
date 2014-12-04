@@ -6,7 +6,6 @@ Model(
 			Example("This could easily be achieved by using the 'widget' feature on the different mobile platforms. Wearables are also a possibility"),
 			Status(ELICITED),
 			Stakeholder("Customer") has Prio(1)
-<<<<<<< HEAD
 		),
 		Feature("ViewNextOption") has (
 			 Spec("The user shall be able to choose to discard the displayed route to a destination and instead get the route of the next departure to the same desination"),
