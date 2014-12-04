@@ -1,0 +1,126 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath}
+\pagestyle{empty}
+\title{Validation Checklist version 1.0}
+\author{Group D}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\thispagestyle{empty}
+	\setcounter{page}{0}
+
+	\begin{tabular}{|l|l|l|} \hline 
+		\multicolumn{3}{|l|}{\textbf{Project}} \\ \hline \hline
+		\textbf{Contents Check}	& \textbf{Observations - }	& \textbf{Problem?} \\
+			& \textbf{found and missing}	&	\\ \hline
+		Customer and sponsor & & \\ \hline
+		Background	&	&	\\ \hline
+		Authors &	& \\ \hline
+		Date &	& \\ \hline
+		Table of contents	&	& \\ \hline
+		All levels of requirements	&	& \\ \hline
+		Definitions of terms and concepts	&	& \\ \hline
+		Business goals	&	&	\\ \hline
+		Trace goals \(\rightarrow\) requirements	&	&	\\ \hline
+		Trace goals \(\leftarrow\) requirements	&	&	\\ \hline
+		\textbf{Data:}	&	&	\\ 
+		Data Model contents	&	&	\\ \hline
+		\textbf{Functional requirements:}	&	&	\\
+		Domain-level requirements	&	&	\\ 
+		e.g. tasks	&	&	\\ \hline
+		Product-level events and	&	&	\\
+		functions	&	&	\\ \hline
+		Design-level requirements e.g.	&	&	\\
+		prototypes or comm. Protocols	&	&	\\ \hline
+		Spec of non-trivial functions	&	&	\\ \hline
+		\textbf{Special cases:}	&	&	\\
+		Stress cases	&	&	\\ \hline
+		Power failure, HW failure,	&	&	\\
+		configuration	&	&	\\ \hline
+		Use cases dealing with special	&	&	\\
+		events or errors	&	&	\\ \hline
+		\textbf{Quality requirements:}	&	&	\\
+		Performance	&	&	\\ \hline
+		Capacity, and accuracy	&	&	\\ \hline
+		Usability	&	&	\\ \hline
+		Safety and security	&	&	\\ \hline
+		Reliability	&	&	\\ \hline
+		Availability	&	&	\\ \hline
+		Fault tolerance	&	&	\\ \hline
+		Maintainability	&	&	\\ \hline
+		Portability	&	&	\\ \hline
+		Reusability	&	&	\\ \hline
+		Interoperability	&	&	\\ \hline
+		Installability	&	&	\\ \hline
+		Other qualities	&	&	\\ \hline
+		events or errors	&	&	\\ \hline
+		\textbf{Other deliverables:}	&	&	\\
+		Documentation	&	&	\\ \hline
+		Installation	&	&	\\ \hline
+		Data conversion	&	&	\\ \hline
+		System operation	&	&	\\ \hline
+		Support and maintenance	&	&	\\ \hline
+		\textbf{Glossary:}	&	&	\\
+		Domain and product terms	&	&	\\ \hline
+	\end{tabular}
+
+	\begin{tabular}{|l|l|l|} \hline
+		\textbf{Structure check:} & \textbf{Observations -} & \textbf{Problems?}	\\
+			& \textbf{found and missing}	&	\\ \hline
+		Unique ID for each requirement	&	&	\\ \hline
+		Verifiable requirements	&	&	\\ \hline
+		Purpose of each requirement	&	&	\\ \hline
+		Example of ways to meet	&	&	\\
+		requirement	&	&	\\ \hline
+		Text explanation of diagrams, ets.	&	&	\\ \hline
+		Importance and stability	&	&	\\ \hline
+		No duplicate information	&	&	\\ \hline
+		\textbf{Consistency checks}	& \textbf{Observations -} & \textbf{Problems?} \\
+			& \textbf{found and missing}	&	\\ \hline
+		CRUD check: Create, read, &	&	\\
+		update, delete all data	&	&	\\ \hline
+		All events handled by	&	&	\\ 
+		task or function?	&	&	\\ \hline
+		Task and message data	&	&	\\
+		in data model?	&	&	\\ \hline
+		Virtual Window data	&	&	\\
+		in data model?	&	&	\\ \hline
+		Virtual window support	&	&	\\
+		all tasks?	&	&	\\ \hline
+		\textbf{Reviews}     & \textbf{Observations -} & \textbf{Problems?} \\
+                        & \textbf{found and missing}    &       \\ \hline
+		Goals and critical	&	&	\\
+		issues covered?	&	&	\\ \hline
+		Requirements justified?	&	&	\\ \hline
+		Risk assessment	&	&	\\ \hline
+		High-risk areas improved	&	&	\\ \hline
+		\textbf{Requirement Quality Check} & \textbf{Observation -} & \textbf{Problem?} \\
+		                        & \textbf{found and missing}    &       \\ \hline	
+		Does the requirements design &	& \\
+		or give suggestions of solutions?	&	& \\ \hline
+		Does multiple requirements describe	&	& \\
+		the same or similar needs?	&	& \\ \hline
+		Can some requirements be grouped	&	& \\
+		to a single requirement?	&	& \\ \hline
+		Can any requirement be split	&	& \\
+		into several requirements?	&	& \\ \hline
+		Is it possible to satisfy the	&	& \\
+		requirements with the available	&	& \\
+		technology?	&	& \\ \hline
+		Is it possible to test all	&	& \\
+		requirements? &	& \\ \hline
+		Are all requirements independent	&	& \\
+		or do you have to examine other	&	& \\
+		requirements to understand them?	&	& \\ \hline
+		Are the requirements unambiguous?	&	& \\ \hline
+		Have other similar requirements	&	& \\
+		been evaluated? 	&	& \\ \hline
+		Is any information redundant?	&	& \\ \hline
+		Is any other information missing?	&	&	\\ \hline
+		Are any requirements missing?	&	&	\\ \hline	
+	\end{tabular}
+\end{document}

@@ -8,7 +8,7 @@ Något kvalitetskrav på hur mkt batteri appen får dra.
 
 Sortera in krav på rätt rubriker, tror inte att alla ligger rätt - Philip (inte färdigt)
 
-Lägga till designkrav
+Philip och Johan: Lägga till designkrav - När bilderna är fixade så ska det i princip vara klart. I design.scala ska rätt siffror sättas så att bilderna blir länkade till scala filen.
 
 Lägga till task: 
 	Välj färdmedel (lägg till och ta bort)
@@ -22,8 +22,8 @@ Design level reqs
 3B system boundraries? lägga till något
 Lite mer om 3C - reason about choices of specification methods in relation to different context
 3f,3g,3h om validering men kan inte göras just nu
-3i - use more than one prioritization technique in a relevant way.
-3j - reflect on prioritization experiences
+3i - use more than one prioritization technique in a relevant way. - Detta är påbärjat
+3j - reflect on prioritization experiences - Påbörjat i projectExperience
 
 Kvar för att få fyra:
 4a - combine different degrees of completeness and different levels of abstraction
