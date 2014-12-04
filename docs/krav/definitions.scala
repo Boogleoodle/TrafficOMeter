@@ -8,7 +8,7 @@ Model(
       Example("Person A looks at A's mobile device and wants to see the fastest way home.")
     ),
    Term("Destination") has (
-      Spec("A geographical location that has been saved by the user."),
+      Spec("A geographical location that has been saved and given a name by the user."),
       Example("User A want to go home but doesn't want to search for the location again")
     ),
     Term("Time") has (

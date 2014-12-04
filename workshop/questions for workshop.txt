@@ -1,0 +1,46 @@
+Del av kursen kravhantering. Ni kommer vara anonyma och endast refereras som försöksdeltagare i rapporten.
+Vi kommer spela in ljud men detta kommer endst spelas upp inom gruppen och raderas när vi är klara. Är det okej?
+
+Vi utvecklar en tjänst och i detta ingår att göra en väldefinerad kravspecifikation.
+För att göra en bra kravspec behöver vi hjälp av er potentiella användare.
+Tjänsten är en widget med tillhörande app för att snabbt få reda på tid/resväg till olika förvalda destinationer oberoende var man befinner sig.
+Tjänsten sträcker sig över hela landet och över länsgränser.
+Under hela workshopen kan ni bortse från tekniska svårigheter/möjligheter, tänk er att allt är möjligt!
+
+Workshopen är uppdelad i två delar, en där vi har några frågor som ni gärna får diskutera. Det finns inget som är fel.
+Sedan kommer vi ha en design-del där ni ska ta fram er kreativa sida.
+
+Fågor:
+Skulle du vara intresserad av detta systemet?
+
+vad är viktigt att ett sånt här system innehåller?
+
+hur många platser är det relevant att visa?
+
+vilken ordning ska platserna visas?
+	prio?
+
+
+Workshop:
+
+3. vad ska visas för varje plats?
+	2.1 namn på plats
+	2.2 nästa transportmedel
+	2.3 avgångstid för nästa transportmedel
+	2.4 antal byten
+	2.5 ankomsttid
+	2.6 till från nu till ankomst
+	2.7 riktning till nästa hållplats
+	2.8 riktigt av transportmedel (t.ex tåg mot malmö)
+	2.9 läge för transportmedel
+	2.9.1 Egna förslag
+
+	prioritera?
+
+
+
+Frågor om systemet:
+
+	Vad för slags information vill du att systemet ska lagra?
+	Vad för slags information vill du att systemet inte ska lagra?
+	 
