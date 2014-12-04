@@ -31,11 +31,11 @@ Model(
 		Frequency(2)
 	),
 	Task("toggleFerry") has (
-		Spec("Toggles whether or not the user wants to go by bus."),
+		Spec("Toggles whether or not the user wants to go by ferry."),
 		Frequency(1)
 	),
-	Task("chooseTransportationMode") has (
-		Spec("User specifies what/which mode of transportation/-s he/she wants to use."),
+	Task("chooseTransportationMeans") has (
+		Spec("User specifies what/which means of transportation/-s he/she wants to use.and then the system uses it"),
 		Task("toggleTrain"),
 		Task("toggleBus"),
 		Task("toggleFerry"),

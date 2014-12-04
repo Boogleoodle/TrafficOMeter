@@ -8,14 +8,14 @@ Model(
 			Stakeholder("Customer") has Prio(1)
           ),
       Feature("ViewNextOption") has (
-       Spec("There should be an option for the user to skip the current fastest route to one of the saved destinations, and instead get the second fastest"),
+       Spec("The user shall be able to choose to discard the displayed route to a destination and instead get the route of the next departure to the same desination"),
        Why("Because the time to the fastest alternative may not be enough for the user to get ready to leave"),
        Example("Get the second fastest option by swiping the current option for the destination off the screen"),
        Status(ELICITED),
 		Stakeholder("Customer") has Prio(2)
        ),
       Feature("FastestOption") has (
-        Spec("The system should show the total travel time of the fastest trip"),
+        Spec("The system should automatically show the total travel time of the fastest trip"),
         Why("So the user can see how long time it takes to travel to the saved destinations"), 
         Example("Show a list of saved destinations and in this list show the time it takes to get to the different locations"),
         Status(ELICITED),
@@ -61,9 +61,9 @@ Section("Maintenance") has (
     Status(ELICITED),
 	Stakeholder("Customer") has Prio(4)
     ),
-  Feature("SpecifyModesOfTravel") has (
-    Spec("The user can specify what modes of travel to use from the modes of travel supported by the system"),
-    Why("Not all users want to use the same modes of travel"),
+  Feature("SpecifyMeansOfTravel") has (
+    Spec("The User shall be able to specify which of the supported means of transportation it would like to use and then the system shall use the selected means of transportation"),
+    Why("Not all users want to use the same means of travel"),
     Example("This can be implemented using a settings dialog"),
     Status(ELICITED),
 	Stakeholder("Customer") has Prio(2)
@@ -142,7 +142,7 @@ Section("Interfaces") has (
   Feature("ExtractDataFromProviders") has (
     Spec("Extract travel data from regional public transportation administrators"),
     Why("Obtaining travel data from this source is a vital part of our system, since it is used in all calculations"),
-    Example("If the user wants to know the fastest trip to its home, the system will need the timetables of all the transportation modes involved"),
+    Example("If the user wants to know the fastest trip to its home, the system will need the timetables of all the transportation means involved"),
     Status(ELICITED)
     )
   )
