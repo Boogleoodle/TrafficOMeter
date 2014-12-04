@@ -34,7 +34,15 @@ Model(
       Example("Show the route between current position and first stop on a map."),
       Status(ELICITED),
       Stakeholder("Customer") has Prio(3)
-    )
+    ),
+	Feature("MaxDistToStop") has ( 
+		Spec("The user shall be able to specify the maximum distance in a transfer between two adjacent stops."),
+		Stakeholder("Customer") has Prio(2)
+	),
+	Feature("MinWaitTime") has (
+		Spec("The user shall be able to specify the minimum waiting time in a transfer between two adjacent stops."),
+		Stakeholder("Customer") has Prio(2)
+	)
   ),
   Section("Means of transportation") has (
     Feature("SupportBuses") has (
