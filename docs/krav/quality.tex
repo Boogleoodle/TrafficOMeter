@@ -1,19 +1,55 @@
-\chapter{Model}
+\begin{lstlisting}
+
+\end{lstlisting}
+
+
+       \section{Usability}
 
 
 \begin{lstlisting}
-Product Our Product
-  Quality requestCapacity
-    Spec The system needs to be able to process at least 20000 update requests per minute
-  Quality UpdateStartview-Usability
-    Spec Updating startview shall be possible with one buttonclick per time
-  Quality Uptime-Reliability
-    Spec The system should have an uptime of 99%
-  Quality GPS-position-Efficiency
-    Spec The system should give a GPS-position correct within a 50 m radius
-  Quality Bytestid-Efficiency
-    Spec The product will not have byten of less than 5 min?????
-  Quality personal-Security
-    Spec The system will not connect position with person
+Quality UpdateStartView
+  Spec Updating start view shall be possible with one press of a button per time
+  Stakeholder Customer
+    Prio 2
+
+\end{lstlisting}
+    
+        
+       \section{Efficiency}
+
+
+\begin{lstlisting}
+Quality GPS-position
+  Spec The system shall give a GPS-position correct within a 50 meter radius
+  Stakeholder Customer
+    Prio 4
+Quality TransferTime
+  Spec The product will not have transfers of less than 5 minutes
+  Stakeholder Customer
+    Prio 3
+Quality requestCapacity
+  Spec The system needs to be able to process at least 20000 update requests per minute
+
+\end{lstlisting}
+    
+        
+       \section{Reliability}
+
+
+\begin{lstlisting}
+Quality Uptime-Reliability
+  Spec The system should have an uptime of 99%
+
+\end{lstlisting}
+    
+        
+       \section{Security}
+
+
+\begin{lstlisting}
+Quality UserIntegrity
+  Spec The system should not provide any statistics that could be used to track a single users travel habits or specific user positions
+  Stakeholder Customer
+    Prio 5
 
 \end{lstlisting}
