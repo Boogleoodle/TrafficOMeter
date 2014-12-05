@@ -1,12 +1,5 @@
 Model(
 	Section("Usage") has (
-		Feature("Visibility") has (
-			Spec("The user shall have easy access to the travel information at all times"), 
-			Why("The travel information provided by the solution is supposed to give the user a good overview of the possible travel opportunities at the current time. It is mainly a 'passive' information search (in contrast to todays 'active' search tools"), 
-			Example("This could easily be achieved by using the 'widget' feature on the different mobile platforms. Wearables are also a possibility"),
-			Status(ELICITED),
-			Stakeholder("Customer") has Prio(1)
-		),
 		Feature("ViewNextOption") has (
 			 Spec("The user shall be able to choose to discard the displayed route to a destination and instead get the route of the next departure to the same desination"),
 			 Why("Because the time to the fastest alternative may not be enough for the user to get ready to leave"),
