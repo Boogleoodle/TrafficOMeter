@@ -1,22 +1,22 @@
 Model(
 	Task("addDestination") has (
-		Spec("User saves a location\nTrigger: User want another destination to travel to"),
-		Task("Find Location") has (
-			Spec("Locate a location to travel to"),
-			Variant("Select current GPS-coordinates as location"),
-			Variant("Desired location does not exist"),
-			Variant("Multiple matches for location query"),
+		Spec("User saves a geographical location\nTrigger: User want another destination to travel to"),
+		Task("Find Geographical Location") has (
+			Spec("Locate a geographical location to travel to"),
+			Variant("Select current GPS-coordinates as geographical location"),
+			Variant("Desired geographical location does not exist"),
+			Variant("Multiple matches for geographical location query"),
 			Frequency(5)
 		),
-		Task("Name Location") has (
-			Spec("Give a name to a location"),
+		Task("Name Geographical Location") has (
+			Spec("Give a name to a geographical location"),
 			Frequency(1)
 		),
-		Task("Save Location") has (
-			Spec("Save a location to the device and database"),
+		Task("Save Geographical Location") has (
+			Spec("Save a geographical location to the device and database"),
 			Frequency(1)
 		),
-		Why("The user shall not have to search for a destination he/she might visit multiple times."),
+		Why("The user shall not have to search for a geographical location he/she might visit multiple times."),
 		Frequency(3)
 	),
 	Task("chooseTransportationMeans") has (
@@ -24,13 +24,13 @@ Model(
 		Frequency(1)
 	),
 	Task("removeDestination") has (
-		Spec("Remove a previously saved location"),
-		Task("SelectSavedLocation") has (
-			Spec("Select a location from a list of saved locations"),
+		Spec("Remove a previously added destination"),
+		Task("SelectDestination") has (
+			Spec("Select a destination from a list of destinations"),
 			Frequency(1)
 		),
-		Task("deleteSelectedLocation") has (
-			Spec("Remove a selected location"),
+		Task("deleteSelectedDestination") has (
+			Spec("Remove a selected destination"),
 			Frequency(1)
 		),
 		Frequency(1)
