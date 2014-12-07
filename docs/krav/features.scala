@@ -7,12 +7,14 @@ Model(
 			 Status(ELICITED),
 			Stakeholder("Customer") has Benefit(4)
 		),
-		Feature("FastestOption") has (
+		Feature("FastestTrip") has (
 			Spec("The system should automatically show the total travel time of the fastest trip"),
 			Why("So the user can see how long time it takes to travel to the destinations"), 
 			Example("Show a list of destinations and in this list show the time it takes to get to the different alternatives"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Benefit(5)
+			Stakeholder("Customer") has Benefit(5),
+			Stakeholder("User") has Benefit(9),
+			Stakeholder("Staten") has Benefit(10)
 		),
 		Feature("GeographicalStartingPoint") has (
 			Spec("The system shall be able to use the user's geographical location as a starting point for a trip"),
@@ -26,7 +28,9 @@ Model(
 			Why("The user might not find its way in the current area, and should be able to get to the first stop quickly"),
 			Example("Show the route between current position and first stop on a map."),
 			Status(ELICITED),
-			Stakeholder("Customer") has Benefit(3)
+			Stakeholder("Customer") has Benefit(3),
+			Stakeholder("User") has Benefit(8),
+			Stakeholder("Staten") has Benefit(4)
 		),
 		Feature("MaxDistToStop") has ( 
 			Spec("The user shall be able to specify the maximum distance in a transfer between two adjacent stops."),
@@ -57,21 +61,27 @@ Model(
 			Why("To populate the list of destinations"),
 			Example("Add button in the application"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Benefit(5)
+			Stakeholder("Customer") has Benefit(5),
+			Stakeholder("User") has Benefit(15),
+			Stakeholder("Staten") has Benefit(8)
 		),
-		Feature("SpecifyByMap") has (
+		Feature("SpecifyLocationByMap") has (
 			Spec("The user can specify the location by by moving a target on a map"),
 			Why("A map gives more information to the user and makes is easier for the user to communicate its wishes"),
 			Example("Use third party map software"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Benefit(2)
+			Stakeholder("Customer") has Benefit(2),
+			Stakeholder("User") has Benefit(3),
+			Stakeholder("Staten") has Benefit(1)
 		),
 		Feature("SpecifyMeansOfTravel") has (
 			Spec("The User shall be able to specify which of the supported means of transportation it would like to use and then the system shall use the selected means of transportation"),
 			Why("Not all users want to use the same means of travel"),
 			Example("This can be implemented using a settings dialog"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Benefit(4)
+			Stakeholder("Customer") has Benefit(4),
+			Stakeholder("User") has Benefit(9),
+			Stakeholder("Staten") has Benefit(4)
 		),
 		Feature("SearchLocations") has (
 			Spec("The user shall be able to search for locations"),
@@ -84,21 +94,28 @@ Model(
 			Spec("It shall be possible to change the name of a destination"),
 			Why("To make it easier to tell the different destinations apart"),
 			Example("An EDIT button besides the field for the name of the destination"),
-			Status(ELICITED)
+			Status(ELICITED),
+			Stakeholder("User") has Benefit(1),
+			Stakeholder("Staten") has Benefit(0)
+
 		),
 		Feature("RemoveDestination") has (
 			Spec("It shall be possible for the user to remove a previously saved destination"),
 			Why("If that destination no longer is in the interest of the user it should be possible to remove it"),
 			Example("An Delete button besides the name of the destination"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Benefit(4)
+			Stakeholder("Customer") has Benefit(4),
+			Stakeholder("User") has Benefit(2),
+			Stakeholder("Staten") has Benefit(0)
 		),
 		Feature("MultipleDestinations") has (
 			Spec("The system shall have support for storing multiple destinations"),
 			Why("It is useless if one can have only one destination at a time"),
 			Example("Multiple fields of destinations"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Benefit(4) 
+			Stakeholder("Customer") has Benefit(4),
+			Stakeholder("User") has Benefit(7),
+			Stakeholder("Staten") has Benefit(3)
 		),
 		Feature("OrderDestinations") has (
 			Spec("It shall be possible for the user to order its destinations in a priority order"),
@@ -113,7 +130,9 @@ Model(
 			Spec("A single user shall be able to access its information from multiple devices automatically"),
 			Why("User might want to use multiple devices, or have obtained a new device"),
 			Example("The system could support a user profile and a server storage solution"),
-			Status(ELICITED)
+			Status(ELICITED),
+			Stakeholder("User") has Benefit(7),
+			Stakeholder("Staten") has Benefit(3)
 		),
 		Feature("KeepAcountPrivate") has (
 			Spec("A user can only access its own destinations"),
@@ -127,7 +146,9 @@ Model(
 			Why("The statistics are used to get useful information for planning future infrastructure"),
 			Example("The statistics could be extracted using a web interface"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Benefit(2)
+			Stakeholder("Customer") has Benefit(2),
+			Stakeholder("User") has Benefit(0),
+			Stakeholder("Staten") has Benefit(25)
 		),
 		Feature("GetPopularLocationStatistics") has (
 			Spec("The system should be able to provide statistics about which geographical locations are popular"),

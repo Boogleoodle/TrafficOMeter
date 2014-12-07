@@ -5,7 +5,10 @@ Model(
             Status(ELICITED),
             Stakeholder("Customer") has (
                 Benefit(5)
-              )
+              ),
+            Stakeholder("User") has Benefit(13),
+            Stakeholder("Staten") has Benefit(7)
+
             ),
         Design("MobileApplication") has (
             Spec("There should be an app where the user can view more information about the user's saved destinations than in the widget and change settings"),
