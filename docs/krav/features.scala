@@ -142,7 +142,7 @@ Model(
 	),
 	Section("Statistics") has (
 		Feature("ExtractStatistics") has (
-			Spec("It shall be possible for [WHO] to extract statistics from the system"),
+			Spec("It shall be possible for the system supervisor(s) to extract statistics from the system"),
 			Why("The statistics are used to get useful information for planning future infrastructure"),
 			Example("The statistics could be extracted using a web interface"),
 			Status(ELICITED),
@@ -153,15 +153,16 @@ Model(
 		Feature("GetPopularLocationStatistics") has (
 			Spec("The system should be able to provide statistics about which geographical locations are popular"),
 			Why("The Swedish government hopes to be able to use this and other statistics as decision basis when planning infrastructure"),
-			Example("?"),		
+			Example("The system supervisor(s) provides the Swedish government with the extracted statistics"),		
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(2)
 		),
 		Feature("GetRoutesStatistics") has (
 			Spec("The system should be able to provide statistics about which routes that all users has at a specific time"),
-			Why("This information could be used to extract information about the quality of the infrastructure (?) in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc. could be useful"),
-			Example("?"),		
+			Why("This information could be used to extract information about the infrastructure in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc. could be useful"),
+			Example("The system supervisor(s) checks the current traffic information in a given city"),		
 			Status(ELICITED)
+
 		)
 	),
 	Section("Interfaces") has (
