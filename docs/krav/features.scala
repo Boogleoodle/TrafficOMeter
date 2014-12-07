@@ -118,11 +118,12 @@ Model(
 			Stakeholder("SwedishGovernment") has Benefit(3)
 		),
 		Feature("OrderDestinations") has (
-			Spec("It shall be possible for the user to order its destinations in a priority order"),
-			Why("Since the display window in the widget will only fit a few destinations, the user needs to be able to prioritize its destinations to chose which ones are displayed"),
-			Example("If the latest added destination is the most frequently used, the user might want to set the top priority for this destination so that it is always visible"),
+			Spec("It shall be possible for the user to order its destinations in an priority order"),
+			Why("The screen of a smart phone might not be big enough to display all  of a users destinations. Therefore it would be convenient for the user to order its destination in an priority order"),
+			Example("The user creates a new destination and would lie to see it on the widget. The user prioritizes the newly added destination so that the destination has a higher priority relative the other destinations. The newly added destination is displayed frist of all the destination, from the top of the screen"),
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(5)
+
 		)
 	),
 	Section("ServerToClientCommunication") has (
