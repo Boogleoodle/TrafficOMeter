@@ -10,7 +10,7 @@
 Quality UpdateStartView
   Spec Updating start view shall be possible with one press of a button per time
   Stakeholder Customer
-    Prio 2
+    Benefit 4
 
 \end{lstlisting}
     
@@ -22,7 +22,11 @@ Quality UpdateStartView
 Quality GPS-position
   Spec The system shall give a GPS-position correct within a 50 meter radius
   Stakeholder Customer
-    Prio 4
+    Benefit 2
+  Stakeholder User
+    Benefit 7
+  Stakeholder SwedishGovernment
+    Benefit 5
 Quality requestCapacity
   Spec The system needs to be able to process at least 20000 update requests per minute
 
@@ -33,8 +37,12 @@ Quality requestCapacity
 
 
 \begin{lstlisting}
-Quality Uptime-Reliability
+Quality Uptime
   Spec The system should have an uptime of 99%
+Stakeholder User
+  Benefit 5
+Stakeholder SwedishGovernment
+  Benefit 14
 
 \end{lstlisting}
     
@@ -46,6 +54,6 @@ Quality Uptime-Reliability
 Quality UserIntegrity
   Spec The system should not provide any statistics that could be used to track a single users travel habits or specific user positions
   Stakeholder Customer
-    Prio 5
+    Benefit 1
 
 \end{lstlisting}
