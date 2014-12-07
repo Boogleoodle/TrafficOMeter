@@ -9,7 +9,7 @@ Model(
 			),
 		Stakeholder("User") has (
 			Goal("travelOverview") has (
-				Spec("The user wants to have an overview over the fastest possible trips to their frequently visited destinations")
+				Spec("The user wants to have an overview over the fastest possible route to their frequently visited destinations")
 				),
 			Goal("minimalUserMaintenance") has (
 				Spec("The user wants to know the total time to get to a frequently visited destinations without having to manually insert information every time")
