@@ -23,6 +23,27 @@ Model(
         			Image("reference to mockup image")
         		)
     		),
+            Screen("AddDestination") has (
+                MockUp("AddDestinationMockup") has (
+                    Image("reference to mockup image")
+                )
+            ),
+            Screen("Application") has (
+                MockUp("ApplicationMockup") has (
+                    Image("reference to mockup image")
+                )
+            ),
+            Screen("Settings") has (
+                MockUp("SettingsMockup") has (
+                    Image("reference to mockup image")
+                )
+            ),
+            Screen("TripInformation") has (
+                MockUp("TripInformationMockup") has (
+                    Image("reference to mockup image")
+                )
+            )
+        ),
     		
     		Section("Application") has (
         		Feature("Appearance") has (
@@ -50,4 +71,4 @@ Model(
     	)
 		
     
-)
+
