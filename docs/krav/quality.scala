@@ -2,13 +2,13 @@ Model(
 	Section("Usability") has (
 		Quality("UpdateStartView") has (
 		Spec("Updating start view shall be possible with one press of a button per time"),
-	Stakeholder("Customer") has Prio(4)
+	Stakeholder("Customer") has Benefit(4)
 	)
 		),
 	Section("Efficiency") has (
 		Quality("GPS-position") has (
 			Spec("The system shall give a GPS-position correct within a 50 meter radius"),
-			Stakeholder("Customer") has Prio(2)
+			Stakeholder("Customer") has Benefit(2)
 		),	
 		
 		Quality("requestCapacity") has (
@@ -22,7 +22,7 @@ Model(
 	Section("Security") has (
 		Quality("UserIntegrity") has (
 			Spec("The system should not provide any statistics that could be used to track a single users travel habits or specific user positions"),
-			Stakeholder("Customer") has Prio(1)
+			Stakeholder("Customer") has Benefit(1)
 		)
 	)
 )

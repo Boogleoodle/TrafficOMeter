@@ -4,14 +4,14 @@ Model(
             Spec("There shall be a widget that displays information about the user's saved destinations"),
             Status(ELICITED),
             Stakeholder("Customer") has (
-                Prio(5)
+                Benefit(5)
               )
             ),
         Design("MobileApplication") has (
             Spec("There should be an app where the user can view more information about the user's saved destinations than in the widget and change settings"),
             Status(ELICITED),
             Stakeholder("Customer") has (
-              Prio(3)
+              Benefit(3)
               )
             )
         ),
