@@ -18,11 +18,9 @@ Model(
 
         Section("Visual") has (
 
-        	Section("Widget") has (
-        		Feature("Appearance") has (
-        			Spec("The product shall look like the screen pictures named widget shown in appendix ??"),
-        			Why("The screen pictures display the way that the product shall look like"),
-        			Status(ELICITED)
+        	Screen("Widget") has (
+        		MockUp("WidgetMockup") has (
+        			Image("reference to mockup image")
         		)
     		),
     		
