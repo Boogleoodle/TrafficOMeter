@@ -109,8 +109,8 @@ Model(
 			Stakeholder("SwedishGovernment") has Benefit(0)
 		),
 		Feature("MultipleDestinations") has (
-			Spec("The system shall have support for storing multiple destinations"),
-			Why("It is useless if one can have only one destination at a time"),
+			Spec("The user shall be able to store multiple destinations"),
+			Why("It is useless if the user can have only one destination saved at the same time, then the user must do a new search every time he or she want to go somewere else"),
 			Example("Multiple fields of destinations"),
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(4),
