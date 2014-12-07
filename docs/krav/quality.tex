@@ -3,7 +3,7 @@
 \end{lstlisting}
 
 
-       \section{Usability}
+       \subsubsection{Usability}
 
 
 \begin{lstlisting}
@@ -15,7 +15,7 @@ Quality UpdateStartView
 \end{lstlisting}
     
         
-       \section{Efficiency}
+       \subsubsection{Efficiency}
 
 
 \begin{lstlisting}
@@ -29,11 +29,32 @@ Quality GPS-position
     Benefit 5
 Quality requestCapacity
   Spec The system needs to be able to process at least 20000 update requests per minute
+Quality Refresh time
+  Gist Mean time between refresh start and received information
+  Spec Measured in milliseconds
+  Breakpoint Utility
+    Value 10000
+  Breakpoint Differentiation
+    Value 4000
+  Breakpoint Saturation
+    Value 500
+  Target Caching travel times and routes on server
+    Value 4000
+    Comment Requires storage on server
+  Target Predicting user patterns
+    Value 400
+    Comment By predicting user behaviour the system could prepare the most frequently used routes before the user needs it
+  Barrier first
+    Value 6000
+  Barrier second
+    Value 1000
+  Product Skånetrafiken
+    Value 6000
 
 \end{lstlisting}
     
         
-       \section{Reliability}
+       \subsubsection{Reliability}
 
 
 \begin{lstlisting}
@@ -47,7 +68,7 @@ Stakeholder SwedishGovernment
 \end{lstlisting}
     
         
-       \section{Security}
+       \subsubsection{Security}
 
 
 \begin{lstlisting}

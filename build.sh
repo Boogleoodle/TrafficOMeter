@@ -11,12 +11,11 @@ else
 fi
 
 java -jar $1 -i build.scala
-#pdflatex ~/Documents/ets170/project/trafficOMeter/docs/systemRequirements.tex
 for f in docs/krav/*.tex;
 do
-	echo "Removing eventual chapter-shite from $f"
+	echo "Removing eventual chapter-shite and changing section to subsubsection in $f"
 	sed '/chapter/d' $f | cat > $f.tmp
-	cat $f.tmp > $f
+	sed 's/section/subsubsection/g' $f.tmp | cat > $f
 	rm $f.tmp
 done
 
