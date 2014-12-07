@@ -5,14 +5,14 @@ Model(
 			 Why("Because the time to the fastest alternative may not be enough for the user to get ready to leave"),
 			 Example("Get the second fastest option by swiping the current option for the destination off the screen"),
 			 Status(ELICITED),
-			Stakeholder("Customer") has Prio(2)
+			Stakeholder("Customer") has Prio(4)
 		),
 		Feature("FastestOption") has (
 			Spec("The system should automatically show the total travel time of the fastest trip"),
 			Why("So the user can see how long time it takes to travel to the destinations"), 
 			Example("Show a list of destinations and in this list show the time it takes to get to the different alternatives"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Prio(1)
+			Stakeholder("Customer") has Prio(5)
 		),
 		Feature("GeographicalStartingPoint") has (
 			Spec("The system shall be able to use the user's geographical location as a starting point for a trip"),
@@ -30,25 +30,25 @@ Model(
 		),
 		Feature("MaxDistToStop") has ( 
 			Spec("The user shall be able to specify the maximum distance in a transfer between two adjacent stops."),
-			Stakeholder("Customer") has Prio(2)
+			Stakeholder("Customer") has Prio(4)
 		),
 		Feature("MinWaitTime") has (
 			Spec("The user shall be able to specify the minimum waiting time in a transfer between two adjacent stops."),
-			Stakeholder("Customer") has Prio(2)
+			Stakeholder("Customer") has Prio(4)
 		)
 	),
 	Section("Means of transportation") has (
 		Feature("SupportBuses") has (
 			Spec("The System shall support all bus lines in all the commuting services in Sweden"),
-			Stakeholder("Customer") has Prio(1)
+			Stakeholder("Customer") has Prio(5)
 		),
 		Feature("SupportTrains") has (
 			Spec("The System shall support all train lines in all the commuting services in Sweden"),
-			Stakeholder("Customer") has Prio(1)
+			Stakeholder("Customer") has Prio(5)
 		),
 		Feature("SupportFerrys") has (
 			Spec("The System shall support all ferry lines in all the commuting services in Sweden"),
-			Stakeholder("Customer") has Prio(1)
+			Stakeholder("Customer") has Prio(5)
 		)
 	),
 	Section("Maintenance") has (
@@ -57,28 +57,28 @@ Model(
 			Why("To populate the list of destinations"),
 			Example("Add button in the application"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Prio(1)
+			Stakeholder("Customer") has Prio(5)
 		),
 		Feature("SpecifyByMap") has (
 			Spec("The user can specify the location by by moving a target on a map"),
 			Why("A map gives more information to the user and makes is easier for the user to communicate its wishes"),
 			Example("Use third party map software"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Prio(4)
+			Stakeholder("Customer") has Prio(2)
 		),
 		Feature("SpecifyMeansOfTravel") has (
 			Spec("The User shall be able to specify which of the supported means of transportation it would like to use and then the system shall use the selected means of transportation"),
 			Why("Not all users want to use the same means of travel"),
 			Example("This can be implemented using a settings dialog"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Prio(2)
+			Stakeholder("Customer") has Prio(4)
 		),
 		Feature("SearchLocations") has (
 			Spec("The user shall be able to search for locations"),
 			Why("To find a location to travel to"),
 			Example("Add an button for opening a search field"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Prio(1)
+			Stakeholder("Customer") has Prio(5)
 		),
 		Feature("ChangeNameOnDestination") has (
 			Spec("It shall be possible to change the name of a destination"),
@@ -91,21 +91,21 @@ Model(
 			Why("If that destination no longer is in the interest of the user it should be possible to remove it"),
 			Example("An Delete button besides the name of the destination"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Prio(2)
+			Stakeholder("Customer") has Prio(4)
 		),
 		Feature("MultipleDestinations") has (
 			Spec("The system shall have support for storing multiple destinations"),
 			Why("It is useless if one can have only one destination at a time"),
 			Example("Multiple fields of destinations"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Prio(2) 
+			Stakeholder("Customer") has Prio(4) 
 		),
 		Feature("OrderDestinations") has (
 			Spec("It shall be possible for the user to order its destinations in a priority order"),
 			Why("Since the display window in the widget will only fit a few destinations, the user needs to be able to prioritize its destinations to chose which ones are displayed"),
 			Example("If the latest added destination is the most frequently used, the user might want to set the top priority for this destination so that it is always visible"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Prio(1)
+			Stakeholder("Customer") has Prio(5)
 		)
 	),
 	Section("ServerToClientCommunication") has (
@@ -127,14 +127,14 @@ Model(
 			Why("The statistics are used to get useful information for planning future infrastructure"),
 			Example("The statistics could be extracted using a web interface"),
 			Status(ELICITED),
-			Stakeholder("Customer") has Prio(4)
+			Stakeholder("Customer") has Prio(2)
 		),
 		Feature("GetPopularLocationStatistics") has (
 			Spec("The system should be able to provide statistics about which geographical locations are popular"),
 			Why("The Swedish government hopes to be able to use this and other statistics as decision basis when planning infrastructure"),
 			Example("?"),		
 			Status(ELICITED),
-			Stakeholder("Customer") has Prio(4)
+			Stakeholder("Customer") has Prio(2)
 		),
 		Feature("GetRoutesStatistics") has (
 			Spec("The system should be able to provide statistics about which routes that all users has at a specific time"),
