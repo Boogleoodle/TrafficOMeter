@@ -170,7 +170,7 @@ Model(
 		Feature("ExtractDataFromProviders") has (
 			Spec("Extract travel data from regional public transportation administrators"),
 			Why("Obtaining travel data from this source is a vital part of our system, since it is used in all calculations"),
-			Example("If the user wants to know the fastest trip to its home, the system will need the timetables of all the transportation means involved"),
+			Example("If the user wants to know the fastest route to its home, the system will need the timetables of all the transportation means involved"),
 			Status(ELICITED)
 		)
 	),
