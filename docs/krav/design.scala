@@ -7,7 +7,7 @@ Model(
                 Benefit(5)
               ),
             Stakeholder("User") has Benefit(13),
-            Stakeholder("Staten") has Benefit(7)
+            Stakeholder("SwedishGovernment") has Benefit(7)
 
             ),
         Design("MobileApplication") has (

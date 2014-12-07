@@ -14,7 +14,7 @@ Model(
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(5),
 			Stakeholder("User") has Benefit(9),
-			Stakeholder("Staten") has Benefit(10)
+			Stakeholder("SwedishGovernment") has Benefit(10)
 		),
 		Feature("GeographicalStartingPoint") has (
 			Spec("The system shall be able to use the user's geographical location as a starting point for a trip"),
@@ -30,7 +30,7 @@ Model(
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(3),
 			Stakeholder("User") has Benefit(8),
-			Stakeholder("Staten") has Benefit(4)
+			Stakeholder("SwedishGovernment") has Benefit(4)
 		),
 		Feature("MaxDistToStop") has ( 
 			Spec("The user shall be able to specify the maximum distance in a transfer between two adjacent stops."),
@@ -63,7 +63,7 @@ Model(
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(5),
 			Stakeholder("User") has Benefit(15),
-			Stakeholder("Staten") has Benefit(8)
+			Stakeholder("SwedishGovernment") has Benefit(8)
 		),
 		Feature("SpecifyLocationByMap") has (
 			Spec("The user can specify the location by by moving a target on a map"),
@@ -72,7 +72,7 @@ Model(
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(2),
 			Stakeholder("User") has Benefit(3),
-			Stakeholder("Staten") has Benefit(1)
+			Stakeholder("SwedishGovernment") has Benefit(1)
 		),
 		Feature("SpecifyMeansOfTravel") has (
 			Spec("The User shall be able to specify which of the supported means of transportation it would like to use and then the system shall use the selected means of transportation"),
@@ -81,7 +81,7 @@ Model(
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(4),
 			Stakeholder("User") has Benefit(9),
-			Stakeholder("Staten") has Benefit(4)
+			Stakeholder("SwedishGovernment") has Benefit(4)
 		),
 		Feature("SearchLocations") has (
 			Spec("The user shall be able to search for locations"),
@@ -96,7 +96,7 @@ Model(
 			Example("An EDIT button besides the field for the name of the destination"),
 			Status(ELICITED),
 			Stakeholder("User") has Benefit(1),
-			Stakeholder("Staten") has Benefit(0)
+			Stakeholder("SwedishGovernment") has Benefit(0)
 
 		),
 		Feature("RemoveDestination") has (
@@ -106,7 +106,7 @@ Model(
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(4),
 			Stakeholder("User") has Benefit(2),
-			Stakeholder("Staten") has Benefit(0)
+			Stakeholder("SwedishGovernment") has Benefit(0)
 		),
 		Feature("MultipleDestinations") has (
 			Spec("The system shall have support for storing multiple destinations"),
@@ -115,7 +115,7 @@ Model(
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(4),
 			Stakeholder("User") has Benefit(7),
-			Stakeholder("Staten") has Benefit(3)
+			Stakeholder("SwedishGovernment") has Benefit(3)
 		),
 		Feature("OrderDestinations") has (
 			Spec("It shall be possible for the user to order its destinations in a priority order"),
@@ -132,7 +132,7 @@ Model(
 			Example("The system could support a user profile and a server storage solution"),
 			Status(ELICITED),
 			Stakeholder("User") has Benefit(7),
-			Stakeholder("Staten") has Benefit(3)
+			Stakeholder("SwedishGovernment") has Benefit(3)
 		),
 		Feature("KeepAcountPrivate") has (
 			Spec("A user can only access its own destinations"),
@@ -148,7 +148,7 @@ Model(
 			Status(ELICITED),
 			Stakeholder("Customer") has Benefit(2),
 			Stakeholder("User") has Benefit(0),
-			Stakeholder("Staten") has Benefit(25)
+			Stakeholder("SwedishGovernment") has Benefit(25)
 		),
 		Feature("GetPopularLocationStatistics") has (
 			Spec("The system should be able to provide statistics about which geographical locations are popular"),
