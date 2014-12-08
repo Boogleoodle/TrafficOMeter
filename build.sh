@@ -11,12 +11,14 @@ else
 	echo " -r	Rebuild tex from scala" 
 	exit
 fi
-if [[$2 == "-r"]]
+
+echo "OPTION: $2"
+if [[ $2 == "-r" ]]
 then
 	java -jar $1 -i build.scala
+	echo "reformating the tex files to suit our project better than what reqT's standard does"
 	for f in docs/krav/*.tex;
 	do
-		echo "Removing eventual chapter-shite and changing section to subsubsection in $f"
 		sed '/chapter/d' $f | cat > $f.tmp
 		sed 's/section/subsubsection/g' $f.tmp | cat > $f
 		rm $f.tmp
