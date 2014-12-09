@@ -6,6 +6,14 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[utf8]{inputenc}
 \usepackage{titlesec}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Traffic-O-Meter}
+\rhead{Version 2.0} %\thepage}
+%\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
 
 \setcounter{secnumdepth}{4}
 
@@ -51,6 +59,7 @@
 	\setcounter{page}{0}
 	\pagebreak
 	\tableofcontents
+	\thispagestyle{empty}
 	\pagebreak
 	
 
