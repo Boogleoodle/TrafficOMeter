@@ -33,7 +33,7 @@ Correctness is a very important quality factor for systems operating in high ris
 \subsection*{Reason}
 Correctness is the measure of how accurately the system performs tasks and delivers information.
 \subsection*{Correct Answer}
-C - The proposition is true, but the reason is false.
+C, the proposition is true, but the reason is false.
 \subsection*{Motivation}
 When operating in high risk environments it is vital that there are no errors in the system, considering it’s a situation of life and death. Correctness is however not a measurement of how accurately a system performs tasks, but rather a measurement of how many errors it contains.
 \subsection*{Reference}
@@ -59,7 +59,6 @@ Quper article: p.45
 \subsection*{Main responsible}
 Hannes Johansson
 
-
 \section{Validation}
 \subsection*{Proposition}
 It is not necessary for developers and clients to review the tasks.
@@ -74,109 +73,70 @@ Lau: 9, p. 382-385
 \subsection*{Learning objective}
 1.1.1, 1.1.4
 \subsection*{Main responsible}
-Johan Mattsson
+Mattias Eklund
 
 \section{Checking and Validation}
 \subsection*{Proposition}
 The CRUD-matrix is used to find missing quality requirements
 \subsection*{Reason}
-The CRUD-matrix helps to check the requirement specification for inconsistencies 
+The CRUD-matrix can be used to check the requirement specification for missing parts or inconsistencies 
 \subsection*{Correct Answer}
-D: The proposition is false, but the reason is a true statement.
+D, the proposition is false, but the reason is a true statement.
 \subsection*{Motivation}
-The CRUD-matrix checks for consistencies in the functional context. Which means that it does nothing for quality requirements
+The CRUD-matrix checks for missing parts or inconsistencies in the functional context. The reason is true since the CRUD-matrix can be used to check the requirements specification, but it cannot detect all kinds of missing parts. The check does for example not help in finding/checking quality requirements, and therefore the proposition is false.
 \subsection*{Reference}
-Lau: 386
+Lau: 9, p. 386
 \subsection*{Learning objective}
-??
+1.1.1, 1.1.2, 1.1.4
 \subsection*{Main responsible}
-Hannes Johansson
+Emma Holmberg Ohlsson
 
-%MDRE, PRIO & RP: 2 problems
 \section{Market Driven Requirements Engineering}
 \subsection*{Proposition}
-Considering the alfa/beta model of MDRE selection qualtiy. Alfa requirements are high quality requirements which should selected.
+Considering the alfa/beta model of MDRE selection quality. Alfa requirements are high quality requirements which should be selected.
 \subsection*{Reason}
-When doing MDRE, it can be useful if the development organization can collaborate together with the marketing department.
+When using MDRE, it can be useful if the development organization can collaborate together with the marketing department.
 \subsection*{Correct Answer}
 B, both reason and proposition are correct but the reason does not explain the proposition.
 \subsection*{Motivation}
 The alfa requirements are the "golden grains" from the MDRE process as expressed in the text. And it is true that the marketing department can be an asset when doing MDRE as they typically know more about the market and the potential buyers. But the two statements are not correlated.
 \subsection*{Reference}
-Primarily MDRE article sect 13.3.1 and 13.2.2.
+MDRE article: sect 13.3.1 and 13.2.2.
 \subsection*{Learning objective}
-1.1.1 \& 1.1.6
-\subsection*{Main responsible}
-Martin Richter
-
-
-
-\section{Release Planning}
-\subsection*{Proposition}
-Release planning is best done with the science of release planning.
-\subsection*{Reason}
-The art of release planning is biased since it relies only on human judgement and therefore should not be a part of the release planning.
-\subsection*{Correct Answer}
-E - Both the proposition and the reason are false.
-\subsection*{Motivation}
-After reading the article I consider the best way to be release planning using the hybrid approach, where you start with the science of release planning to get a couple of possible good release plans, but then use the art of release planning to choose and make minor alterations to get the most appropriate one. People in the project are good for the judgement calls that an algorithm cannot handle and therefore the art of science should also be included in the release planning. 
-\subsection*{Reference}
-RP article - The art and science of software release planning
-\subsection*{Learning objective}
-1.1.1, 1.1.3, 1.1.4
-\subsection*{Main responsible}
-Emma Holmberg Ohlsson
-
-\section{MDRE}
-\subsection*{Proposition}
-MDRE doesn't apply well to companies with an undefined process.
-\subsection*{Reason}
-If key persons leave the company, key knowledge might also leave.
-\subsection*{Correct Answer}
-A - both the proposition and the reason are true
-\subsection*{Motivation}
-Companies without a defined process take a significant risk if key persons leave the organization, since they lack the necessary documentation and structure. In times of downsizing or rapid expansion it is very difficult to install a repeatable proces
-\subsection*{Reference}
-MDRE: 13.2.3
-\subsection*{Learning objective}
-?????
-\subsection*{Main responsible}
- Fredrik Åkerberg
- 
- 
-
-% AGRE & INTDEP, 1 problem
-\section{Agile Requirements Engineering}
-\subsection*{Proposition}
-Non functional requirements, such as security and scalability, have a tendency to be neglected when using agile RE. 
-\subsection*{Reason}
-When working with agile RE the prioritization is often based on the product owner's business value, which often is defined as high usability or more features.
-\subsection*{Correct Answer}
-A, the proposition is correct and the reason explains why.
-\subsection*{Motivation}
-The article on AGRE brings up the neglect of non functional requires as a challenge with AGRE. It also says that the increased interaction with the product owner leads to prioritization decisions to be based on business value.
-\subsection*{Reference}
-AGRE article p. 64
-\subsection*{Learning objective}
-1.1.3 \& 1.1.6
-\subsection*{Main responsible}
-Martin Richter
-
-\section{INTDEP}
-\subsection*{Proposition}
-Requirements interdependencies is important when in comes to release planning and they are often identified explicitly.
-\subsection*{Reason}
-The amount of requirement interdependencies makes them easy to identify and the idientification become less complex as the numbers increase.
-\subsection*{Correct Answer}
-E - Both the Proposition and the Reason are false
-\subsection*{Motivation}
-Requirements interdependencies has an important role in release planning, but they are NOT often identified explicitly because it becomes harder to identify them and the complexity grows as the numbers increase.
-\subsection*{Reference}
-INTDEP 3.3
-\subsection*{Learning objective}
-1.1.1 \&\& 1.1.3? eller 1.1.4
+1.1.1, 1.1.6
 \subsection*{Main responsible}
 Philip Holgersson
 
+\section{Market Driven Requirements Engineering}
+\subsection*{Proposition}
+A company using MDRE should define its processes before expanding its operations.
+\subsection*{Reason}
+Without well defined processes it is hard to transfer knowledge between personnel. 
+\subsection*{Correct Answer}
+A, both the proposition and the reason are true. Also, the reason explains the proposition.
+\subsection*{Motivation}
+Companies without a defined process take a significant risk if key persons leave the organization, since they lack the necessary documentation and structure. In times of downsizing or rapid expansion it is very difficult to install a repeatable process.
+\subsection*{Reference}
+MDRE: sect 13.2.3
+\subsection*{Learning objective}
+1.1.5, 1.1.6
+\subsection*{Main responsible}
+Fredrik Åkerberg
+ 
+\section{Agile Requirements Engineering}
+\subsection*{Proposition}
+Some quality requirements, such as security and scalability, have a tendency to be neglected when using agile RE. 
+\subsection*{Reason}
+When working with agile RE the prioritization is often based on the product owner's business value, which is rarely defined as high security or scalability.
+\subsection*{Correct Answer}
+A, the proposition is correct and the reason explains why.
+\subsection*{Motivation}
+The article on AGRE brings up the neglect of quality requires as a challenge with AGRE. It also says that the increased interaction with the product owner leads to prioritization decisions to be based on business value.
+\subsection*{Reference}
+AGRE article: p. 64
+\subsection*{Learning objective}
+1.1.3, 1.1.6
+\subsection*{Main responsible}
+Martin Richter
 
 \end{document}
