@@ -146,22 +146,21 @@ Model(
 		Feature("GetRoutesStatistics") has (
 			Spec("The system should be able to provide statistics about which routes that all users has at a specific time"),
 			Why("This information could be used to extract information about the infrastructure in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc. could be useful"),
-			Example("The system supervisor(s) checks the current traffic information in a given city"),		
-
+			Example("The system supervisor(s) checks the current traffic information in a given city")
 		)
 	),
 	Section("Interfaces") has (
 		Feature("ExtractDataFromProviders") has (
 			Spec("Extract travel data from regional public transportation administrators"),
 			Why("Obtaining travel data from this source is a vital part of our system, since it is used in all calculations"),
-			Example("If the user wants to know the fastest route to its home, the system will need the timetables of all the transportation means involved"),
+			Example("If the user wants to know the fastest route to its home, the system will need the timetables of all the transportation means involved")
 		)
 	),
 	Section("Support") has (
 		Feature("Language") has (
 			Spec("The system shall have support for both Swedish and English"),
 			Why("To make the product available for more people"),
-			Example("A setting where one can use the language to be used"), 
+			Example("A setting where one can use the language to be used") 
 		)
 	)
 )

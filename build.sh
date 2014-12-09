@@ -19,7 +19,7 @@ then
 	echo "reformating the tex files to suit our project better than what reqT's standard does"
 	for f in docs/krav/*.tex;
 	do
-		echo "$f"
+#		echo "$f"
 		sed '/chapter/d' $f | cat > $f.tmp
 		if [[ $f = "docs/krav/features.tex" ]]
 		then 
