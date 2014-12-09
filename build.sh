@@ -19,11 +19,18 @@ then
 	echo "reformating the tex files to suit our project better than what reqT's standard does"
 	for f in docs/krav/*.tex;
 	do
+#		echo "$f"
 		sed '/chapter/d' $f | cat > $f.tmp
-		sed 's/section/subsubsection/g' $f.tmp | cat > $f
+		if [[ $f = "docs/krav/features.tex" ]]
+		then 
+			sed 's/section/paragraph/g' $f.tmp | cat > $f
+		else
+			sed 's/section/subsubsection/g' $f.tmp | cat > $f
+		fi
 		rm $f.tmp
 	done
 fi
+
 
 cd docs/
 pdflatex systemRequirements.tex
