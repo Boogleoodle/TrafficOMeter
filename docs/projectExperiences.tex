@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{hyperref}
+\usepackage{hhline}
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
 
 \title{Project Experiences version 2.0 \\ The Traffic-o-meter}
@@ -167,9 +168,36 @@ Data model is an abstract model of what data is needed in a system, not necessar
 	Validating requirements is a crucial part in requirements engineering. It is a way to trace the customer's goals and demands to the requirements it has stated. There are two ways of validation requirements, top-down and bottom-up. In the top-down version the analyst first looks at the goals and demands and then tries to figure out if they are all covered by the requirements. In the bottom-up version the analyst instead starts from the requirements end and checks if they all describe the goals and demands.
 			\subsection{CRUD}
 			The CRUD matrix describes the relationship between the tasks and entities. 
-			
-			
-			
+			\begin{tabular}{|l||c|c|c|c|c|}
+			\hline 
+			\textbf{TASK \textbackslash ENTIY} & Participant & External calendar & Event planner & Group & Event \\ 
+			\hhline{|=||=|=|=|=|=|}
+			Register account & & & C & & \\ 
+			\hline 
+			Login & & & & & \\ 
+			\hline 
+			Forgotten password & U & & & & \\ 
+			\hline 
+			Create event & R U O & & & U & C \\ 
+			\hline 
+			Accept group invitation & C & R O & & U & \\ 
+			\hline 
+			Invite users to group & & & & U & \\ 
+			\hline 
+			Create groups & & & U & C & \\ 
+			\hline 
+			Invite groups & O & & & O & \\ 
+			\hline 
+			Remove participants from group & R D O & U D & & R U & \\ 
+			\hline 
+			Edit event & & & & & R U \\ 
+			\hline 
+			Delete event & & & & & D \\ 
+			\hhline{|=||=|=|=|=|=|}
+			\textbf{MISSING} & & \textbf{C} & \textbf{R D O} & \textbf{D} & \textbf{O} \\ 
+			\hline 
+			\end{tabular} 
+
 			\subsection{Checklist}
 
 	\section{Future work}
