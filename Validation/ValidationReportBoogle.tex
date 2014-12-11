@@ -1,0 +1,117 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage[nottoc]{tocbibind}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hhline}
+\pagestyle{fancy}
+\lhead{Boogle Calendar}
+\rhead{Version 1.0} %\thepage}
+%\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{Validation Report version 1.0\\ Boogle Calendar}
+\author{Group D\\ Emma Holmberg Ohlsson, Alexander Nässlander,\\Martin Richter, Hannes Johansson, Johan Mattsson,\\Philip Holgersson, Mattias Eklund, Fredrik Åkerberg}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\thispagestyle{empty}
+	\setcounter{page}{0}
+	\pagebreak
+	
+	\section{Validation Checklist}
+		
+		The filled in checklist can be found in the attached pdf (ValidationChecklist.pdf).
+
+	\section{CRUD Matrix}
+			\begin{center}
+		
+		
+			\begin{tabular}{|l||c|c|c|c|c|}
+			\hline 
+			\textbf{TASK \textbackslash ENTITY} & Participant & External calendar & Event planner & Group & Event \\ 
+			\hhline{|=||=|=|=|=|=|}
+			Register account & & & C & & \\ 
+			\hline 
+			Login & & & & & \\ 
+			\hline 
+			Forgotten password & U & & & & \\ 
+			\hline 
+			Create event & R U O & & & U & C \\ 
+			\hline 
+			Accept group invitation & C & R O & & U & \\ 
+			\hline 
+			Invite users to group & & & & U & \\ 
+			\hline 
+			Create groups & & & U & C & \\ 
+			\hline 
+			Invite groups & O & & & O & \\ 
+			\hline 
+			Remove participants from group & R D O & U D & & R U & \\ 
+			\hline 
+			Edit event & & & & & R U \\ 
+			\hline 
+			Delete event & & & & & D \\ 
+			\hhline{|=||=|=|=|=|=|}
+			\textbf{MISSING} & & (C) & (R) \textbf{D} (O) & \textbf{D} & \textbf{O} \\ 
+			\hline 
+			\end{tabular} 
+	
+		\end{center}	
+		The missing operations in parenthesis are not consider to be something the system should support.
+	
+	\section{Prio of issues}
+		We have prioritized all the issues we encountered when going through the validation checklist. Our comments about the issues are found in the problems column of the checklist. We consider the first 15 issues to be critical.
+		
+		\begin{enumerate}
+			\setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+			\item Missing authors of the system requirements
+			\item Missing business goals and critical issues
+			\item Consistency
+			\item Unambiguous
+			\item Missing explanation of terms
+			\item Verifiable
+			\item Add prio to requirements
+			\item Missing tracing from goals to requirements
+			\item Correct
+			\item Make sure virtual window data is in the data model
+			\item Database contents
+			\item Fix result from CRUD check
+			\item Complete
+			\item Justify requirements
+			\item Risk assessment
+
+			\item Usability requirements
+			\item Explain diagram 2 and 3 more.
+			\item Make requirements more modifiable/Remove duplicated information
+			\item Missing explanation of the algorithm for deciding which time is the “best” for an event
+			\item Missing design level requirements
+			\item Examples of how to meet the requirements
+			\item Safety requirements
+			\item Reliability requirements
+			\item Missing cases dealing with special cases and errors
+			\item Stress cases are missing
+			\item Maintainability
+			\item Requirement for interoperability
+			\item Capacity/accuracy requirements
+			\item Support and maintenance
+			\item Virtual windows supports all tasks
+
+			\item Fix table of contents
+			\item Self Explanatory ids
+			\item Password should be longer
+			\item Data conversions
+			\item Prototype test
+			\item Could expand customer part with explanation
+
+		\end{enumerate}		 
+	
+\end{document}
