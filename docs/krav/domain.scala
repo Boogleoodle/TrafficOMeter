@@ -1,6 +1,12 @@
 Model(
-      Req("Android") has (Spec("The system shall support Android")),
-      Req("IOS") has (Spec("The system shall support IOS"))
+      Req("Android") has (
+      	Spec("The system shall support Android"),
+      	Cost(32)
+      	),
+      Req("IOS") has (
+      	Spec("The system shall support IOS"),
+      	Cost(32)
+      	)
     )
 
  
