@@ -9,7 +9,7 @@ Model(
 		),
 
 		Feature("FastestTrip") has (
-			Spec("The system should automatically show the total travel time of the fastest trip"),
+			Spec("The system shall automatically show the total travel time of the fastest trip"),
 			Why("So the user can see how long time it takes to travel to the destinations"), 
 			Example("Show a list of destinations and in this list show the time it takes to get to the different alternatives"),
 			Cost(2),
@@ -20,7 +20,7 @@ Model(
 
 		Feature("GeographicalStartingPoint") has (
 			Spec("The system shall be able to use the user's geographical location as a starting point for a trip"),
-			Why("The position should be used as the starting point when determining the route"),
+			Why("The position shall be used as the starting point when determining the route"),
 			Example("Use native GPS or WiFi-positioning feature of platforms"),
 			Cost(32),
 			Stakeholder("Customer") has Benefit(3)
@@ -28,7 +28,7 @@ Model(
 
 		Feature("ShowRouteToFirstStop") has (
 			Spec("When the user selects a specific travel option the route between the current position and the first stop shall be accessible"),
-			Why("The user might not find its way in the current area, and should be able to get to the first stop quickly"),
+			Why("The user might not find its way in the current area, and shall be able to get to the first stop quickly"),
 			Example("Show the route between current position and first stop on a map."),
 			Cost(16),
 			Stakeholder("Customer") has Benefit(3),
@@ -116,7 +116,7 @@ Model(
 		),
 		Feature("RemoveDestination") has (
 			Spec("It shall be possible for the user to remove a previously saved destination"),
-			Why("If that destination no longer is in the interest of the user it should be possible to remove it"),
+			Why("If that destination no longer is in the interest of the user it shall be possible to remove it"),
 			Example("An Delete button besides the name of the destination"),
 			Cost(8),
 			Stakeholder("Customer") has Benefit(4),
@@ -154,7 +154,7 @@ Model(
 
 		Feature("KeepAcountPrivate") has (
 			Spec("A user can only access its own destinations"),
-			Why("The data is private and should not be possible view or change by someone else"),
+			Why("The data is private and shall not be possible view or change by someone else"),
 			Cost(32),
 			Example("The system could provide a login system that protects the data")
 		)
@@ -172,7 +172,7 @@ Model(
 		),
 
 		Feature("GetPopularStatistics") has (
-			Spec("The system should be able to provide statistics about which geographical locations are popular"),
+			Spec("The system shall be able to provide statistics about which geographical locations are popular"),
 			Why("The Swedish government hopes to be able to use this and other statistics as decision basis when planning infrastructure"),
 			Cost(128),
 			Example("The system supervisor(s) provides the Swedish government with the extracted statistics"),		
@@ -180,7 +180,7 @@ Model(
 		),
 
 		Feature("GetRoutesStatistics") has (
-			Spec("The system should be able to provide statistics about which routes that all users has at a specific time"),
+			Spec("The system shall be able to provide statistics about which routes that all users has at a specific time"),
 			Why("This information could be used to extract information about the infrastructure in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc. could be useful"),
 			Cost(128),
 			Example("The system supervisor(s) checks the current traffic information in a given city")
