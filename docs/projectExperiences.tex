@@ -136,53 +136,55 @@ Data model is an abstract model of what data is needed in a system, not necessar
 			\subsubsection{Application}
 				We went through as many functions that we could come up with and broke them down into tasks.
 			\subsubsection{Why chosen}
-				Task descriptions was choosen to give a better understanding of the systems requirements.
+				Task descriptions was chosen to give a better understanding of the systems requirements.
 			\subsubsection{Outcome}	
-				In the process of describing task it became obvious that there were a lot more tasks than initially imagened. As a task was being described, subtasks emerged and thus an even deeper understanding of the system was accuired than previously suspected that the method would generate. There are probably more tasks to described in the system than was done, however you have to realise where to stop. It is easy to dig very far into the tasks and thus generate a lot of paperwork.
+				In the process of describing task it became obvious that there were a lot more tasks than initially imagined. As a task was being described, subtasks emerged and thus an even deeper understanding of the system was acquired than previously suspected that the method would generate. There are probably more tasks to described in the system than was done, however you have to realise where to stop. It is easy to dig very far into the tasks and thus generate a lot of paperwork.
 
 	\section{Prioritization Methods/Techniques}
 	In this section we describe the different techniques and methods we used for prioritization. It also goes into how and why we used them, as well as describing the result.
 
-	\subsection{100-dollar}
+	\subsection{Cumulative Voting (The 100-dollar method)}
+		The 100-dollar method is used to prioritize requirements. The stakeholder in question is given a fixed sum of money (for example 100 dollars), this amount is then divided to the different requirements to get the prioritization. The result is that the requirements are prioritized on a ratio scale which means that it is possible to see how much more important one requirement is compared to another.   
 		\subsubsection{Application}
-			The 100-dollar method was used to prioritize our requirements. 
+			The 100-dollar method was used when two of the stakeholders prioritized the requirements - the users and the Swedish government (we played the role of the government during this prioritization). The stakeholders were given 100 dollars each to prioritize. This prioritization was done before all requirements were specified and we chose to let all the requirements keep their prio when new requirements were added. The new requirements were compared to already existing requirement's prio and given a prio so that the 100 dollar were exceeded but the prioritization still correct. For the release planning the prios have been normalized to work with all other stakeholder prios. 
 		\subsubsection{Why chosen}
-			This method is an easy way to get an overview over the rerquirements that is most important.
+			The method is an easy way to get an overview over which requirements that is the most important. We also liked the fact that it is possible to see how much more important a requirement is compared to another.
 		\subsubsection{Outcome}
-			From this method we were able to något and we also found some new requirements.
+			We got a prioritization from two of the stakeholders that we converted to benefit in our reqT model. This prio have been used both by us to figure out which requirements to give the most attention and to be able to do a release planning (then with normalized benefits).
 
-	\subsection{Insertion sort}
+	\subsection{Ranking (Insertion sort)}
 		The method gives all the requirements ranked on an ordinal scale.
 		\subsubsection{Application}
 			Insertion sort was used to rank our requirements against each other to be able to see which are more important than the rest.
 		\subsubsection{Why chosen}
-			The method was used when prioritizing some of our requirements for the computer lab.
+			The method was used when prioritizing some of our requirements for the computer lab. We used it for a while in our project as well but decided that we would rather have all requirements prioritized either with cumulative voting or numerical assignment since we think that it gives more information about how they relate to each other.
 		\subsubsection{Outcome}
-			We saw that insertion sort is practical to get a clear picture over which requirements we consider more important than others, but it can not tell us how much more important they are. We also considered the method a bit to time consuming and therefore choose a faster method when letting the customer prioritize. 			
+			We saw that insertion sort is practical to get a clear picture over which requirements we consider more important than others, but it can not tell us how much more important they are. We also considered the method a bit to time consuming and therefore choose a faster method when letting the customer prioritize.  			
 		
-	\subsection{Prioritization session with customer}
-		To find out what the customer considered most important in the finished system we asked them to prioritize all of the requirements.
+	\subsection{Numerical assignment (Grouping)}
+		This was the method used when we had a prioritization session with our customer.
+		To find out what the customer considered most important in the finished system we asked them to prioritize all of the requirements, but only gave them five groups to place each requirement in.
 		\subsubsection{Application}
 			The customer was asked to make a prioritization of the requirements we had so far, by ranking them from 1 to 5, where 1 was the highest priority and 5 was the lowest.
 		\subsubsection{Why chosen}
-			We wanted to get an idea of what our customers thought was most important and to see if that was in line with our point of view.
+			We wanted to get an idea of what our customers thought was most important and to see if that was in line with our point of view. We also wanted to get the input we needed to be able to do a release planning in a later stage.
 		\subsubsection{Outcome}
-			All of the requirements ended up divided into the five groups so that it is more clear what to focus on. We will use these results when performing the release planning.
+			All of the requirements ended up divided into the five groups so that it is more clear what to focus on. We will use these results when performing the release planning, the prios will then be normalized to work together with the prioritization from the other stakeholders.
 
 	\section{Validation techniques}
 	Validating requirements is a crucial part in requirements engineering. It is a way to trace the customer's goals and demands to the requirements it has stated. There are two ways of validation requirements, top-down and bottom-up. In the top-down version the analyst first looks at the goals and demands and then tries to figure out if they are all covered by the requirements. In the bottom-up version the analyst instead starts from the requirements end and checks if they all describe the goals and demands.
+						
 			\subsection{CRUD}
-
-
-
-			The CRUD matrix is a way to find missing parts in the requirements and get an overview of what is checked against what by describing the relations between tasks and entities in the system. The entities are taken from the datamodel and the tasks are the same tasks that are written in the spec. The method is based on a matrix where the columns contain the entities and the rows contains the tasks. This matrix is then filled by the different letters c, r, u, d and o that stands for in which ways the tasks relates to the entities. 
+				The CRUD matrix is a way to find missing parts in the requirements and get an overview of what is checked against what by describing the relations between tasks and entities in the system. The entities are taken from the datamodel and the tasks are the same tasks that are written in the requirements specification. The method is based on a matrix where the columns contain the entities and the rows contains the tasks. This matrix is then filled by the letters c, r, u, d and o that stands for in which ways the tasks relates to the entities. 
+				
+				This CRUD-matrix was done to validate the system we are customers to (Boogle) since it was one of the criteria in their validation checklist.
 			
 	\begin{center}
 		
 		
 			\begin{tabular}{|l||c|c|c|c|c|}
 			\hline 
-			\textbf{TASK \textbackslash ENTIY} & Participant & External calendar & Event planner & Group & Event \\ 
+			\textbf{TASK \textbackslash ENTITY} & Participant & External calendar & Event planner & Group & Event \\ 
 			\hhline{|=||=|=|=|=|=|}
 			Register account & & & C & & \\ 
 			\hline 
@@ -211,10 +213,13 @@ Data model is an abstract model of what data is needed in a system, not necessar
 			\end{tabular} 
 	
 		\end{center}
+			After our CRUD-check of the Boogle Calendar system we looked at the different missing parts. Of the six missing parts we decided that we don't think that it is the system's job to be able to create external calendars, have an overview of all event planners or look at (read) one event planner. The other parts we found missing were sent to the developers as a critical issue.
 
 			
 			\subsection{Our Checklist}
-			
+				To help our customers in validating our system we made a validation checklist. We based our checklist on the example checklists from the course book and the compendium. We went through both checklists and discussed as a group which criteria we wanted the customers to validate against, those that we found relevant were added to our own validation checklist. While creating our checklist we realized that we were missing some things, some we corrected directly and some were added to a to do list to be fixed before the final release. Some criteria were added on purpose even though we knew that we were missing it in the product (for example some types of quality requirements), the purpose of this was that we wanted to find out if our customers found these criteria important. Sadly the customers did not comment on if they had any examples of what was missing, just that they were missing, but their priority of the criteria said that they did not consider it critical so it is not a big problem. We were hoping to get more out of the validation feedback, but at least we got some things to look at, and the more unclear answers we could always ask the customer about. We consider the writing of the checklist to have been a bit more beneficial for us since we found a lot of things to improve when we considered the criteria. Even though we feel this way we could not have done without the customers validation feedback since even if we think it is perfect it might not be what they actually asked for.
+				Before sending in the last release we will try to solve the most critical issues that the customers found to improve our system as much as possible.
+				 			
 			\subsection{Validating with customer checklist}
 
 	\section{Future work}
@@ -249,55 +254,63 @@ In this paragraph each group member briefly explains its individual contribution
 		I have been mainly involved in the elicitation and the selection of elicitation techniques. I have also taken part of the group discussion, brainstorming and meetings with customers.
 		\subsubsection{R2}
 		Have done the workshop with our clients where I took part in planning, execution and summarizing the results. I have also worked on some virtual windows for the user application that we presented to our clients. 
-		%\subsubsection{R3}
-	
+		\subsubsection{R3}
+			CRUD-check			
+			
 	\subsection{Emma}
 		\subsubsection{R1}
 		So far I have except for the common brainstorming, customer meetings and general work been working on a context diagram, data model and a first user task.
 		\subsubsection{R2}
-	In this release I have worked in particular with QUPER, quality goals and proritization. I have also been involved in producing the validation checklist in cooperation with the rest of the group.
-		%\subsubsection{R3}
-	
+	In this release I have worked in particular with QUPER, quality goals and prioritization. I have also been involved in producing the validation checklist in cooperation with the rest of the group.
+		\subsubsection{R3}
+			Validating Boogle, writing experiences of validation and prioritization.			
+			
 	\subsection{Fredrik}
 		\subsubsection{R1}
 		I have contributed to the data model and the elicitation technique similar companies. Except for that I have been involved in the brainstorming, customer meetings and common work.
 		\subsubsection{R2}
 		I have been participating in workshop with users and meetings with the customers. Done some more brainstorming, which resulted in a couple of new requirements. I've also been working on putting the requirements in the right place and corrected unambiguous requirements.
-		%\subsubsection{R3}
+		\subsubsection{R3}
+		Release planning, validation		
 		
 	\subsection{Hannes}
 		\subsubsection{R1}
 		I have helped producing the context diagram and planned for future quality requirements work. I have also gone to the meetings with stakeholders and been in the group discussions and brainstorming.
 		\subsubsection{R2}
 		Have worked on our with the requirements in reqT as well as correcting/clarifying them.  
-		%\subsubsection{R3}
+		\subsubsection{R3}
+		Validation, stakeholders
 	
 	\subsection{Johan}
 		\subsubsection{R1}
 		I have taken part in the elicitation process aswell as helping out with other tasks such as the context diagram. Further have I also been involved in the customer meetings and out internal brainstorming.
 		\subsubsection{R2}
 		Have worked with producing mock ups and taken part in our supplier's workshop. I also specified some requirements and worked in reqT so that all requirements were coherent.
-		%\subsubsection{R3}
+		\subsubsection{R3}
+		Crud-matrix, stakeholders	
 	
 	\subsection{Martin}
 		\subsubsection{R1}
 		I have mostly coordinated the work, documenting the project experiences and trying different Gantt chart software. Have also had contact with our suppliers and participated in meetings with them and with our clients.
 		\subsubsection{R2}
 		I planned the workshop and lead it together with Alexander. Have had contact with our suppliers and also took part in their workshop. Also helped out with clarifying some requirements and updating project experiences.
-		%\subsubsection{R3}
+		\subsubsection{R3}
+			presentation
 	
 	\subsection{Mattias}
 		\subsubsection{R1}
 		I have been working with tools and setting up the document and file infrastructure. Other than this I have participated in the meetings.
 		\subsubsection{R2}
 	For this release I've mostly been working on the tasks and multiple refactorisations of the aforementioned tasks. Other than that I've been building a script to automatically generate all the external tex-files from scala files to make sure that the latest version of the models are in the system requirements document.
-		%\subsubsection{R3}
+		\subsubsection{R3}
+		Release planning
 
 	\subsection{Philip}
 		\subsubsection{R1}
-	I have mostly been writing in this document and participated in discussions. I've also handled a lot of the contact to and from our costumer group and the group we are cosutmers to.
+	I have mostly been writing in this document and participated in discussions. I've also handled a lot of the contact to and from our costumer group and the group we are customers to.
 		\subsubsection{R2}
 		Been working a bit with the design requirements and I have been working with putting requirements in the right section and I've been editing requirements to be easier to understand and more specified and fixed minor bugs
-		%\subsubsection{R3}
+		\subsubsection{R3}
+		Presentation
 
 \end{document}
