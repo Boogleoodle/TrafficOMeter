@@ -141,23 +141,27 @@ Data model is an abstract model of what data is needed in a system, not necessar
 				In the process of describing task it became obvious that there were a lot more tasks than initially imagined. As a task was being described, subtasks emerged and thus an even deeper understanding of the system was acquired than previously suspected that the method would generate. There are probably more tasks to described in the system than was done, however you have to realise where to stop. It is easy to dig very far into the tasks and thus generate a lot of paperwork.
 
 	\section{Prioritization Methods/Techniques}
-	In this section we describe the different techniques and methods we used for prioritization. It also goes into how and why we used them, as well as describing the result.
+	Prioritization is used to see which requirements are the most important for different stakeholders. This can later be used to see which features to include in early releases through release planning. There are a couple of different methods to use for prioritization depending on if you just want to see which requirements are more important than others or if you also want to know how much more important. Different aspects can also be taken into account during prioritization. 
+	
+	In our prioritizations we have used importance as the aspect to compare the requirements against since we feel that it is most important aspect when doing release planning. \textbf{Om vi får för oss att göra risk assesment så vill vi nog ta bort denna mening:} Had we had more time we would also have liked to have done a prioritization based on the risk of the different requirements since it would have been practical to see how much risk the different requirements introduce to the project.
+	
+	All requirements have also been given a cost which according to the article about prioritization in the compendium also seems to be counted as a prioritization. We estimated the cost by setting a time in hours and the "prioritization" was done by estimating the actual cost of implementing the requirement.
 
 	\subsection{Cumulative Voting (The 100-dollar method)}
 		The 100-dollar method is used to prioritize requirements. The stakeholder in question is given a fixed sum of money (for example 100 dollars), this amount is then divided to the different requirements to get the prioritization. The result is that the requirements are prioritized on a ratio scale which means that it is possible to see how much more important one requirement is compared to another.   
 		\subsubsection{Application}
-			The 100-dollar method was used when two of the stakeholders prioritized the requirements - the users and the Swedish government (we played the role of the government during this prioritization). The stakeholders were given 100 dollars each to prioritize. This prioritization was done before all requirements were specified and we chose to let all the requirements keep their prio when new requirements were added. The new requirements were compared to already existing requirement's prio and given a prio so that the 100 dollar were exceeded but the prioritization still correct. For the release planning the prios have been normalized to work with all other stakeholder prios. 
+			The 100-dollar method was used when two of the stakeholders prioritized the requirements - the users and the Swedish government (we played the role of the government during this prioritization). The stakeholders were given 100 dollars each to prioritize. This prioritization was done before all requirements were specified and we chose to let all the requirements keep their priority when new requirements were added. The new requirements were compared to already existing requirement's priority and given a priority so that the 100 dollar were exceeded but the prioritization still correct. For the release planning the priorities have been normalized to work with all other stakeholder priorities. 
 		\subsubsection{Why chosen}
 			The method is an easy way to get an overview over which requirements that is the most important. We also liked the fact that it is possible to see how much more important a requirement is compared to another.
 		\subsubsection{Outcome}
-			We got a prioritization from two of the stakeholders that we converted to benefit in our reqT model. This prio have been used both by us to figure out which requirements to give the most attention and to be able to do a release planning (then with normalized benefits).
+			We got a prioritization from two of the stakeholders that we converted to benefit in our reqT model. This priority have been used both by us to figure out which requirements to give the most attention and to be able to do a release planning (then with normalized benefits).
 
 	\subsection{Ranking (Insertion sort)}
-		The method gives all the requirements ranked on an ordinal scale.
+		Insertion sort gives all the requirements ranked on an ordinal scale, all ties have to be broken so no two requirements have the same priority.
 		\subsubsection{Application}
-			Insertion sort was used to rank our requirements against each other to be able to see which are more important than the rest.
+			Insertion sort was used to rank our requirements against each other to be able to see which are more important than the rest. The method was used to prepare for the second computer lab.
 		\subsubsection{Why chosen}
-			The method was used when prioritizing some of our requirements for the computer lab. We used it for a while in our project as well but decided that we would rather have all requirements prioritized either with cumulative voting or numerical assignment since we think that it gives more information about how they relate to each other.
+			The method was used when prioritizing some of our requirements for the computer lab. We used it for a while in our project as well but decided that we would rather have all requirements prioritized either with cumulative voting or numerical assignment since we think that it gives more information about how they relate to each other in priority.
 		\subsubsection{Outcome}
 			We saw that insertion sort is practical to get a clear picture over which requirements we consider more important than others, but it can not tell us how much more important they are. We also considered the method a bit to time consuming and therefore choose a faster method when letting the customer prioritize.  			
 		
@@ -169,7 +173,7 @@ Data model is an abstract model of what data is needed in a system, not necessar
 		\subsubsection{Why chosen}
 			We wanted to get an idea of what our customers thought was most important and to see if that was in line with our point of view. We also wanted to get the input we needed to be able to do a release planning in a later stage.
 		\subsubsection{Outcome}
-			All of the requirements ended up divided into the five groups so that it is more clear what to focus on. We will use these results when performing the release planning, the prios will then be normalized to work together with the prioritization from the other stakeholders.
+			All of the requirements ended up divided into the five groups so that it is more clear what to focus on. We will use these results when performing the release planning, the priorities will then be normalized to work together with the prioritization from the other stakeholders.
 
 	\section{Validation techniques}
 	Validating requirements is a crucial part in requirements engineering. It is a way to trace the customer's goals and demands to the requirements it has stated. There are two ways of validation requirements, top-down and bottom-up. In the top-down version the analyst first looks at the goals and demands and then tries to figure out if they are all covered by the requirements. In the bottom-up version the analyst instead starts from the requirements end and checks if they all describe the goals and demands.
