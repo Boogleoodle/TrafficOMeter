@@ -85,7 +85,7 @@ Model(
 			Stakeholder("Customer") has Benefit(5)
 		),
 
-		Feature("SupportFerrys") has (
+		Feature("SupportFerries") has (
 			Spec("The System shall support all ferry lines in all the commuting services in Sweden"),
 			Cost(128),
 			Stakeholder("Customer") has Benefit(5)
