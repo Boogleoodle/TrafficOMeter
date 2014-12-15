@@ -1,7 +1,7 @@
 Model(
 	Section("Usage") has (
 		Feature("ViewNextOption") has (
-			Spec("The user shall be able to choose to discard the displayed route to a destination and instead get the route of the next departure to the same desination"),
+			Spec("The user shall be able to choose to discard the displayed trip to a destination and instead get the next trip to the same desination"),
 			Why("Because the time to the fastest alternative may not be enough for the user to get ready to leave"),
 			Example("Get the second fastest option by swiping the current option for the destination off the screen"),
 			Cost(8),
@@ -192,7 +192,7 @@ Model(
 			Spec("Extract travel data from regional public transportation administrators"),
 			Why("Obtaining travel data from this source is a vital part of our system, since it is used in all calculations"),
 			Cost(256),
-			Example("If the user wants to know the fastest route to its home, the system will need the timetables of all the transportation means involved")
+			Example("If the user wants to know the fastest trip to its home, the system will need the time tables of all the transportation means involved")
 		)
 	),
 

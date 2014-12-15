@@ -33,7 +33,7 @@ Model(
 			),
 			Target("Predicting user patterns") has (
 				Value(400),
-				Comment("By predicting user behaviour the system could prepare the most frequently used routes before the user needs it")
+				Comment("By predicting user behaviour the system could prepare the most frequently used trips before the user needs it")
 			),
 			Barrier("first") has Value(6000),
 			Barrier("second") has Value(1000),
