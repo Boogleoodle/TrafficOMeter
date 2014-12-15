@@ -74,19 +74,19 @@ Model(
 
 	Section("Means of transportation") has (
 		Feature("SupportBuses") has (
-			Spec("The System shall support all bus lines in all the commuting services in Sweden"),
+			Spec("The System shall retrieve information for all bus lines in Sweden that has an accesible API"),
 			Cost(128),
 			Stakeholder("Customer") has Benefit(5)
 		),
 
 		Feature("SupportTrains") has (
-			Spec("The System shall support all train lines in all the commuting services in Sweden"),
+			Spec("The System shall retrieve information for all train lines in Sweden that has an accesible API"),
 			Cost(128),
 			Stakeholder("Customer") has Benefit(5)
 		),
 
 		Feature("SupportFerries") has (
-			Spec("The System shall support all ferry lines in all the commuting services in Sweden"),
+			Spec("The System shall retrieve information for all ferry lines in Sweden that has an accesible API"),
 			Cost(128),
 			Stakeholder("Customer") has Benefit(5)
 		)
