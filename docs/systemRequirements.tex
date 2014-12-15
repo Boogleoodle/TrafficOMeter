@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+	\documentclass[a4paper]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
@@ -116,12 +116,16 @@ The project goal is to develop an app and/or widget where the user can see how t
 			\subsubsection{Tasks}
 				\input{krav/task1.tex}
 			\subsubsection{Feature Requirements}
-				\input{krav/features.tex}
-				\input{krav/domain.tex}			
+
+				\input{krav/features.tex}				
 			
+
 		\subsection{Product Level Requirements}		
 			\subsubsection{Data Requirements}
-				The data in the data model should be stored by the system.	
+			
+			% The data in the data model should be stored by the system. --Detta lades in i en scala-fil istället	
+			\input{krav/data1.tex}
+			
 				\begin{figure}[h]
 					\includegraphics[scale=0.50]{img/datamodel-v2.png}
 					\caption{Data Model for the system}
@@ -132,16 +136,13 @@ The project goal is to develop an app and/or widget where the user can see how t
 			\subsubsection{Functional Requirements}
 				\input{krav/functional.tex}
 		
-
 					
 				
 		\subsection{Design Level Requirements}
 		\input{krav/design.tex}
-		
-		\newpage
-		
+
 		\subsection{Quality Requirements}
-		When it comes to quality we consider the issues prioritized in the following way:
+		When it comes to quality we consider the issues prioritized in the following way. Below are also explanations to all quality requirements we consider more or less important than as usual.
 		
 		\begin{tabular}{|l|c|c|c|c|c|}
 			\hline
@@ -173,12 +174,31 @@ The project goal is to develop an app and/or widget where the user can see how t
 			\hline
 			Interoperability & & 7 & & & \\
 			\hline
-			Reusability & & & x & & \\
+			Re-usability & & & & & 1 \\
+			\hline
+			Instability & & & x & & \\
 			\hline
 		\end{tabular}
-			
-			\input{krav/quality.tex}		
+		
+		\begin{enumerate}
+  			\item It is important to consider how much information about the users (GPS-coordinates etc) is shared with the government.	All data should anonymous and each so that it is never possible to trace data to a person.
+  			\item People will use the service every day and if the uptime is low, it will cause irritation among the users as well as bad publicity.
+  			\item If the software does not have high usability, it will defeat its purpose and won't be fast and easy to use. This is one of the competitive advantages of the system.
+  			\item It should be fast and easy to get travel information updates. For example if a bus is early, the user should be notified so he/she don't miss it.
+  			\item Our clients explicitly said they didn't want any further development of the service. However, the service should still be possible to update but it doesn't for example need support for extension.
+  			\item It was important of our clients for the service to work on several platforms. We also have feature requirements for the platforms the service should support.
+  			\item Different stakeholders might want statistics in different forms.
+  			\item The service is quite specific and also our main stakeholder made it clear that the re-usability is very unimportant.	
+		\end{enumerate}
 
+
+
+		\subsection{Domain Level Requirements}
+		
+			\input{krav/domain.tex}
+		
+		\subsection{Product Level Requirements}
+			\input{krav/quality.tex}		
 		\subsection{Design Level Requirements}	
 	
 	%\newline

@@ -3,7 +3,7 @@
 \begin{lstlisting}
 Task addDestination
 	Spec User saves a geographical location
-	Trigger: User want another destination to travel to
+Trigger: User want another destination to travel to
 	Task Find Geographical Location
 		Spec Locate a geographical location to travel to
 		Variant Select current GPS-coordinates as geographical location
@@ -18,11 +18,9 @@ Task addDestination
 		Frequency 1
 	Why The user shall not have to search for a geographical location he/she might visit multiple times.
 	Frequency 3
-
 Task chooseTransportationMeans
 	Spec User specifies which means of transportation(s) that the system shall use for calculating the fastest trip
 	Frequency 1
-
 Task removeDestination
 	Spec Remove a previously added destination
 	Task SelectDestination

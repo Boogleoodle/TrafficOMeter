@@ -1,7 +1,30 @@
 Model(
+
+	Section("Support") has (
+		Feature("Language") has (
+			Spec("The system shall have support for both Swedish and English"),
+			Why("To make the product available for more people"),
+			Example("A setting where one can use the language to be used"),
+			Cost(64) 
+		),
+		Feature("Android") has (
+			Spec("The system shall support Android"),
+			Why("A big share of the smart phone and tablet market uses the Android operating system"),
+			Cost(64),
+			Stakeholder("User") has Benefit(5)
+		),
+
+		Feature("IOS") has (
+			Spec("The system shall support IOS"),
+			Why("A big share of the smart phone and tablet market uses the IOS operating system"),
+			Cost(64),
+			Stakeholder("User") has Benefit(5)
+		)
+	),
+
 	Section("Usage") has (
 		Feature("ViewNextOption") has (
-			Spec("The user shall be able to choose to discard the displayed trip to a destination and instead get the next trip to the same desination"),
+			Spec("The user shall be able to choose to discard the displayed trip to a destination and instead get the next trip to the same destination"),
 			Why("Because the time to the fastest alternative may not be enough for the user to get ready to leave"),
 			Example("Get the second fastest option by swiping the current option for the destination off the screen"),
 			Cost(8),
@@ -62,7 +85,7 @@ Model(
 			Stakeholder("Customer") has Benefit(5)
 		),
 
-		Feature("SupportFerrys") has (
+		Feature("SupportFerries") has (
 			Spec("The System shall support all ferry lines in all the commuting services in Sweden"),
 			Cost(128),
 			Stakeholder("Customer") has Benefit(5)
@@ -193,15 +216,6 @@ Model(
 			Why("Obtaining travel data from this source is a vital part of our system, since it is used in all calculations"),
 			Cost(256),
 			Example("If the user wants to know the fastest trip to its home, the system will need the time tables of all the transportation means involved")
-		)
-	),
-
-	Section("Support") has (
-		Feature("Language") has (
-			Spec("The system shall have support for both Swedish and English"),
-			Why("To make the product available for more people"),
-			Cost(64),
-			Example("A setting where one can use the language to be used") 
 		)
 	)
 )
