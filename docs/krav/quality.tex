@@ -29,11 +29,9 @@ Quality GPS-position
 		Benefit 7
 	Stakeholder SwedishGovernment
 		Benefit 5
-
 Quality requestCapacity
 	Spec The system needs to be able to process at least 20000 update requests per minute
 	Cost 128
-
 Quality Refresh time
 	Gist Mean time between refresh start and information received
 	Spec Measured in milliseconds
@@ -48,7 +46,7 @@ Quality Refresh time
 		Comment Requires storage on server
 	Target Predicting user patterns
 		Value 400
-		Comment By predicting user behaviour the system could prepare the most frequently used routes before the user needs it
+		Comment By predicting user behaviour the system could prepare the most frequently used trips before the user needs it
 	Barrier first
 		Value 6000
 	Barrier second
@@ -65,11 +63,11 @@ Quality Refresh time
 \begin{lstlisting}
 Quality Uptime
 	Spec The system shall have an uptime of 99%
-	Cost 256
-	Stakeholder User
-		Benefit 5
-	Stakeholder SwedishGovernment
-		Benefit 14
+Cost 256
+Stakeholder User
+	Benefit 5
+Stakeholder SwedishGovernment
+	Benefit 14
 
 \end{lstlisting}
 		
