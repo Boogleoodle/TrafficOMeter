@@ -18,7 +18,6 @@ Feature ExtractStatistics
 		Benefit 0
 	Stakeholder SwedishGovernment
 		Benefit 25
-
 Feature GetPopularStatistics
 	Spec The system shall be able to provide statistics about which geographical locations are popular
 	Why The Swedish government hopes to be able to use this and other statistics as decision basis when planning infrastructure
@@ -26,7 +25,6 @@ Feature GetPopularStatistics
 	Example The system supervisor(s) provides the Swedish government with the extracted statistics
 	Stakeholder Customer
 		Benefit 2
-
 Feature GetRoutesStatistics
 	Spec The system shall be able to provide statistics about which routes that all users has at a specific time
 	Why This information could be used to extract information about the infrastructure in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc. could be useful
@@ -49,7 +47,6 @@ Feature MultiAccessibleUserData
 	Cost 64
 	Stakeholder SwedishGovernment
 		Benefit 3
-
 Feature KeepAcountPrivate
 	Spec A user can only access its own destinations
 	Why The data is private and shall not be possible view or change by someone else
@@ -74,7 +71,6 @@ Feature SaveLocation
 		Benefit 15
 	Stakeholder SwedishGovernment
 		Benefit 8
-
 Feature SpecifyLocationByMap
 	Spec The user can specify the location by moving a target pin on a map
 	Why A map gives more information to the user and makes is easier for the user to communicate its wishes
@@ -86,7 +82,6 @@ Feature SpecifyLocationByMap
 		Benefit 3
 	Stakeholder SwedishGovernment
 		Benefit 1
-
 Feature SpecifyMeansOfTravel
 	Spec The User shall be able to specify which of the supported means of transportation it would like to use and then the system shall use the selected means of transportation
 	Why Not all users want to use the same means of travel
@@ -98,7 +93,6 @@ Feature SpecifyMeansOfTravel
 		Benefit 9
 	Stakeholder SwedishGovernment
 		Benefit 4
-
 Feature SearchLocations
 	Spec The user shall be able to search for locations
 	Why To find a location to travel to
@@ -106,7 +100,6 @@ Feature SearchLocations
 	Cost 64
 	Stakeholder Customer
 		Benefit 5
-
 Feature ChangeNameOnDestination
 	Spec It shall be possible to change the name of a destination
 	Why To make it easier to tell the different destinations apart
@@ -116,7 +109,6 @@ Feature ChangeNameOnDestination
 		Benefit 1
 	Stakeholder SwedishGovernment
 		Benefit 0
-
 Feature RemoveDestination
 	Spec It shall be possible for the user to remove a previously saved destination
 	Why If that destination no longer is in the interest of the user it shall be possible to remove it
@@ -128,7 +120,6 @@ Feature RemoveDestination
 		Benefit 2
 	Stakeholder SwedishGovernment
 		Benefit 0
-
 Feature MultipleDestinations
 	Spec The user shall be able to store multiple destinations
 	Why It is very useful that the user can store several destinations at the same time without having to do a new search every time he or she wants to go somewere
@@ -140,7 +131,6 @@ Feature MultipleDestinations
 		Benefit 7
 	Stakeholder SwedishGovernment
 		Benefit 3
-
 Feature OrderDestinations
 	Spec It shall be possible for the user to order its destinations in an priority order
 	Why The screen of a smart phone might not be big enough to display all	of a users destinations. Therefore it would be convenient for the user to order its destination in an priority order
@@ -159,8 +149,20 @@ Feature OrderDestinations
 Feature Language
 	Spec The system shall have support for both Swedish and English
 	Why To make the product available for more people
-	Cost 64
 	Example A setting where one can use the language to be used
+	Cost 64
+Feature Android
+	Spec The system shall support Android
+	Why A big share of the smart phone and tablet market uses the Android operating system
+	Cost 64
+	Stakeholder User
+		Benefit 5
+Feature IOS
+	Spec The system shall support IOS
+	Why A big share of the smart phone and tablet market uses the IOS operating system
+	Cost 64
+	Stakeholder User
+		Benefit 5
 
 \end{lstlisting}
 		
@@ -170,13 +172,12 @@ Feature Language
 
 \begin{lstlisting}
 Feature ViewNextOption
-	Spec The user shall be able to choose to discard the displayed route to a destination and instead get the route of the next departure to the same desination
+	Spec The user shall be able to choose to discard the displayed trip to a destination and instead get the next trip to the same destination
 	Why Because the time to the fastest alternative may not be enough for the user to get ready to leave
 	Example Get the second fastest option by swiping the current option for the destination off the screen
 	Cost 8
 	Stakeholder Customer
 		Benefit 4
-
 Feature FastestTrip
 	Spec The system shall automatically show the total travel time of the fastest trip
 	Why So the user can see how long time it takes to travel to the destinations
@@ -188,7 +189,6 @@ Feature FastestTrip
 		Benefit 9
 	Stakeholder SwedishGovernment
 		Benefit 10
-
 Feature GeographicalStartingPoint
 	Spec The system shall be able to use the user's geographical location as a starting point for a trip
 	Why The position shall be used as the starting point when determining the route
@@ -196,7 +196,6 @@ Feature GeographicalStartingPoint
 	Cost 32
 	Stakeholder Customer
 		Benefit 3
-
 Feature ShowRouteToFirstStop
 	Spec When the user selects a specific travel option the route between the current position and the first stop shall be accessible
 	Why The user might not find its way in the current area, and shall be able to get to the first stop quickly
@@ -208,13 +207,11 @@ Feature ShowRouteToFirstStop
 		Benefit 8
 	Stakeholder SwedishGovernment
 		Benefit 4
-
 Feature MaxDistToStop
 	Spec The user shall be able to specify the maximum distance in a transfer between two adjacent stops.
 	Cost 32
 	Stakeholder Customer
 		Benefit 4
-
 Feature MinWaitTime
 	Spec The user shall be able to specify the minimum waiting time in a transfer between two adjacent stops.
 	Cost 32
@@ -232,7 +229,7 @@ Feature ExtractDataFromProviders
 	Spec Extract travel data from regional public transportation administrators
 	Why Obtaining travel data from this source is a vital part of our system, since it is used in all calculations
 	Cost 256
-	Example If the user wants to know the fastest route to its home, the system will need the timetables of all the transportation means involved
+	Example If the user wants to know the fastest trip to its home, the system will need the time tables of all the transportation means involved
 
 \end{lstlisting}
 		
@@ -246,13 +243,11 @@ Feature SupportBuses
 	Cost 128
 	Stakeholder Customer
 		Benefit 5
-
 Feature SupportTrains
 	Spec The System shall support all train lines in all the commuting services in Sweden
 	Cost 128
 	Stakeholder Customer
 		Benefit 5
-
 Feature SupportFerrys
 	Spec The System shall support all ferry lines in all the commuting services in Sweden
 	Cost 128
