@@ -121,8 +121,8 @@ Model(
 			Stakeholder("User") has Benefit(9),
 			Stakeholder("SwedishGovernment") has Benefit(4)
 		),
-		Feature("SearchLocations") has (
-			Spec("The user shall be able to search for locations"),
+		Feature("SearchDestination") has (
+			Spec("The user shall be able to search for destination"),
 			Why("To find a location to travel to"),
 			Example("Add an button for opening a search field"),
 			Cost(64),
@@ -158,7 +158,7 @@ Model(
 		Feature("OrderDestinations") has (
 			Spec("It shall be possible for the user to order its destinations in an priority order"),
 			Why("The screen of a smart phone might not be big enough to display all	of a users destinations. Therefore it would be convenient for the user to order its destination in an priority order"),
-			Example("The user creates a new destination and would like to see it on the widget. The user prioritizes the newly added destination so that the destination has a higher priority relative the other destinations. The newly added destination is displayed first of all the destination, from the top of the screen"),
+			Example("A ORDER alternative in the settings for the widget where the user is able to drag and drop its destinations up and down to match the actual view on the widget"),
 			Cost(16),
 			Stakeholder("Customer") has Benefit(5)
 
