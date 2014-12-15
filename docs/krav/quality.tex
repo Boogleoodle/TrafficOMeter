@@ -3,78 +3,83 @@
 \end{lstlisting}
 
 
-       \subsubsection{Usability}
+			 \subsubsection{Usability}
 
 
 \begin{lstlisting}
 Quality UpdateStartView
-  Spec Updating start view shall be possible with one press of a button per time
-  Stakeholder Customer
-    Benefit 4
+	Spec Updating start view shall be possible with one press of a button per time
+	Cost 8
+	Stakeholder Customer
+		Benefit 4
 
 \end{lstlisting}
-    
-        
-       \subsubsection{Efficiency}
+		
+				
+			 \subsubsection{Efficiency}
 
 
 \begin{lstlisting}
 Quality GPS-position
-  Spec The system shall give a GPS-position correct within a 50 meter radius
-  Stakeholder Customer
-    Benefit 2
-  Stakeholder User
-    Benefit 7
-  Stakeholder SwedishGovernment
-    Benefit 5
+	Spec The system shall give a GPS-position correct within a 50 meter radius
+	Cost 64
+	Stakeholder Customer
+		Benefit 2
+	Stakeholder User
+		Benefit 7
+	Stakeholder SwedishGovernment
+		Benefit 5
 Quality requestCapacity
-  Spec The system needs to be able to process at least 20000 update requests per minute
+	Spec The system needs to be able to process at least 20000 update requests per minute
+	Cost 128
 Quality Refresh time
-  Gist Mean time between refresh start and received information
-  Spec Measured in milliseconds
-  Breakpoint Utility
-    Value 10000
-  Breakpoint Differentiation
-    Value 4000
-  Breakpoint Saturation
-    Value 500
-  Target Caching travel times and routes on server
-    Value 4000
-    Comment Requires storage on server
-  Target Predicting user patterns
-    Value 400
-    Comment By predicting user behaviour the system could prepare the most frequently used routes before the user needs it
-  Barrier first
-    Value 6000
-  Barrier second
-    Value 1000
-  Product Skanetrafiken
-    Value 6000
+	Gist Mean time between refresh start and information received
+	Spec Measured in milliseconds
+	Breakpoint Utility
+		Value 10000
+	Breakpoint Differentiation
+		Value 4000
+	Breakpoint Saturation
+		Value 500
+	Target Caching travel times and routes on server
+		Value 4000
+		Comment Requires storage on server
+	Target Predicting user patterns
+		Value 400
+		Comment By predicting user behaviour the system could prepare the most frequently used trips before the user needs it
+	Barrier first
+		Value 6000
+	Barrier second
+		Value 1000
+	Product Skanetrafiken
+		Value 6000
 
 \end{lstlisting}
-    
-        
-       \subsubsection{Reliability}
+		
+				
+			 \subsubsection{Reliability}
 
 
 \begin{lstlisting}
 Quality Uptime
-  Spec The system should have an uptime of 99%
+	Spec The system shall have an uptime of 99%
+Cost 256
 Stakeholder User
-  Benefit 5
+	Benefit 5
 Stakeholder SwedishGovernment
-  Benefit 14
+	Benefit 14
 
 \end{lstlisting}
-    
-        
-       \subsubsection{Security}
+		
+				
+			 \subsubsection{Security}
 
 
 \begin{lstlisting}
 Quality UserIntegrity
-  Spec The system should not provide any statistics that could be used to track a single users travel habits or specific user positions
-  Stakeholder Customer
-    Benefit 1
+	Spec The system shall not provide any statistics that could be used to track a single users travel habits or specific user positions
+	Cost 32
+	Stakeholder Customer
+		Benefit 1
 
 \end{lstlisting}

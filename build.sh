@@ -23,11 +23,12 @@ then
 		sed '/chapter/d' $f | cat > $f.tmp
 		if [[ $f = "docs/krav/features.tex" ]]
 		then 
-			sed 's/section/paragraph/g' $f.tmp | cat > $f
+			sed 's/section/paragraph/g' $f.tmp | cat > $f.tmp.tmp
 		else
-			sed 's/section/subsubsection/g' $f.tmp | cat > $f
+			sed 's/section/subsubsection/g' $f.tmp | cat > $f.tmp.tmp
 		fi
-		rm $f.tmp
+		sed 's/\ \ /\t/g' $f.tmp.tmp | cat > $f
+		rm $f.*
 	done
 fi
 
