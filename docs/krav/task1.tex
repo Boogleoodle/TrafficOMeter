@@ -2,33 +2,35 @@
 
 \begin{lstlisting}
 Task addDestination
-  Spec User saves a geographical location
-Trigger: User want another destination to travel to
-  Task Find Geographical Location
-    Spec Locate a geographical location to travel to
-    Variant Select current GPS-coordinates as geographical location
-    Variant Desired geographical location does not exist
-    Variant Multiple matches for geographical location query
-    Frequency 5
-  Task Name Geographical Location
-    Spec Give a name to a geographical location
-    Frequency 1
-  Task Save Geographical Location
-    Spec Save a geographical location to the device and database
-    Frequency 1
-  Why The user shall not have to search for a geographical location he/she might visit multiple times.
-  Frequency 3
+	Spec User saves a geographical location
+	Trigger: User want another destination to travel to
+	Task Find Geographical Location
+		Spec Locate a geographical location to travel to
+		Variant Select current GPS-coordinates as geographical location
+		Variant Desired geographical location does not exist
+		Variant Multiple matches for geographical location query
+		Frequency 5
+	Task Name Geographical Location
+		Spec Give a name to a geographical location
+		Frequency 1
+	Task Save Geographical Location
+		Spec Save a geographical location to the device and database
+		Frequency 1
+	Why The user shall not have to search for a geographical location he/she might visit multiple times.
+	Frequency 3
+
 Task chooseTransportationMeans
-  Spec User specifies which means of transportation(s) that the system shall use for calculating the fastest trip
-  Frequency 1
+	Spec User specifies which means of transportation(s) that the system shall use for calculating the fastest trip
+	Frequency 1
+
 Task removeDestination
-  Spec Remove a previously added destination
-  Task SelectDestination
-    Spec Select a destination from a list of destinations
-    Frequency 1
-  Task deleteSelectedDestination
-    Spec Remove a selected destination
-    Frequency 1
-  Frequency 1
+	Spec Remove a previously added destination
+	Task SelectDestination
+		Spec Select a destination from a list of destinations
+		Frequency 1
+	Task deleteSelectedDestination
+		Spec Remove a selected destination
+		Frequency 1
+	Frequency 1
 
 \end{lstlisting}
