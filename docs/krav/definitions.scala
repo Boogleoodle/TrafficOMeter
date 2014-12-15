@@ -24,7 +24,7 @@ Model(
 	),
 
 	Term("Geographical Location") has (
-		Spec("Consists of GPS coordinates"),
+		Spec("Consists of GPS coordinates to determain a location"),
 		Example("lat: 55.71037075564825, lon: 13.208270072937012")
 	),
 
@@ -43,8 +43,8 @@ Model(
 	),
 
 	Term("Timetable") has(
-		Spec("The predefined departure times for a specific means of transportation"),
-		Example("Bus A departs at time X")
+		Spec("The predefined departure times set by the regional public transport office for a specific means of transportation for every line of transportation"),
+		Example("Bus A departs at time X hours and Y minutes direction Z")
 	),
 
 	Term("Sub-trip") has (
