@@ -16,62 +16,71 @@
 \section{Allmänt}
 \begin{itemize}
 
-	\item samma med alla former av resa, vi är inte konsekventa med ordvalet
+	
 	\item Gällande ert kontext-diagram, ni saknar Product owner som ni nämner som stakeholder under era goal-krav. Hittade ni några andra intressenter? Ex. konkurrenter? Dessa kan med fördel inkluderas i diagrammet tillsammans med en domängräns som avskiljer den inre och yttre domänen. Se boken för ytterligare detaljer.
+	
 	\item Ser gärna att ni gör goal-doman tracing mellan era goal-krav och tasks på domän-nivå, detta är ett billigt och oftast enkelt sätt att hitta luckor och stärka motiveringen bakom kraven.
+	
 	\item Önskar att ni inför radbrytningar mellan kraven, detta hade ökat läsförmågan betydligt.
 	
-	\item I ExtractStatistics hade jag gärna sett en referens till ett datakrav/datatyp för just statistics. Tänk på detta generellt.
-
 
 	\item På en del ställen är ni tvetydiga och lämnar öppning för misstolkning, i ex.MultiAccessibleUserData nämner ni multiple devices, vilka är detta? Gäller det samtidig användning?
-	\item Saknar krav som beskriver era virtuella fönster? Likaså verkar referenserna till era mockups ej fungera.
-	\item Inom era kvalitetskrav behöver ni ej uppdela efter de olika abstraktionerna: doman, produkt osv.
+	
+	
 	\item En sista kommentar är att ni bör läsa igenom bedömningsmallen och använda detta i huvudet när ni skriver i project experiences så att ni motiverar vad det är ni gjort, varför osv. Detta underlättar för mig att förstå hur ni tänkt, om ni anser er uppfylla ett visst kriterie i bedömningsmallen exempelvis.
-	\item ios and android reqs ska bli features och få benefit
+	
+	
 	\item ge krav unika id - tydligen så har några task samma id som några features, lös detta
+	
 \end{itemize}
 
 
 \section{features}
 
-	\subsection{saveLocation saveDestination}
-		\begin{itemize}
-			\item Gå igenom alla ID för krav och se till så att det är rätt.
-			\\Destination = resmål (plats med namn).
-			\\Location = geografisk plats.
-		\end{itemize}
+		
+	\subsection{extractstatistics}
+vi får antingen specificera vilken typ av statistik  här eller bygga på med  fler specifika som vi redan har några. nu är det skumt med ett övergripande och några specifika.
+	
+	Johans kommentar: I ExtractStatistics hade jag gärna sett en referens till ett datakrav/datatyp för just statistics. Tänk på detta generellt.
 
+
+	\subsection{getdatafromproviders}
+	ska det vara att producten ska göra detta?
+	
+
+
+
+	
+\section{DONE}
+Här lägger vi items som är klara
 
 	\subsection{searchdestination} (jag kan inte hitta denna någonstans, det fanns en searchLocation men den ändrade jag till searchDestination. Innan dess hittade jag ingen med den namnet. //Philip)
 		\begin{itemize}
 			\item gör denna tydligare. 
 			\item är det bara för att man ska kunna lägga till genom att söka efter den?, och isf har vi något annat krav för nån annan möjlighet eller är detta enda sättet att lägga till? har för mig att vi har ett till, kan man inte gruppera dem tillsammans på något sätt
 		\end{itemize}
-		
 
-		
-	\subsection{orderdestinations}
+\subsection{orderdestinations}
 		\begin{itemize}
 			\item Här antar vi att vi har en widget, så antingen göra krav på det eller skriva om detta krav (är det inte tillräckligt att vi har ett widget krav i design-kraven?)
-			
- 		
 		\end{itemize}
-		
-	\subsection{extractstatistics}
-vi får antingen specificera vilken typ av statistik  här eller bygga på med  fler specifika som vi redan har några. nu är det skumt med ett övergripande och några specifika
-
-
-	\subsection{getdatafromproviders}
-	ska det vara att producten ska göra detta?
+\subsection{saveLocation saveDestination}
+		\begin{itemize}
+			\item Gå igenom alla ID för krav och se till så att det är rätt.
+			\\Destination = resmål (plats med namn).
+			\\Location = geografisk plats.
+		\end{itemize}
+	\begin{itemize}	
+	\item ios and android reqs ska bli features och få benefit
+	\item samma med alla former av resa, vi är inte konsekventa med ordvalet
+	\item Inom era kvalitetskrav behöver ni ej uppdela efter de olika abstraktionerna: doman, produkt osv.
+	\item Saknar krav som beskriver era virtuella fönster? Likaså verkar referenserna till era mockups ej fungera.
 	
-	
-\section{DONE}
-Här lägger vi items som är klara
-	\begin{itemize}
 	\item här är example ett exempel och inte förslag på lösning, välj hur vi ska ha det och gör det konsekvent (jag anser detta vara bättre, men jag kan ha fel //Philip)
+	
 	\item Status-raden i era krav behöver ni ej ha med.
 	\item I många krav skriver ni Should vilket kan tolkas som borde. En funktion som borde göra någonting är inte en bra funktion. Använd Shall eller liknande konsekvent. 
 	\item Gillar att ni tydligt har med prioriteringarna för var krav och stakeholder. Beskrivningarna av hur ni kom fram till dessa etc. i PE bör utökas men antar att detta är planerat för denna release.
 	\end{itemize}
+
 \end{document}
