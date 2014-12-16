@@ -1,16 +1,16 @@
 Model(
 	Term("Means of transportation") has (
 		Spec("Type of vehicle in which the public transport takes place"),
-		Example("Bus, train, and ferry.")
+		Example("Bus, train, or ferry.")
 	),
 	Term("User") has (
 		Spec("An individual who uses the system"),
-		Example("Person A looks at A's mobile device and wants to see the fastest way home.")
+		Example("An individual that wants to travel between pre-set destinations")
 	),
 
 	Term("Destination") has (
 		Spec("A geographical location that has been saved and given a name by the user."),
-		Example("User A want to go home but doesn't want to search for the location again")
+		Example("Destination A = Name: Home, lat: 55.7112325, lon: 13.1867275. Destination B = Name: School, lat: 55.71037075564825, lon: 13.208270072937012")
 	),
 
 	Term("Time") has (
@@ -20,7 +20,7 @@ Model(
 
 	Term("Line of Transportation") has (
 		Spec("A set of 'stop's that is served by the same vehicle. There is one line for each direction between the stops."), 
-		Example("Bus 6 between X and Y")
+		Example("Bus 6 in Lund, Bus 171 between Malmoe and Lund")
 	),
 
 	Term("Geographical Location") has (
@@ -29,17 +29,18 @@ Model(
 	),
 
 	Term("Trip") has (
-		Spec("A specific travel between two geographical (GPS) points"), 
+		Spec("A specific travel between two geographical (GPS) location"), 
 		Example("Between a users current position and one of its destinations")
 	),
 
 	Term("Stop") has (
 		Spec("Place where a public transportation vehicle stop to pick up and let off passengers."),
-		Example("Bus A stops at stop X to let set of persons Z on and set of persons C off.")
+		Example("Bus A stops at stop X to let set of persons P on and set of persons Q off.")
 	),
 
 	Term("Route") has (
-		Spec("The path between two different stops. Consists of one or more 'sub-trip's")
+		Spec("The path between two different stops. Consists of one or more 'sub-line's"),
+		Example("From bus stop X to bus stop Z, (change at bus stop Y e.g X->Y, Y->Z)")
 	),
 
 	Term("Timetable") has(
@@ -47,8 +48,8 @@ Model(
 		Example("Bus A departs at time X hours and Y minutes direction Z")
 	),
 
-	Term("Sub-trip") has (
-		Spec("A subset of a line that is part of a bigger 'trip'"), 
+	Term("Sub-line") has (
+		Spec("A subset of a line of transportation that is part of a bigger 'route'"), 
 		Example("Bus 3, stop #4 to stop #9")
 	)
 )
