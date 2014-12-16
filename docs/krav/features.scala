@@ -121,10 +121,10 @@ Model(
 			Stakeholder("User") has Benefit(9),
 			Stakeholder("SwedishGovernment") has Benefit(4)
 		),
-		Feature("SearchLocation") has (
-			Spec("The user shall be able to search for location"),
-			Why("To find a location to travel to"),
-			Example("Add an button for opening a search field"),
+		Feature("SpecifyLocationByAddress") has (
+			Spec("The user shall be able to specify a location by providing an address"),
+			Why("The user might need to travel to a specific address"),
+			Example("A text input field, incorporate the Google maps search engine"),
 			Cost(64),
 			Stakeholder("Customer") has Benefit(5)
 		),
