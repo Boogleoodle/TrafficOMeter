@@ -29,10 +29,10 @@ Quality GPS-position
 		Benefit 7
 	Stakeholder SwedishGovernment
 		Benefit 5
-Quality requestCapacity
+Quality RequestCapacity
 	Spec The system needs to be able to process at least 20000 update requests per minute
 	Cost 128
-Quality Refresh time
+Quality MeanTimeToRefreshTrips
 	Gist Mean time between refresh start and information received
 	Spec Measured in milliseconds
 	Breakpoint Utility
@@ -46,13 +46,29 @@ Quality Refresh time
 		Comment Requires storage on server
 	Target Predicting user patterns
 		Value 400
-		Comment By predicting user behaviour the system could prepare the most frequently used trips before the user needs it
+		Comment By predicting user behavior the system could prepare the most frequently used trips before the user needs it
 	Barrier first
 		Value 6000
 	Barrier second
 		Value 1000
 	Product Skanetrafiken
 		Value 6000
+Quality MeanTimeToCalculateTrip
+	Gist Mean time of calculating the fastest time for a trip with at least two lines of transportations
+	Spec Measured in milliseconds
+	Breakpoint Utility
+		Value 3000
+	Breakpoint Differentiation
+		Value 1500
+	Breakpoint Saturation
+		Value 500
+	Target Optimizing computing algorithms
+		Value 1000
+		Comment Requires faster algorithms to be developed
+	Barrier first
+		Value 1000
+	Product Skanetrafiken
+		Value 2000
 
 \end{lstlisting}
 		

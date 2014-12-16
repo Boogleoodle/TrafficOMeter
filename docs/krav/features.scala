@@ -61,12 +61,14 @@ Model(
 
 		Feature("MaxDistToStop") has ( 
 			Spec("The user shall be able to specify the maximum distance in a transfer between two adjacent stops."),
+			Why("The user might not want to walk several minutes between stops in a transfer"),
 			Cost(32),
 			Stakeholder("Customer") has Benefit(4)
 		),
 
 		Feature("MinWaitTime") has (
 			Spec("The user shall be able to specify the minimum waiting time in a transfer between two adjacent stops."),
+			Why("The user might want to be guaranteed some time for the transfers to not feel stressed"),
 			Cost(32),
 			Stakeholder("Customer") has Benefit(4)
 		)
@@ -74,19 +76,22 @@ Model(
 
 	Section("Means of transportation") has (
 		Feature("SupportBuses") has (
-			Spec("The System shall retrieve information for all bus lines in Sweden that has an accesible API"),
+			Spec("The System shall retrieve information for all bus lines in Sweden that has an accessible API"),
+			Why("To support as many bus lines as possible"),
 			Cost(128),
 			Stakeholder("Customer") has Benefit(5)
 		),
 
 		Feature("SupportTrains") has (
-			Spec("The System shall retrieve information for all train lines in Sweden that has an accesible API"),
+			Spec("The System shall retrieve information for all train lines in Sweden that has an accessible API"),
+			Why("To support as many train lines as possible"),
 			Cost(128),
 			Stakeholder("Customer") has Benefit(5)
 		),
 
 		Feature("SupportFerries") has (
-			Spec("The System shall retrieve information for all ferry lines in Sweden that has an accesible API"),
+			Spec("The System shall retrieve information for all ferry lines in Sweden that has an accessible API"),
+			Why("To support as many ferry lines as possible"),
 			Cost(128),
 			Stakeholder("Customer") has Benefit(5)
 		)

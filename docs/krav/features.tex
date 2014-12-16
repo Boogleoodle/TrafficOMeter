@@ -60,8 +60,8 @@ Feature KeepAcountPrivate
 
 
 \begin{lstlisting}
-Feature SaveLocation
-	Spec The user can save a location to its destinations for easy access
+Feature SaveDestination
+	Spec The user can save a destination to its list of already saved destinations for easy access
 	Why To populate the list of destinations
 	Example Add button in the application
 	Cost 32
@@ -93,10 +93,10 @@ Feature SpecifyMeansOfTravel
 		Benefit 9
 	Stakeholder SwedishGovernment
 		Benefit 4
-Feature SearchDestination
-	Spec The user shall be able to search for destination
-	Why To find a location to travel to
-	Example Add an button for opening a search field
+Feature SpecifyLocationByAddress
+	Spec The user shall be able to specify a location by providing an address
+	Why The user might need to travel to a specific address
+	Example A text input field, incorporate the Google maps search engine
 	Cost 64
 	Stakeholder Customer
 		Benefit 5
@@ -209,11 +209,13 @@ Feature ShowRouteToFirstStop
 		Benefit 4
 Feature MaxDistToStop
 	Spec The user shall be able to specify the maximum distance in a transfer between two adjacent stops.
+	Why The user might not want to walk several minutes between stops in a transfer
 	Cost 32
 	Stakeholder Customer
 		Benefit 4
 Feature MinWaitTime
 	Spec The user shall be able to specify the minimum waiting time in a transfer between two adjacent stops.
+	Why The user might want to be guaranteed some time for the transfers to not feel stressed
 	Cost 32
 	Stakeholder Customer
 		Benefit 4
@@ -239,17 +241,20 @@ Feature ExtractDataFromProviders
 
 \begin{lstlisting}
 Feature SupportBuses
-	Spec The System shall retrieve information for all bus lines in Sweden that has an accesible API
+	Spec The System shall retrieve information for all bus lines in Sweden that has an accessible API
+	Why To support as many bus lines as possible
 	Cost 128
 	Stakeholder Customer
 		Benefit 5
 Feature SupportTrains
-	Spec The System shall retrieve information for all train lines in Sweden that has an accesible API
+	Spec The System shall retrieve information for all train lines in Sweden that has an accessible API
+	Why To support as many train lines as possible
 	Cost 128
 	Stakeholder Customer
 		Benefit 5
 Feature SupportFerries
-	Spec The System shall retrieve information for all ferry lines in Sweden that has an accesible API
+	Spec The System shall retrieve information for all ferry lines in Sweden that has an accessible API
+	Why To support as many ferry lines as possible
 	Cost 128
 	Stakeholder Customer
 		Benefit 5
