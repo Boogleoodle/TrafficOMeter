@@ -16,12 +16,12 @@ Model(
 			Stakeholder("SwedishGovernment") has Benefit(5)
 		),
 
-		Quality("requestCapacity") has (
+		Quality("RequestCapacity") has (
 			Spec("The system needs to be able to process at least 20000 update requests per minute"),
 			Cost(128)
 		),
 
-		Quality("Refresh time") has (
+		Quality("MeanTimeToRefreshTrips") has (
 			Gist("Mean time between refresh start and information received"),
 			Spec("Measured in milliseconds"),
 			Breakpoint("Utility") has Value(10000), 
@@ -33,12 +33,26 @@ Model(
 			),
 			Target("Predicting user patterns") has (
 				Value(400),
-				Comment("By predicting user behaviour the system could prepare the most frequently used trips before the user needs it")
+				Comment("By predicting user behavior the system could prepare the most frequently used trips before the user needs it")
 			),
 			Barrier("first") has Value(6000),
 			Barrier("second") has Value(1000),
 			Product("Skanetrafiken") has Value(6000)
-		)
+		),
+			Quality("MeanTimeToCalculateTrip") has (
+			Gist("Mean time of calculating the fastest time for a trip with at least two lines of transportations"),
+			Spec("Measured in milliseconds"),
+			Breakpoint("Utility") has Value(3000), 
+			Breakpoint("Differentiation") has Value(1500), 
+			Breakpoint("Saturation") has Value(500),
+			Target("Optimizing computing algorithms") has (
+				Value(1000),
+				Comment("Requires faster algorithms to be developed")
+			),
+			
+			Barrier("first") has Value(1000),
+			Product("Skanetrafiken") has Value(2000)
+			)
 	),
 
 	Section("Reliability") has (
