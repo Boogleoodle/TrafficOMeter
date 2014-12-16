@@ -23,31 +23,31 @@ Model(
 
 		Screen("Widget") has (
 			MockUp("WidgetMockup") has (
-				Image("reference to mockup image \ref{pic:widget}")
+				Image("reference to mockup image 'Widget'")
 			 )
 		),
 
 		Screen("AddDestination") has (
 			MockUp("AddDestinationMockup") has (
-				Image("reference to mockup image \ref{pic:AddDestination}")
+				Image("reference to mockup image 'AddDestination'")
 			)
 		),
 
 		Screen("Application") has (
 			MockUp("ApplicationMockup") has (
-				Image("reference to mockup image \ref{pic:Application")
+				Image("reference to mockup image 'Application'")
 			)
 		),
 
 		Screen("Settings") has (
 			MockUp("SettingsMockup") has (
-				Image("reference to mockup image \ref{pic:Settings}")
+				Image("reference to mockup image 'Settings'")
 			)
 		),
 
 		Screen("TripInformation") has (
 			MockUp("TripInformationMockup") has (
-				Image("reference to mockup image \ref{pic:TripInformation}")
+				Image("reference to mockup image 'TripInformation'")
 			)
 		)
 	)
