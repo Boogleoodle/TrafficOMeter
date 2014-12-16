@@ -93,8 +93,8 @@ Model(
 	),
 
 	Section("Maintenance") has (
-		Feature("SaveLocation") has (
-			Spec("The user can save a location to its destinations for easy access"),
+		Feature("SaveDestination") has (
+			Spec("The user can save a destination to its list of already saved destinations for easy access"),
 			Why("To populate the list of destinations"),
 			Example("Add button in the application"),
 			Cost(32),
@@ -121,8 +121,8 @@ Model(
 			Stakeholder("User") has Benefit(9),
 			Stakeholder("SwedishGovernment") has Benefit(4)
 		),
-		Feature("SearchDestination") has (
-			Spec("The user shall be able to search for destination"),
+		Feature("SearchLocation") has (
+			Spec("The user shall be able to search for location"),
 			Why("To find a location to travel to"),
 			Example("Add an button for opening a search field"),
 			Cost(64),
