@@ -25,13 +25,13 @@ Model(
 		Feature("ShowRouteToFirstStop"),
 		Feature("MaxDistToStop"),
 		Feature("MinWaitTime"),
-		Task("chooseTransportationMeans"),
+		Task("ChooseTransportationMeans"),
 		MockUp("WidgetMockup"),
 		MockUp("ApplicationMockup"),
 		MockUp("TripInformationMockup"),
 		Quality("UpdateStartView"),
 		Design("Widget"),
-		Quality("GPS-position"),
+		Quality("GPSPosition"),
 		Feature("GeographicLocation")
 	),
 	Goal("MinimalUserMaintenance") has (
@@ -42,19 +42,19 @@ Model(
 		Feature("MultipleDestinations"),
 		Feature("SaveLocation"),
 		Feature("SpecifyLocationByMap"),
-		Task("addDestination"),
-		Task("removeDestination"),
-		Quality("Refresh time"),
+		Task("AddDestination"),
+		Task("RemoveDestination"),
+		Quality("RefreshTime"),
 		MockUp("AddDestinationMockup")
 	),
-	Goal("DoNotTieUpInformation") has (
+	Goal("UserTiedInformation") has (
 		Feature("MultiAccessibleUserData"),
 		Feature("KeepAcountPrivate"),
 		Quality("UserIntegrity")
 	),
 	Goal("ReturnOnInvestment") has (
 		Spec("The product needs to create enough value for the users for the product owner to get a return on their investment"),
-		Quality("requestCapacity"),
+		Quality("RequestCapacity"),
 		Quality("Uptime")
 	),
 
