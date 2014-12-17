@@ -231,6 +231,26 @@ Data model is an abstract model of what data is needed in a system, not necessar
 				%HANNES LEVERERAR!
 				Tänk på: adapt the validation to the context and provide rationale for the chosen validation techniques.
 
+	\section{Release planning}
+		Release planning is (just as many other aspects in this document) vital for projects success. Basically release planning is about determening what requirement and feature that should be included in which release. Determining this is NP-hard and often have more than one solution. For reference, when we performed the release planning for our project, we managed to find approximately 450000 different solutions in 2 minutes (this was ofcourse not done by hand).
+
+		\subsection{Release planning by hand}
+			As our project does not contain a lot of dependencies between features it was not that hard to generate an adequate solution. However, if the number of dependecies increase, planning by hand would be much more difficult. Also as the dependencies increase in number it becomes more obvious that release planning actually is a NP-hard problem.
+
+		\subsection{Release planning with reqT}
+			Release planning with reqT is not a valid method if you only plan to do it once and the project isn't that complex. However, as for the most project you will have multiple releases over a long period of time, and keeping track of what requirement or feature that has or has not been implemented is a major task. This can however be made somewhat simpler with reqT if you keep track of the current status of the requirements and features in the project.
+
+			It is not unusual that you do not stick to the plans that has been laid out. This can be both positive and negative, positive if you manage to get more things done than what was originally planned, negative if you did not manage to accomplish what was originally planned. When this happens it is necessary to reschedule fot the next release. This cumbersome task can be managed quite easily with reqT.
+
+			\subsubsection{Our experiences with reqT}
+				Initially the work load for the people that are in charge of the release planning is quite high. All requirements that should be included in the release planning has to be specified, given a cost to implement from each development team, given a benefit for each stakeholder, and constraints such as feature and requirement precedances much be entered. This is usually provided from other part of the project and thus the people responsible for the release planning doesn't have to collect this information from the required sources. However it still has to be entered into the model. This is not a problem if done continuously throughout the project.
+
+				The problem we faced here was that we only performed the release planning once and at the end of the project. Up to this point all the requrements had been specified by different people, in different small models and could not easily be tracked and managed. This was very likely due to lack of understanding of the reqT tool in the group. If we were to do this again we would most likely have structured the requirements differently as to make tasks such as release planning easier.
+
+				Some other things we stumbled upon as we tried to do the release planning were that there were some limitations in reqT that we did not know of, such as a Capacity could not exceed the value 1000, this is to limit the number of possible solutions and thus limiting the calculation time. If you do exceed Capacity values of 1000, reqT can never find a solution as it only says ''Inconsistency Found''. When we lowered the Capacity values we still managed to find roughly 450000 soulutions in 2 minutes. This is most likely due to the fact that there aren't many constraints between the requirements and features in our project.
+
+				The model representing the solution was somewhat horrific, and you had to break down the model in smaller instances to be able to get grip on what the solution was. All releases in the solution contained all of the features and requirements that was in the original model but with 0 cost and benefit. This means that when you tried to generate a graphical representation of the solution it was completely unreadable. Once the model had been broken down and all of the ''ghost features'' was removed the model was much easier to comprehend.
+
 	\section{Future work}
 	%For next release/future
 
@@ -286,7 +306,7 @@ In this paragraph each group member briefly explains its individual contribution
 		\subsubsection{R2}
 		I have been participating in workshop with users and meetings with the customers. Done some more brainstorming, which resulted in a couple of new requirements. I've also been working on putting the requirements in the right place and corrected unambiguous requirements.
 		\subsubsection{R3}
-		Release planning, validation		
+		For release 3 I've been busy with with the release planning. The release planning was made with the help of reqT. Also worked with the validation of the system.
 		
 	\subsection{Hannes}
 		\subsubsection{R1}
@@ -316,9 +336,9 @@ In this paragraph each group member briefly explains its individual contribution
 		\subsubsection{R1}
 		I have been working with tools and setting up the document and file infrastructure. Other than this I have participated in the meetings.
 		\subsubsection{R2}
-	For this release I've mostly been working on the tasks and multiple refactorisations of the aforementioned tasks. Other than that I've been building a script to automatically generate all the external tex-files from scala files to make sure that the latest version of the models are in the system requirements document.
+		For this release I've mostly been working on the tasks and multiple refactorisations of the aforementioned tasks. Other than that I've been building a script to automatically generate all the external tex-files from scala files to make sure that the latest version of the models are in the system requirements document.
 		\subsubsection{R3}
-		Release planning
+		For release 3 I've been busy with with the release planning. The release planning was made with the help of reqT. I also rebuilt the build script. It's better now.
 
 	\subsection{Philip}
 		\subsubsection{R1}
