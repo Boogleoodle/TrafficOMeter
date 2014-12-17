@@ -14,5 +14,11 @@ Model(
 		Req("WidgetPresentation") has (
 			Spec("The data of the widget shall be represented as in the virtual window --ref{pic:vwWidget}")
 		)
+		Req("ExtractingFormat") has (
+			Spec("When extracting statistics from the system it shall be extracted to a semi-colon separated document") 
+		)
+
+
+
 
 )

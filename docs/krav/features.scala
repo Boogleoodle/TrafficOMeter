@@ -189,30 +189,56 @@ Model(
 	),
 
 	Section("Statistics") has (
-		Feature("ExtractStatistics") has (
-			Spec("It shall be possible for the system supervisor(s) to extract statistics from the system"),
-			Why("The statistics are used to get useful information for planning future infrastructure"),
-			Example("The statistics could be extracted using a web interface"),
-			Cost(256),
-			Stakeholder("Customer") has Benefit(2),
+		Feature ("GetPopularMeansOfTransportStatistics") has (
+			Spec("The system shall be able to extract the most preferable means of transportation for different routes"),
+			Why("The information could be used for future planning of the infrstructure. eg. If there are both trains and buses between Point A and Point B and almost everyone uses the train, then the buses might be excessive"),
+			Example("The statistiscs could be extracted using a web interface, on the format specified in Data Requirement ExtractingFormat"),
+			Cost(128),
+			Stakeholder("Costumer") has Benefit(2),
 			Stakeholder("User") has Benefit(0),
-			Stakeholder("SwedishGovernment") has Benefit(25)
+			Stakeholder("Government") has Benefit(25)
 		),
 
-		Feature("GetPopularStatistics") has (
+		Feature("GetPopularLocationStatistics") has (
 			Spec("The system shall be able to provide statistics about which geographical locations are popular"),
 			Why("The Swedish government hopes to be able to use this and other statistics as decision basis when planning infrastructure"),
 			Cost(128),
 			Example("The system supervisor(s) provides the Swedish government with the extracted statistics"),		
-			Stakeholder("Customer") has Benefit(2)
+			Stakeholder("Customer") has Benefit(2),
+			Stakeholder("User") has Benefit(0),
+			Stakeholder("Government") has Benefit(15)
+		),
+		
+		Feature("GetUserStatistics") has (
+			Spec("The system shall be able to extract user statistics of the System"),
+			Why("The information could be used to get an overview of what might be changed about the app or if the app is used at all"),
+			Example("The statistiscs could be extracted using a web interface, on the format specified in Data Requirement ExtractingFormat"),
+			Cost(128),
+			Stakeholder("Costumer") has Benefit(2),
+			Stakeholder("User") has Benefit(0),
+			Stakeholder("Government") has Benefit(2)
 		),
 
+		Feature("GetTravelStatistics") has (
+			Spec("The system shall be able to extract information about frequent travels between point A and point B"),
+			Why("The information could be used for future planning of the infrastructure. If travels between point A and B occurs frequently, then it might say something about the load of this route"),
+			Example("The statistiscs could be extracted using a web interface, on the format specified in Data Requirement ExtractingFormat"),
+			Cost(128),
+			Stakeholder("Costumer") has Benefit(2),
+			Stakeholder("User") has Benefit(0),
+			Stakeholder("Government") has Benefit(25)
+		),
+		
 		Feature("GetRoutesStatistics") has (
 			Spec("The system shall be able to provide statistics about which routes that all users has at a specific time"),
 			Why("This information could be used to extract information about the infrastructure in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc. could be useful"),
 			Cost(128),
 			Example("The system supervisor(s) checks the current traffic information in a given city")
+			Stakeholder("Costumer") has Benefit(2),
+			Stakeholder("User") has Benefit(0),
+			Stakeholder("Government") has Benefit(0)
 		)
+
 	),
 
 	Section("Interfaces") has (
