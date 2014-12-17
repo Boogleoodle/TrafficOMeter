@@ -233,7 +233,7 @@ Model(
 			Spec("The system shall be able to provide statistics about which routes that all users has at a specific time"),
 			Why("This information could be used to extract information about the infrastructure in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc. could be useful"),
 			Cost(128),
-			Example("The system supervisor(s) checks the current traffic information in a given city")
+			Example("The system supervisor(s) checks the current traffic information in a given city"),
 			Stakeholder("Costumer") has Benefit(2),
 			Stakeholder("User") has Benefit(0),
 			Stakeholder("Government") has Benefit(0)
