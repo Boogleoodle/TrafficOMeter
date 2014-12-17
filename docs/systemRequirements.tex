@@ -3,6 +3,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{graphicx}
+\usepackage{graphics}
 \usepackage[nottoc]{tocbibind}
 \usepackage[utf8]{inputenc}
 \usepackage{titlesec}
@@ -158,42 +159,47 @@ The project goal is to develop an app and/or widget where the user can see how t
 
 		\subsection{Quality Requirements}
 		When it comes to quality we consider the issues prioritized in the following way. Below are also explanations to all quality requirements we consider more or less important than as usual.
+		\begin{table}
+		\centering		
+			\resizebox{\columnwidth}{!}{
+			\begin{tabular}{|l|c|c|c|c|c|}
 		
-		\begin{tabular}{|l|c|c|c|c|c|}
-			\hline
-			& Critical & Important & As usual & Unimportant & Ignore \\
-			\hline			
-			\multicolumn{6}{|l|}{\textbf{Operation}} \\	
-			\hline
-			Integrity/Security & & 1 & & & \\
-			\hline
-			Correctness & & & x & & \\			
-			\hline
-			Reliability/Availability & & 2 & & & \\
-			\hline
-			Usability & 3 & & & & \\
-			\hline
-			Efficiency & & 4 & & & \\
-			\hline
-			\multicolumn{6}{|l|}{\textbf{Revision}} \\
-			\hline
-			Maintainability & & & x & & \\
-			\hline
-			Testability & & & x & & \\
-			\hline
-			Flexibility & & & & 5 & \\
-			\hline
-			\multicolumn{6}{|l|}{\textbf{Transition}} \\
-			\hline
-			Portability & 6 & & & & \\
-			\hline
-			Interoperability & & 7 & & & \\
-			\hline
-			Re-usability & & & & & 1 \\
-			\hline
-			Instability & & & x & & \\
-			\hline
-		\end{tabular}
+				\hline
+				& Critical & Important & As usual & Unimportant & Ignore \\
+				\hline			
+				\multicolumn{6}{|l|}{\textbf{Operation}} \\	
+				\hline
+				Integrity/Security & & 1 & & & \\
+				\hline
+				Correctness & & & x & & \\			
+				\hline
+				Reliability/Availability & & 2 & & & \\
+				\hline
+				Usability & 3 & & & & \\
+				\hline
+				Efficiency & & 4 & & & \\
+				\hline
+				\multicolumn{6}{|l|}{\textbf{Revision}} \\
+				\hline
+				Maintainability & & & x & & \\
+				\hline
+				Testability & & & x & & \\
+				\hline
+				Flexibility & & & & 5 & \\
+				\hline
+				\multicolumn{6}{|l|}{\textbf{Transition}} \\
+				\hline
+				Portability & 6 & & & & \\
+				\hline
+				Interoperability & & 7 & & & \\
+				\hline
+				Re-usability & & & & & 1 \\
+				\hline
+				Instability & & & x & & \\
+				\hline
+			\end{tabular}
+			}
+		\end{table}
 		
 		\begin{enumerate}
   			\item It is important to consider how much information about the users (GPS-coordinates etc) is shared with the government.	All data should anonymous and each so that it is never possible to trace data to a person.
