@@ -135,7 +135,7 @@ Model(
 		),
 		Feature("ChangeNameOnDestination") has (
 			Spec("It shall be possible to change the name of a destination"),
-			Why("To make it easier to tell the different destinations apart"),
+			Why("To make it easier to tell the different destinations apart a User might want to change the name of a destination. For example, a User want to change the name of the destination that correlates to the users work to the name: WORK" ),
 			Example("An EDIT button besides the field for the name of the destination"),
 			Cost(8),
 			Stakeholder("User") has Benefit(1),
@@ -153,7 +153,7 @@ Model(
 		),
 		Feature("MultipleDestinations") has (
 			Spec("The user shall be able to store multiple destinations"),
-			Why("It is very useful that the user can store several destinations at the same time without having to do a new search every time he or she wants to go somewere"),
+			Why("It is very useful that the user can store several destinations at the same time without having to do a new search every time he or she wants to go somewhere"),
 			Example("Multiple fields of destinations"),
 			Cost(8),
 			Stakeholder("Customer") has Benefit(4),
@@ -174,7 +174,7 @@ Model(
 		Feature("MultiAccessibleUserData") has (
 			Spec("A single user shall be able to access its information from multiple devices"),
 			Why("User might want to use multiple smartphones and/or tablets, or have obtained a new smartphone or tablet"),
-			Example("The system could support a User profile and a server storage solution so that the User can get its information using multiple devices"),
+			Example("The system could support a User profile and a server storage solution so that the User can get its information using	 multiple devices"),
 			Stakeholder("User") has Benefit(7),
 			Cost(64),
 			Stakeholder("SwedishGovernment") has Benefit(3)
