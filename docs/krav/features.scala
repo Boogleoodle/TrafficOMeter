@@ -142,7 +142,7 @@ Model(
 			Stakeholder("SwedishGovernment") has Benefit(0)
 
 		),
-		Feature("RemoveDestination") has (
+		Feature("DeleteDestination") has (
 			Spec("It shall be possible for the user to remove a previously saved destination"),
 			Why("If that destination no longer is in the interest of the user it shall be possible to remove it"),
 			Example("An Delete button besides the name of the destination"),
