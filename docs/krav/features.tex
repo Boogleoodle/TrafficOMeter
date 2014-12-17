@@ -1,3 +1,294 @@
 \begin{lstlisting}
 
 \end{lstlisting}
+
+
+			 \paragraph{Statistics}
+
+
+\begin{lstlisting}
+Feature GetPopularMeansOfTransportStatistics
+	Spec The system shall be able to extract the most preferable means of transportation for different routes
+	Why The information could be used for future planning of the infrstructure. eg. If there are both trains and buses between Point A and Point B and almost everyone uses the train, then the buses might be excessive
+	Example The statistiscs could be extracted using a web interface, on the format specified in Data Requirement ExtractingFormat
+	Cost 128
+	Stakeholder Costumer
+		Benefit 2
+	Stakeholder User
+		Benefit 0
+	Stakeholder Government
+		Benefit 25
+Feature GetPopularLocationStatistics
+	Spec The system shall be able to provide statistics about which geographical locations are popular
+	Why The Swedish government hopes to be able to use this and other statistics as decision basis when planning infrastructure
+	Cost 128
+	Example The system supervisor(s) provides the Swedish government with the extracted statistics
+	Stakeholder Customer
+		Benefit 2
+	Stakeholder User
+		Benefit 0
+	Stakeholder Government
+		Benefit 15
+Feature GetUserStatistics
+	Spec The system shall be able to extract user statistics of the System
+	Why The information could be used to get an overview of what might be changed about the app or if the app is used at all
+	Example The statistiscs could be extracted using a web interface, on the format specified in Data Requirement ExtractingFormat
+	Cost 128
+	Stakeholder Costumer
+		Benefit 2
+	Stakeholder User
+		Benefit 0
+	Stakeholder Government
+		Benefit 2
+Feature GetTravelStatistics
+	Spec The system shall be able to extract information about frequent travels between point A and point B
+	Why The information could be used for future planning of the infrastructure. If travels between point A and B occurs frequently, then it might say something about the load of this route
+	Example The statistiscs could be extracted using a web interface, on the format specified in Data Requirement ExtractingFormat
+	Cost 128
+	Stakeholder Costumer
+		Benefit 2
+	Stakeholder User
+		Benefit 0
+	Stakeholder Government
+		Benefit 25
+Feature GetRoutesStatistics
+	Spec The system shall be able to provide statistics about which routes that all users has at a specific time
+	Why This information could be used to extract information about the infrastructure in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc. could be useful
+	Cost 128
+	Example The system supervisor(s) checks the current traffic information in a given city
+	Stakeholder Costumer
+		Benefit 2
+	Stakeholder User
+		Benefit 0
+	Stakeholder Government
+		Benefit 0
+
+\end{lstlisting}
+		
+				
+			 \paragraph{ServerToClientCommunication}
+
+
+\begin{lstlisting}
+Feature MultiAccessibleUserData
+	Spec A single user shall be able to access its information from multiple devices
+	Why User might want to use multiple smartphones and/or tablets, or have obtained a new smartphone or tablet
+	Example The system could support a User profile and a server storage solution so that the User can get its information using	 multiple devices
+	Stakeholder User
+		Benefit 7
+	Cost 64
+	Stakeholder SwedishGovernment
+		Benefit 3
+Feature KeepAcountPrivate
+	Spec A user can only access its own destinations
+	Why The data is private and shall not be possible view or change by someone else
+	Cost 32
+	Example The system could provide a login system that protects the data
+
+\end{lstlisting}
+		
+				
+			 \paragraph{Maintenance}
+
+
+\begin{lstlisting}
+Feature SaveDestination
+	Spec The user can save a destination to its list of already saved destinations for easy access
+	Why To populate the list of destinations
+	Example Add button in the application
+	Cost 32
+	Stakeholder Customer
+		Benefit 5
+	Stakeholder User
+		Benefit 15
+	Stakeholder SwedishGovernment
+		Benefit 8
+Feature SpecifyLocationByMap
+	Spec The user can specify the location by moving a target pin on a map
+	Why A map gives more information to the user and makes is easier for the user to communicate its wishes
+	Example Use third party map software
+	Cost 64
+	Stakeholder Customer
+		Benefit 2
+	Stakeholder User
+		Benefit 3
+	Stakeholder SwedishGovernment
+		Benefit 1
+Feature SpecifyMeansOfTravel
+	Spec The User shall be able to specify which of the supported means of transportation it would like to use and then the system shall use the selected means of transportation
+	Why Not all users want to use the same means of travel
+	Example This can be implemented using a settings dialog
+	Cost 4
+	Stakeholder Customer
+		Benefit 4
+	Stakeholder User
+		Benefit 9
+	Stakeholder SwedishGovernment
+		Benefit 4
+Feature SpecifyLocationByAddress
+	Spec The user shall be able to specify a location by providing an address
+	Why The user might need to travel to a specific address
+	Example A text input field, incorporate the Google maps search engine
+	Cost 64
+	Stakeholder Customer
+		Benefit 5
+Feature ChangeNameOnDestination
+	Spec It shall be possible to change the name of a destination
+	Why To make it easier to tell the different destinations apart a User might want to change the name of a destination. For example, a User want to change the name of the destination that correlates to the users work to the name: WORK
+	Example An EDIT button besides the field for the name of the destination
+	Cost 8
+	Stakeholder User
+		Benefit 1
+	Stakeholder SwedishGovernment
+		Benefit 0
+Feature RemoveDestination
+	Spec It shall be possible for the user to remove a previously saved destination
+	Why If that destination no longer is in the interest of the user it shall be possible to remove it
+	Example An Delete button besides the name of the destination
+	Cost 8
+	Stakeholder Customer
+		Benefit 4
+	Stakeholder User
+		Benefit 2
+	Stakeholder SwedishGovernment
+		Benefit 0
+Feature MultipleDestinations
+	Spec The user shall be able to store multiple destinations
+	Why It is very useful that the user can store several destinations at the same time without having to do a new search every time he or she wants to go somewhere
+	Example Multiple fields of destinations
+	Cost 8
+	Stakeholder Customer
+		Benefit 4
+	Stakeholder User
+		Benefit 7
+	Stakeholder SwedishGovernment
+		Benefit 3
+Feature OrderDestinations
+	Spec It shall be possible for the user to order its destinations in an priority order
+	Why The screen of a smart phone might not be big enough to display all	of a users destinations. Therefore it would be convenient for the user to order its destination in an priority order
+	Example A ORDER alternative in the settings for the widget where the user is able to drag and drop its destinations up and down to match the actual view on the widget
+	Cost 16
+	Stakeholder Customer
+		Benefit 5
+
+\end{lstlisting}
+		
+				
+			 \paragraph{Support}
+
+
+\begin{lstlisting}
+Feature Language
+	Spec The system shall have support for both Swedish and English
+	Why To make the product available for more people
+	Example A setting where one can use the language to be used
+	Cost 64
+Feature Android
+	Spec The system shall support Android
+	Why A big share of the smart phone and tablet market uses the Android operating system
+	Cost 64
+	Stakeholder User
+		Benefit 5
+Feature IOS
+	Spec The system shall support IOS
+	Why A big share of the smart phone and tablet market uses the IOS operating system
+	Cost 64
+	Stakeholder User
+		Benefit 5
+
+\end{lstlisting}
+		
+				
+			 \paragraph{Usage}
+
+
+\begin{lstlisting}
+Feature ViewNextOption
+	Spec The user shall be able to choose to discard the displayed trip to a destination and instead get the next trip to the same destination
+	Why Because the time to the fastest alternative may not be enough for the user to get ready to leave
+	Example Get the second fastest option by swiping the current option for the destination off the screen
+	Cost 8
+	Stakeholder Customer
+		Benefit 4
+Feature FastestTrip
+	Spec The system shall automatically show the total travel time of the fastest trip
+	Why So the user can see how long time it takes to travel to the destinations
+	Example Show a list of destinations and in this list show the time it takes to get to the different alternatives
+	Cost 2
+	Stakeholder Customer
+		Benefit 5
+	Stakeholder User
+		Benefit 9
+	Stakeholder SwedishGovernment
+		Benefit 10
+Feature GeographicalStartingPoint
+	Spec The system shall be able to use the user's geographical location as a starting point for a trip
+	Why The position shall be used as the starting point when determining the route
+	Example Use native GPS or WiFi-positioning feature of platforms
+	Cost 32
+	Stakeholder Customer
+		Benefit 3
+Feature ShowRouteToFirstStop
+	Spec When the user selects a specific travel option the route between the current position and the first stop shall be accessible
+	Why The user might not find its way in the current area, and shall be able to get to the first stop quickly
+	Example Show the route between current position and first stop on a map.
+	Cost 16
+	Stakeholder Customer
+		Benefit 3
+	Stakeholder User
+		Benefit 8
+	Stakeholder SwedishGovernment
+		Benefit 4
+Feature MaxDistToStop
+	Spec The user shall be able to specify the maximum distance in a transfer between two adjacent stops.
+	Why The user might not want to walk several minutes between stops in a transfer
+	Cost 32
+	Stakeholder Customer
+		Benefit 4
+Feature MinWaitTime
+	Spec The user shall be able to specify the minimum waiting time in a transfer between two adjacent stops.
+	Why The user might want to be guaranteed some time for the transfers to not feel stressed
+	Cost 32
+	Stakeholder Customer
+		Benefit 4
+
+\end{lstlisting}
+		
+				
+			 \paragraph{MeansOfTransportation}
+
+
+\begin{lstlisting}
+Feature SupportBuses
+	Spec The System shall retrieve information for all bus lines in Sweden that has an accessible API
+	Why To support as many bus lines as possible
+	Cost 128
+	Stakeholder Customer
+		Benefit 5
+Feature SupportTrains
+	Spec The System shall retrieve information for all train lines in Sweden that has an accessible API
+	Why To support as many train lines as possible
+	Cost 128
+	Stakeholder Customer
+		Benefit 5
+Feature SupportFerries
+	Spec The System shall retrieve information for all ferry lines in Sweden that has an accessible API
+	Why To support as many ferry lines as possible
+	Cost 128
+	Stakeholder Customer
+		Benefit 5
+
+\end{lstlisting}
+		
+				
+			 \paragraph{Interfaces}
+
+
+\begin{lstlisting}
+Feature ExtractDataFromProviders
+	Spec Extract travel data from regional public transportation administrators
+	Why Obtaining travel data from this source is a vital part of our system, since it is used in all calculations
+	Cost 256
+	Example If the user wants to know the fastest trip to its home, the system will need the time tables of all the transportation means involved
+
+\end{lstlisting}
