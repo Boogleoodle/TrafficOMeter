@@ -6,6 +6,9 @@ Model(
 		),
 		Goal("userTravelStatistics") has (
 			Spec("The government wants statistics relevant for research purposes, to improve future infrastructure")
+		),
+		Goal("AccessibleForEverybody") has (
+			Spec("As the government is supporting the project it needs to be developed for all Swedish citizens and tourists in Sweden")
 		)
 	),
 
@@ -16,6 +19,9 @@ Model(
 		),
 		Goal("minimalUserMaintenance") has (
 			Spec("The user wants to know the total time to get to a frequently visited destinations without having to manually insert information every time")
+		),
+		Goal("NotTieUpInformation") has (
+			Spec("The information should be connected to the user and not tied to the user")
 		)
 	),
 
@@ -23,6 +29,9 @@ Model(
 		Text("The product owner is a company that has been hired by the Swedish government to develop the solution to their goal of getting more people to use public transport. The product owner will also implement the system"),
 		Goal("returnOnInvestment") has (
 			Spec("The product needs to create enough value for the users for the product owner to get a return on their investment")
+		),
+		Goal("ReplaceCurrentSoftware") has (
+			Spec("The product owner wants the system to support the functions that the users to use it as their main search tool for transports.")
 		)
 	),
 
