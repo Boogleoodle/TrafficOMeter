@@ -4,7 +4,7 @@ Model(
 		Goal("MoreTravel") has (
 			Spec("Increase the use of public transportation by making it a more effortless to find travel connections")
 		),
-		Goal("userTravelStatistics") has (
+		Goal("UserTravelStatistics") has (
 			Spec("The government wants statistics relevant for research purposes, to improve future infrastructure")
 		),
 		Goal("AccessibleForEverybody") has (
