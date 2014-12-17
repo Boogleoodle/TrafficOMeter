@@ -34,25 +34,21 @@ fi
 
 
 cd docs/
-pdflatex systemRequirements.tex
-pdflatex systemRequirements.tex
-rm systemRequirements.toc
-rm systemRequirements.aux
-rm systemRequirements.out
-rm systemRequirements.log
+files=("systemRequirements" "checklist" "projectExperiences")
+for f in ${files[@]};
+do
+	echo "Building: $f"
+	pdflatex $f.tex | cat > $f.cat
+	echo "Rebuilding $f to ensure that references are correct."
+	pdflatex $f.tex | cat > $f.cat
+	echo "Cleaning up the mess after pdflatex..."
+	rm $f.toc
+	rm $f.aux
+	rm $f.out
+	rm $f.log
+	echo "$f built"
+	echo " "
+done
 
-pdflatex checklist.tex
-pdflatex checklist.tex
-rm checklist.toc
-rm checklist.aux
-rm checklist.out
-rm checklist.log
-
-pdflatex projectExperiences.tex
-pdflatex projectExperiences.tex
-rm projectExperiences.toc
-rm projectExperiences.aux
-rm projectExperiences.out
-rm projectExperiences.log
-
+echo "--- the cats keeps track of the errors ---"
 
