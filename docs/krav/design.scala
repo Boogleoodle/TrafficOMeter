@@ -23,31 +23,36 @@ Model(
 
 		Screen("Widget") has (
 			MockUp("WidgetMockup") has (
-				Image("reference to mockup image 'Widget'")
+				Spec("The layout of the widget can be designed as in:"),
+				Image("Figure 12: Widget")
 			 )
 		),
 
 		Screen("AddDestination") has (
 			MockUp("AddDestinationMockup") has (
-				Image("reference to mockup image 'AddDestination'")
+				Spec("The graphical interface for adding a destination can be designed as in:"),
+				Image("Figure 11: AddDestination")
 			)
 		),
 
 		Screen("Application") has (
 			MockUp("ApplicationMockup") has (
-				Image("reference to mockup image 'Application'")
+				Spec("The main window of the application can be designed as in:"),
+				Image("Figure 8: Application")
 			)
 		),
 
 		Screen("Settings") has (
 			MockUp("SettingsMockup") has (
-				Image("reference to mockup image 'Settings'")
+				Spec("The graphical interface for the settings of the application can be designed as in:"),
+				Image("Figure 10: Settings")
 			)
 		),
 
 		Screen("TripInformation") has (
 			MockUp("TripInformationMockup") has (
-				Image("reference to mockup image 'TripInformation'")
+				Spec("The view of detailed information about a trip can be designed as in:"),
+				Image("Figure 9: TripInformation")
 			)
 		)
 	)
