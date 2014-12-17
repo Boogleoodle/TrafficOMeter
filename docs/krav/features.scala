@@ -74,7 +74,7 @@ Model(
 		)
 	),
 
-	Section("Means of transportation") has (
+	Section("MeansOfTransportation") has (
 		Feature("SupportBuses") has (
 			Spec("The System shall retrieve information for all bus lines in Sweden that has an accessible API"),
 			Why("To support as many bus lines as possible"),

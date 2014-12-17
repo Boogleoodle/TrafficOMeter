@@ -35,7 +35,7 @@ Model(
 		)
 	),
 
-	Stakeholder("regionalPublicTransportationAdministrators") has (
+	Stakeholder("RegionalPublicTransportationAdministrators") has (
 		Text("The regional public transportation administrators will get more customers with this product on the market. This will bring them higher income and more maintenance work"),
 		Goal("userTravelStatistics") has (
 			Spec("The system will provide data about the users' possible travels that can be analyzed to reveal flaws in the local transportation systems")

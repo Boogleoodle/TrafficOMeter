@@ -8,7 +8,7 @@ Model(
 		Req("RouteInformation") has (
 			Spec("The data of the screen that shows the route information shall be represented as in the virtual window --ref{pic:vwRoute}")
 		),
-		Req("Traveling Settings") has (
+		Req("TravelingSettings") has (
 			Spec("The data of the screen that handles the editing of traveling settings shall be represented as in the virtual window --ref{pic:vwSettings}")
 		),
 		Req("WidgetPresentation") has (
