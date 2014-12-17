@@ -1,5 +1,5 @@
 Model(
-	Term("Means of transportation") has (
+	Term("MeansOfTransportation") has (
 		Spec("Type of vehicle in which the public transport takes place"),
 		Example("Bus, train, or ferry.")
 	),
@@ -18,12 +18,12 @@ Model(
 		Example("Means of transportation A departs at time B")
 	),
 
-	Term("Line of Transportation") has (
+	Term("LineOfTransportation") has (
 		Spec("A set of 'stop's that is served by the same vehicle. There is one line for each direction between the stops."), 
 		Example("Bus 6 in Lund, Bus 171 between Malmoe and Lund")
 	),
 
-	Term("Geographical Location") has (
+	Term("GeographicalLocation") has (
 		Spec("Consists of GPS coordinates to determain a location"),
 		Example("lat: 55.71037075564825, lon: 13.208270072937012")
 	),

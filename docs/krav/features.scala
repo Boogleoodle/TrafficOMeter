@@ -74,7 +74,7 @@ Model(
 		)
 	),
 
-	Section("Means of transportation") has (
+	Section("MeansOfTransportation") has (
 		Feature("SupportBuses") has (
 			Spec("The System shall retrieve information for all bus lines in Sweden that has an accessible API"),
 			Why("To support as many bus lines as possible"),
@@ -142,7 +142,7 @@ Model(
 			Stakeholder("SwedishGovernment") has Benefit(0)
 
 		),
-		Feature("RemoveDestination") has (
+		Feature("DeleteDestination") has (
 			Spec("It shall be possible for the user to remove a previously saved destination"),
 			Why("If that destination no longer is in the interest of the user it shall be possible to remove it"),
 			Example("An Delete button besides the name of the destination"),
@@ -233,7 +233,7 @@ Model(
 			Spec("The system shall be able to provide statistics about which routes that all users has at a specific time"),
 			Why("This information could be used to extract information about the infrastructure in a specific city. From the information things like number of transfers, the given time it takes relative to the distance covered etc. could be useful"),
 			Cost(128),
-			Example("The system supervisor(s) checks the current traffic information in a given city")
+			Example("The system supervisor(s) checks the current traffic information in a given city"),
 			Stakeholder("Costumer") has Benefit(2),
 			Stakeholder("User") has Benefit(0),
 			Stakeholder("Government") has Benefit(0)
