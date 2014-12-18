@@ -10,7 +10,7 @@
 \usepackage{fancyhdr}
 \usepackage{float}
 \pagestyle{fancy}
-\lhead{Traffic-O-Meter}
+\lhead{Traffic-o-meter}
 \rhead{Version 3.0} %\thepage}
 %\cfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -114,6 +114,7 @@ The project goal is to develop an app and/or widget where the user can see how t
 			\item[\textbf{Product Owner}] The product owner is responsible for  developing Traffic-o-meter. The product owner will also maintain the product after its release. They have been contracted to do this by the Swedish government.		
 			\item[\textbf{Competitors}] Similar systems, the competitors, compete for the users. They are another opportunity for the user to see possible trips. They use the public transport databases.
 		\end{itemize}
+
 		
 	
 	
@@ -152,7 +153,7 @@ The project goal is to develop an app and/or widget where the user can see how t
 
 		\subsection{Quality Requirements}
 		When it comes to quality we consider the issues prioritized in the following way. Below are also explanations to all quality requirements we consider more or less important than as usual.
-		\begin{table}
+		\begin{figure}[H]
 		\centering		
 			\resizebox{\columnwidth}{!}{
 			\begin{tabular}{|l|c|c|c|c|c|}
@@ -186,19 +187,19 @@ The project goal is to develop an app and/or widget where the user can see how t
 				\hline
 				Interoperability & & 7 & & & \\
 				\hline
-				Re-usability & & & & & 1 \\
+				Re-usability & & & & & 8 \\
 				\hline
 				Instability & & & x & & \\
 				\hline
 			\end{tabular}
 			}
-		\end{table}
+		\end{figure}
 		
 		\begin{enumerate}
   			\item It is important to consider how much information about the users (GPS-coordinates etc) is shared with the government.	All data should anonymous and each so that it is never possible to trace data to a person.
   			\item People will use the service every day and if the uptime is low, it will cause irritation among the users as well as bad publicity.
   			\item If the software does not have high usability, it will defeat its purpose and will not be fast and easy to use. This is one of the competitive advantages of the system.
-  			\item It should be fast and easy to get travel information updates. For example if a bus is early, the user should be notified so he/she do not miss it.
+  			\item It should be fast and easy to get travel information updates. For example if a bus is early, the user should be notified so that the user do not miss it.
   			\item Our clients explicitly said they did not want any further development of the service. However, the service should still be possible to update but it does not for example need support for extension.
   			\item It was important of our clients for the service to work on several platforms. We also have feature requirements for the platforms the service should support.
   			\item Different stakeholders might want statistics in different forms.
@@ -209,7 +210,46 @@ The project goal is to develop an app and/or widget where the user can see how t
 	\section{Goal-Domain Tracing}
 	 To show that all goals are covered by the domain level requirements we have provided a goal-domain tracing. \\
 		\input{krav/goalRequirementTracing.tex}		
-		
+
+	\section{Release planning}
+		\begin{table}[h]
+			\begin{tabular}{|l|r|r|r|r|} \hline
+				\multicolumn{2}{|l|}{}	& \multicolumn{3}{c|}{\textbf{Benefit}} \\ \hline
+				\textbf{Feature} & \textbf{Cost} & \textbf{Cust} & \textbf{User} & \textbf{Govt} \\ \hline
+				SaveLocation	& 32 & 5 & 15 & 8 \\ 
+				GetTravelStatistics	& 128 & 2 & 0 & 25 \\
+				Fastest Trip	& 2 & 5 & 9 & 10 \\
+				SpecifyMeansOfTravel	& 4 & 4	& 9 & 4 \\
+				ShowRouteToFirstStop	& 16 & 3 & 8 & 4 \\
+				MultipleDestinations	& 8 & 4 & 7 &3 \\
+				MultipleAccessibleUserData	& 64 & 0 & 7 & 3 \\
+				RemoveDestination	& 8 & 4 & 2 & 0 \\
+				SpecifyLocationByMap	& 64 & 2 & 3 & 1 \\
+				OrderDestinations	& 16 & 5 & 0 & 0 \\
+				SeachLocations	& 64 &5 & 0 & 0 \\
+				SupportBuses	& 128 & 5 & 0 & 0 \\
+				SupportTrains	& 128 & 5 & 0 & 0 \\
+				SupportFerries	& 128 & 5 & 0 & 0 \\
+				ViewNextOption	& 8 & 4 & 0 & 0 \\
+				MaxDistToStop	& 32 & 4 & 0 & 0 \\
+				MinWaitTime	& 32 & 4 & 0 & 0 \\
+				GeographicalStartingPoint	& 32 & 3 & 0 & 0 \\
+				GetPopularLocationStatistics	& 128 & 2 & 0 & 15 \\ 
+				ChangeNameOfDestination	& 8 & 0 & 1 & 0 \\
+				KeepAccountPrivate	& 32 & 0 & 0 & 0 \\
+				Language	& 64 & 0 & 0 & 0 \\
+				GetRoutesStatistics	& 128 & 2 & 0 & 0 \\
+				ExtractDataFromProviders	& 256 & 0 & 0 & 0 \\
+				GetpopularMeansOfTransportStatistics	& 128 & 2 & 0 & 5 \\
+				GetUserStatistics	& 128 & 2 & 0 & 2 \\ \hline
+		\end{tabular}
+	\end{table}
+
+		\input{rel_plan/rel_plan.tex}
+%		\input{rel_plan/r3r1.tex}
+%		\input{rel_plan/r3r2.tex}
+%		\input{rel_plan/r3rlater.tex}
+				
 	%\newline
 	\section{Appendix: Pictures} % (fold)
 		\label{sec:appendix}

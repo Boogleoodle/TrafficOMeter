@@ -21,17 +21,17 @@ Model(
 			Spec("The user wants to know the total time to get to a frequently visited destinations without having to manually insert information every time")
 		),
 		Goal("UserTiedInformation") has (
-			Spec("The information should be connected to the user and not tied to the users device")
+			Spec("The information should be connected to the user and not tied to the user's device")
 		)
 	),
 
 	Stakeholder("ProductOwner") has (
 		Text("The product owner is a company that has been hired by the Swedish government to develop the solution to their goal of getting more people to use public transport. The product owner will also implement the system"),
 		Goal("ReturnOnInvestment") has (
-			Spec("The product needs to create enough value for the users for the product owner to get a return on their investment")
+			Spec("The product needs to create enough value for the users, so that the product owner can benefit from their investment")
 		),
 		Goal("ReplaceCurrentSoftware") has (
-			Spec("The product owner wants the system to support the functions that the users to use it as their main search tool for transports.")
+			Spec("The product owner wants the system to support the functions that appeal to the users, in such way that they will use the product as their main search tool for transports.")
 		)
 	),
 

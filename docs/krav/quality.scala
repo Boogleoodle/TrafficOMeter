@@ -65,7 +65,7 @@ Model(
 
 	Section("Security") has (
 		Quality("UserIntegrity") has (
-			Spec("The system shall not provide any statistics that could be used to track a single users travel habits or specific user positions"),
+			Spec("The system shall not provide any statistics that could be used to track a single user's travel habits or specific user positions"),
 			Cost(32),
 			Stakeholder("Customer") has Benefit(1)
 		)
