@@ -9,14 +9,14 @@ Model(
 		),
 		Feature("Android") has (
 			Spec("The system shall support Android"),
-			Why("A big share of the smart phone and tablet market uses the Android operating system"),
+			Why("A big share of the smartphone and tablet market uses the Android operating system"),
 			Cost(64),
 			Stakeholder("User") has Benefit(5)
 		),
 
 		Feature("IOS") has (
 			Spec("The system shall support IOS"),
-			Why("A big share of the smart phone and tablet market uses the IOS operating system"),
+			Why("A big share of the smartphone and tablet market uses the IOS operating system"),
 			Cost(64),
 			Stakeholder("User") has Benefit(5)
 		)
@@ -162,7 +162,7 @@ Model(
 		),
 		Feature("OrderDestinations") has (
 			Spec("It shall be possible for the user to order its destinations in an priority order"),
-			Why("The screen of a smart phone might not be big enough to display all	of a users destinations. Therefore it would be convenient for the user to order its destination in an priority order"),
+			Why("The screen of a smartphone might not be big enough to display all	of a users destinations. Therefore it would be convenient for the user to order its destination in an priority order"),
 			Example("A ORDER alternative in the settings for the widget where the user is able to drag and drop its destinations up and down to match the actual view on the widget"),
 			Cost(16),
 			Stakeholder("Customer") has Benefit(5)

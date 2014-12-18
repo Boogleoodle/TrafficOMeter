@@ -30,10 +30,19 @@ then
 		sed 's/\ \ /\t/g' $f.tmp.tmp | cat > $f
 		rm $f.*
 	done
+	for f in docs/rel_plan/*.tex;
+	do
+		sed 's/section/subsection/g' $f | cat > $f.tmp
+		sed 's/\ \ /\t/g' $f.tmp | $f
+		rm $f.tmp
+	done
 fi
 
 
 cd docs/
+
+
+
 files=("systemRequirements" "checklist" "projectExperiences")
 for f in ${files[@]};
 do
