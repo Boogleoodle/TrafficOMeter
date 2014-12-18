@@ -19,7 +19,7 @@ then
 	echo "reformating the tex files to suit our project better than what reqT's standard does"
 	for f in docs/krav/*.tex;
 	do
-#		echo "$f"
+		echo "Processing:	$f"
 		sed '/chapter/d' $f | cat > $f.tmp
 		if [[ $f = "docs/krav/features.tex" ]]
 		then 
@@ -30,10 +30,12 @@ then
 		sed 's/\ \ /\t/g' $f.tmp.tmp | cat > $f
 		rm $f.*
 	done
+
 	for f in docs/rel_plan/*.tex;
 	do
+		echo "Processing:	$f"
 		sed 's/section/subsection/g' $f | cat > $f.tmp
-		sed 's/\ \ /\t/g' $f.tmp | $f
+		sed 's/\ \ /\t/g' $f.tmp | cat > $f
 		rm $f.tmp
 	done
 fi
