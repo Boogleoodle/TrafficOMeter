@@ -18,7 +18,7 @@
 	\pagebreak
 	
 	\section{About this document}
-We have done a project in the course Requirements Engineering. The project has consisted of two parts, one part where we produced a requirements specification for a system and one part where we were clients to another group writing requirements for our system. The larger part was making the system requirements specification. For the actual requirements specification, check out the document systemRequirements.pdf. This report describes the process used, techniques and why they were chosen, learning outcomes and a personal statement from each team member on their individual contribution.
+We have done a project in the course requirements engineering. The project consisted of two parts, one part where we produced a requirements specification for another group and one part where we were clients to another group. The bigger part was making a system requirements specification. For the actual requirements specification, check out the document systemRequirements.pdf. This report describes the process used, techniques chosen and why, learning outcomes and a personal statement from each team member on their individual contribution.
 
 	\section{Elicitation Methods/Techniques}
 	%Description of the techniques
@@ -50,7 +50,7 @@ Brainstorming is a good method to use in the beginning of a project to get start
 		\subsubsection{Why chosen}
 		Identifying the stakeholders in the beginning of the project will allow us to elicit more requirements early on. By knowing the stakeholders we can divide the requirements in to certain groups, which makes the specification and validation easier.
 		\subsubsection{Outcome}
-The outcome of using stakeholder analysis was that we came to insight for whom we are really making the system.  This led to a meeting with our customers in which we realized that the government should be included, which is something that we hadn't discussed before. There was also some entities that are affected by the product but not considered as stakeholders, such as rivalling companies and services. The different entities are hard to tell apart before making a stakeholder analysis but are very important for the outcome of other parts of the project, such as the release planning. Having determined the stakeholders made some parts of the elicitation and specification easier, as we knew more about who were affected by the product. This made creation of goal requirements easier as we could tie them to a specific stakeholder.
+We came to the insight for whom we are really making the system. This led to a meeting with our customers in which we realized that the government should be included, which is something that we hadn't discussed before.
 	The following stakeholders were identified:
 
 		\begin{itemize}
@@ -59,7 +59,7 @@ The outcome of using stakeholder analysis was that we came to insight for whom w
 			\item The regional public transportation companies (Länstrafikbolagen). 
 			\item The Swedish Government\footnote{Forgotten during stakeholder analysis but added during the construction of the Context diagram, see section \ref{subsec:context}}.
 		\end{itemize}
-		
+				
 		\subsection{Similar companies}
 			In order to get inspiration and see what similar services there are today, it can be a good idea to look at competitors' or partners' services. This is not a technique in itself but is often used with for example observation.
 	
@@ -75,7 +75,7 @@ The outcome of using stakeholder analysis was that we came to insight for whom w
 		\subsubsection{Why chosen}
 		We used this method to get an idea of what a finished product might look like and to get inspiration on features to include in our solution.
 		\subsubsection{Outcome}
-		The method helped us to develop many of our system requirements and it generated questions that we could discuss with our customers to get a better final product.
+		Observing and analysing other companies' solutions to the problem helped us to develop many of our system requirements and it generated questions that we could discuss with our customers to get a better final product. The members of our team have, more or less, all used applications similar to the one we were supposed to develop. This in it self gave some domain knowledge and ideas of what could be implemented. Examples of what requirements that emerged during this phase is the maximum distance to walk and minimum time to wait at a switch.
 
 
 		\subsection{Focus group \& design workshop}
@@ -92,18 +92,22 @@ We found out that the potential users did not want too much information and that
 	Finding the requirements is only a fraction of the requirements process. Defining and documenting them is the second step, which is known as requirements specification. This subprocess of requirements engineering involves how we want to present the requirements as well as defining what kind of requirements they are. How to represent different requirements depend on what level they are on which kind of requirement it is (data requirement, quality requirement, feature requirement etcetera). Under
 levels we explain the different levels of requirements and how these relate to our requirements.  We also explain the different techniques we used for specification. There is a short paragraph explaining each technique and then follows how we applied it, why and what the outcome was.
 
-		\subsection{Levels}
-		The different levels of requirements.
-		
-		
+	\subsection{Levels}
+		It is crucial to gather requirements on the higher levels in order to understand the context.
+		\begin{itemize}
+		\item Goal level, high level requirements, often related to business goals.
+		\item Domain level, often involves what problems to be solved.
+		\item Product level, typically function requirements.
+		\item Design level, often how to solve the problems, for example algorithms to be used.
+	\end{itemize}
 		
 		\subsection{Data model}
-A data model is an abstract model of what data is needed in a system. It is not necessarily a requirement but in our case we use the model as a requirement. Data model is an efficient and unambiguous way of visualizing the data the system requires. Data models are similar in structure to E/R-diagrams which makes them more suitable for the developers.
+A data model is an abstract model of what data is needed in a system. It is not necessarily a requirement but in our case we use the model as a requirement.
 	
 		\subsubsection{Application}
-		We chose the user as a starting point and tried to investigate what kind of data that we would need to be able to give the functionality required. 
+		We chose the user as a starting point and tried to investigate what kind of data that we would need to be able to give the functionality required.
 		\subsubsection{Why chosen}
-		The data model gives us an overview of the system, together with the definitions, make it easier to show how the different parts of the system relates to each other. As we are not going to develop the system ourselves it is important that we can present the structure of the system for the developers. 
+		We used it to realize which kind of data the system would need.
 		\subsubsection{Outcome}
 	We got a lot of definitions out of putting it together since we needed to discuss what we meant by the entities in the model (coming in a data dictionary in release 2).
 
@@ -116,13 +120,18 @@ A data model is an abstract model of what data is needed in a system. It is not 
 			\subsubsection{Outcome}
 				We got clearer view on how the system would interact with the customer and what kind of data structure was needed. It really gave us a good start on what kind of data was needed and where the data was need. Together wit the Design Workshop in our "project backpack", it gave us a good start for the designing of the screens.
 		\subsection{Context diagram} \label{subsec:context}
-		A picture of how the system fits in to/interacts with its inner domain. It is used to realize what systems/people directly interacts with the product.
+		A picture of how the system fits in to/interacts with its inner domain. It is used to realize what systems/people directly interacts with the product. The outer domain can also be included to give even better understanding of how the system fits into the surroundings.
 			\subsubsection{Application}
 			We chose the user as a starting point and reasoned about what the user needed to use the product for, from that we realized that the product needed to interact with a couple of systems. Then we reasoned about why the government wanted the product (to increase the use of public transport) which got us to realize that they would want statistics from the system.
+			
+			After release 2 we got the tip to extend the context diagram to include the outer domain as well. When we looked at which stakeholders that had not been included in the first version we saw that the product owner should have been in the inner domain. We also added Competitors and the regional public transportation administrators to the diagram.
+			
 			\subsubsection{Why chosen}
 			We wanted to get an overview of how the system interacts with the actors and who might be affected by the system.
 			\subsubsection{Outcome}
 			When we were discussing the context diagram we realized that we were missing a stakeholder that we did not find during the stakeholder analysis. The missing stakeholder was the government that wants to get statistics from the system. 
+			
+			When adding the outer domain to the context diagram we realized that the product owner should have been in the inner domain. We also added competitors as a stakeholder, something we had not thought to do before since we didn't think they affected us - but they do since if the user decide to use them instead of us the product will not be successful.
 
 		\subsection{QUPER}
 		Used for quality requirements to deal with the problem of knowing if a little better for example performance would improve the product a lot or just be unnecessary. It is a way to see clearly in what range we want our quality requirements to be/how hard we want to work to satisfy them to a certain degree.
