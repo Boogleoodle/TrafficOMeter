@@ -98,23 +98,22 @@ The project goal is to develop an app and/or widget where the user can see how t
 	\section{Domain}
 		\begin{figure}[H]
 				\includegraphics[scale=0.50]{img/Context-v3.png}
-			\caption{The Context Diagram of the system.}
+			\caption{Context Diagram for the system}
 		\end{figure}
 		
-		 The inner domain is inside the oval but the outer domain is also included to show how the system interacts with the outside world.
 	\subsection{The parts of the context diagram}			
 		\begin{itemize}
 
-			\item[\textbf{Swedish Government}] The part of the government that is involved in public transport has contracted the product owner to create the product. They have delegated the responsibility of administrating public transportation to regional public transportation administrators. From these administrators they get feedback of how everything is working. The finished product will give statistics to the government about the usage.
-			\item[\textbf{User}] An individual using the system. It communicates with the product by being able to manage settings and in return it get to see trips. The user uses public transportation. If the user is not satisfied with the product the may turn to similar systems instead, our competitors, and get their possible trips by looking at their timetables.
+			\item[\textbf{Swedish Government}] The part of the Government that is involved in public transport has contracted the Product Owner to create Traffic-o-meter. They have delegated the responsibility of administrating Public Transportation to Regional Public Transportation Administrators. From these administrators they get feedback of how everything is working. Traffic-o-meter will give statistics to the Government about the usage.
+			\item[\textbf{User}] An individual using the system. It communicates with Traffic-o-meter by being able to manage settings and in return it get to see trips. The User uses Public Transportation for their daily travel. If the user is not satisfied with Traffic-o-meter the may turn to similar systems instead, our Competitors, and get their possible trips by looking at their timetables.
 			\item[\textbf{GPS system}] The native GPS of the device or WI-FI location services. The GPS system gives information to the product about the location of a device.
-			\item[\textbf{Public Transportation}] The public transportation is the actual means of transportation that go around transporting users (and other people). It is administrated by the regional public transportation administrators. And runs after the information in the public transport databases.
-			\item[\textbf{PTD}] Public transport databases contains information regarding time tables, stops, means of transport and delays. The product use this information when calculating trips. The competitors also uses the public transport databases for this purpose. Public transport databases are used to know when public transportation is supposed to leave, and the databases are updated if the public transportation is for example delayed. The databases are updated by the regional public transportation administrators.
-			\item[\textbf{RPTA}] The regional Public Transportation administrators have been given the responsibility to handle public transport by the government. They administrate public transportation and get maintenance requests from them. They create and update the public transport databases and analyse the data in them to see if it needs to be modified.
+			\item[\textbf{Public Transportation}] The Public Transportation is the actual means of transportation that go around transporting Users (and other people). It is administrated by the Regional Public Transportation Administrators and runs after the information in the Public Transport databases.
+			\item[\textbf{PTD}] Public Transport databases contains information regarding time tables, stops, means of transport and delays. Traffic-o-meter uses this information when calculating trips. The Competitors also uses the Public Transport databases for this purpose. Public Transport databases store information about when public transportation is supposed to leave, and the databases are updated if the Public Transportation is for example delayed. The databases are updated by the Regional Public Transportation Administrators.
+			\item[\textbf{RPTA}] The Regional Public Transportation administrators have been given the responsibility to handle Public Transport, in a specific part of Sweden, by the government. They administrate Public Transportation and get maintenance requests from them. They create and update the Public Transport databases and analyse the data in them to improve the timetables in the future.
 			
-			\item[\textbf{Traffic-o-meter}] Trafic-o-meter is the product being developed. It gets its positioning data from available GPS systems. It is developed and maintained by the Product owner. The product gives the government statistics of its usage. It gets information about times, stops and means of transport from the public transport databases. The product communicates with the user by showing its trips and destinations. The user can also add or manage its settings.
-			\item[\textbf{Product Owner}] The product owner is responsible for  developing Traffic-o-meter. The product owner will also maintain the product after its release. They have been contracted to do this by the Swedish government.		
-			\item[\textbf{Competitors}] Similar systems, the competitors, compete for the users. They are another opportunity for the user to see possible trips. They use the public transport databases.
+			\item[\textbf{Traffic-o-meter}] Trafic-o-meter is the product being developed. It gets its positioning data from available GPS systems. It is developed and maintained by the Product Owner. The product gives the Government statistics of its usage. It gets information about times, stops and means of transport from the Public Transport databases. Traffic-o-meter communicates with the user by showing its trips and destinations. The User can also add or manage its settings.
+			\item[\textbf{Product Owner}] The Product Owner is responsible for  developing Traffic-o-meter. The product owner will also maintain the product after its release. They have been contracted to do this by the Swedish government.		
+			\item[\textbf{Competitors}] Similar systems, the Competitors, compete for the Users. They are another opportunity for the user to see possible trips. They use the same Public Transport databases as Traffic-o-meter.
 		\end{itemize}
 
 	
