@@ -8,8 +8,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{titlesec}
 \usepackage{fancyhdr}
+\usepackage{float}
 \pagestyle{fancy}
-\lhead{Traffic-o-meter}
+\lhead{Traffic-O-Meter}
 \rhead{Version 3.0} %\thepage}
 %\cfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -51,7 +52,7 @@
 
 
 \title{System Requirements version 3.0\\ The Traffic-o-meter}
-\author{Group D\\ Emma Holmberg Ohlsson, Alexander Nässlander,\\Martin Richter, Hannes Johansson, Johan Mattsson,\\Philip Holgersson, Mattias Eklund, Fredrik Åkerberg\\boogleoodle@googlegroups.com}
+\author{Group D\\ Mattias Eklund, Philip Holgersson, Emma Holmberg Ohlsson,\\ Hannes Johansson, Johan Mattsson, Alexander Nässlander\\Martin Richter, Fredrik Åkerberg\\boogleoodle@googlegroups.com}
 \date{\today}
 
 \begin{document}
@@ -88,40 +89,34 @@
 		% subsection stakeholders (end)
 	
 	\section{System Purpose} % (fold)
-	The purpose of the system is to make everyday travels an easier task for people using public transportation. The users of this application will have an easily accessible overview of how long it will take them to get to their favourite locations. These locations can be their work, home, the gym etc.
+	The purpose of the system is to make everyday travels an easier task for people using public transportation. The users of this application will have an easily accessible overview of how long it will take them to get to their favorite locations. These locations can be their work, home, the gym etcetera.
 	
 	
 The project goal is to develop an app and/or widget where the user can see how to get to their favorite destinations in the shortest time possible. The shown travel alternatives shall be adjusted according to the current position of the user, by the starting point being set to the users geographical location.
 	\section{Definitions}
 		\input{krav/definitions.tex}
 	\section{Domain}
-		\begin{figure}[h]
+		\begin{figure}[H]
 				\includegraphics[scale=0.50]{img/Context-v3.png}
 			\caption{Context Diagram for the system}
 		\end{figure}
-		\subsection{Parts of the context diagram} % (fold)
-		\label{sub:parts_of_the_context_diagram}
-		\begin{itemize}
-			\item[\textbf{Government agency}] The part of the government that is interested in public transport. 
-			\item[\textbf{User}] Anyone using the app.
-			\item[\textbf{GPS system}] The native GPS of the device or WI-FI location services.
-			\item[\textbf{RPTD}] Regional public transport databases, provides information regarding time tables and delays.
-			\item[\textbf{Traffic-o-meter}] This is the product.
-		\end{itemize}
-		\subsection{Transitions} % (fold)
-		\label{sub:transitions}
-			\subsubsection{Traffic information} % (fold)
-			\label{ssub:traffic_information}
-			This section covers the different traffic information that is sent from the regional public transport databases to the Traffic-o-meter system.
-			\begin{itemize}
-				\item[\textbf{Stops}] The geographical positions where it is possible to get on and off public transport.
-				\item[\textbf{GiveTimes}] The time table for the routes included in the updated trips.
-				\item[\textbf{MeansOfTransport}] The means of transportations that are represented in the updates trips.
-			\end{itemize}
-			% subsubsection traffic_information (end)
-		% subsection transitions (end)
-		% subsection parts_of_the_context_diagram (end)
 		
+	\subsection{The parts of the context diagram}			
+		\begin{itemize}
+
+			\item[\textbf{Swedish Government}] The part of the government that is involved in public transport has contracted the product owner to create the product. They have delegated the responsibility of administrating public transportation to regional public transportation administrators. From these administrators they get feedback of how everything is working. The finished product will give statistics to the government about the usage.
+			\item[\textbf{User}] An individual using the system. It communicates with the product by being able to manage settings and in return it get to see trips. The user uses public transportation. If the user is not satisfied with the product the may turn to similar systems instead, our competitors, and get their possible trips by looking at their timetables.
+			\item[\textbf{GPS system}] The native GPS of the device or WI-FI location services. The GPS system gives information to the product about the location of a device.
+			\item[\textbf{Public Transportation}] The public transportation is the actual means of transportation that go around transporting users (and other people). It is administrated by the regional public transportation administrators. And runs after the information in the public transport databases.
+			\item[\textbf{PTD}] Public transport databases contains information regarding time tables, stops, means of transport and delays. The product use this information when calculating trips. The competitors also uses the public transport databases for this purpose. Public transport databases are used to know when public transportation is supposed to leave, and the databases are updated if the public transportation is for example delayed. The databases are updated by the regional public transportation administrators.
+			\item[\textbf{RPTA}] The regional Public Transportation administrators have been given the responsibility to handle public transport by the government. They administrate public transportation and get maintenance requests from them. They create and update the public transport databases and analyse the data in them to see if it needs to be modified.
+			
+			\item[\textbf{Traffic-o-meter}] Trafic-o-meter is the product being developed. It gets its positioning data from available GPS systems. It is developed and maintained by the Product owner. The product gives the government statistics of its usage. It gets information about times, stops and means of transport from the public transport databases. The product communicates with the user by showing its trips and destinations. The user can also add or manage its settings.
+			\item[\textbf{Product Owner}] The product owner is responsible for  developing Traffic-o-meter. The product owner will also maintain the product after its release. They have been contracted to do this by the Swedish government.		
+			\item[\textbf{Competitors}] Similar systems, the competitors, compete for the users. They are another opportunity for the user to see possible trips. They use the public transport databases.
+		\end{itemize}
+
+	
 	
 	
 	\section{Requirements}
@@ -159,7 +154,7 @@ The project goal is to develop an app and/or widget where the user can see how t
 
 		\subsection{Quality Requirements}
 		When it comes to quality we consider the issues prioritized in the following way. Below are also explanations to all quality requirements we consider more or less important than as usual.
-		\begin{table}
+		\begin{figure}[H]
 		\centering		
 			\resizebox{\columnwidth}{!}{
 			\begin{tabular}{|l|c|c|c|c|c|}
@@ -193,13 +188,13 @@ The project goal is to develop an app and/or widget where the user can see how t
 				\hline
 				Interoperability & & 7 & & & \\
 				\hline
-				Re-usability & & & & & 1 \\
+				Re-usability & & & & & 8 \\
 				\hline
 				Instability & & & x & & \\
 				\hline
 			\end{tabular}
 			}
-		\end{table}
+		\end{figure}
 		
 		\begin{enumerate}
   			\item It is important to consider how much information about the users (GPS-coordinates etc) is shared with the government.	All data should anonymous and each so that it is never possible to trace data to a person.
@@ -216,46 +211,7 @@ The project goal is to develop an app and/or widget where the user can see how t
 	\section{Goal-Domain Tracing}
 	 To show that all goals are covered by the domain level requirements we have provided a goal-domain tracing. \\
 		\input{krav/goalRequirementTracing.tex}		
-
-	\section{Release planning}
-		\begin{table}[h]
-			\begin{tabular}{|l|r|r|r|r|} \hline
-				\multicolumn{2}{|l|}{}	& \multicolumn{3}{c|}{\textbf{Benefit}} \\ \hline
-				\textbf{Feature} & \textbf{Cost} & \textbf{Cust} & \textbf{User} & \textbf{Govt} \\ \hline
-				SaveLocation	& 32 & 5 & 15 & 8 \\ 
-				GetTravelStatistics	& 128 & 2 & 0 & 25 \\
-				Fastest Trip	& 2 & 5 & 9 & 10 \\
-				SpecifyMeansOfTravel	& 4 & 4	& 9 & 4 \\
-				ShowRouteToFirstStop	& 16 & 3 & 8 & 4 \\
-				MultipleDestinations	& 8 & 4 & 7 &3 \\
-				MultipleAccessibleUserData	& 64 & 0 & 7 & 3 \\
-				RemoveDestination	& 8 & 4 & 2 & 0 \\
-				SpecifyLocationByMap	& 64 & 2 & 3 & 1 \\
-				OrderDestinations	& 16 & 5 & 0 & 0 \\
-				SeachLocations	& 64 &5 & 0 & 0 \\
-				SupportBuses	& 128 & 5 & 0 & 0 \\
-				SupportTrains	& 128 & 5 & 0 & 0 \\
-				SupportFerries	& 128 & 5 & 0 & 0 \\
-				ViewNextOption	& 8 & 4 & 0 & 0 \\
-				MaxDistToStop	& 32 & 4 & 0 & 0 \\
-				MinWaitTime	& 32 & 4 & 0 & 0 \\
-				GeographicalStartingPoint	& 32 & 3 & 0 & 0 \\
-				GetPopularLocationStatistics	& 128 & 2 & 0 & 15 \\ 
-				ChangeNameOfDestination	& 8 & 0 & 1 & 0 \\
-				KeepAccountPrivate	& 32 & 0 & 0 & 0 \\
-				Language	& 64 & 0 & 0 & 0 \\
-				GetRoutesStatistics	& 128 & 2 & 0 & 0 \\
-				ExtractDataFromProviders	& 256 & 0 & 0 & 0 \\
-				GetpopularMeansOfTransportStatistics	& 128 & 2 & 0 & 5 \\
-				GetUserStatistics	& 128 & 2 & 0 & 2 \\ \hline
-		\end{tabular}
-	\end{table}
-
-		\input{rel_plan/rel_plan.tex}
-%		\input{rel_plan/r3r1.tex}
-%		\input{rel_plan/r3r2.tex}
-%		\input{rel_plan/r3rlater.tex}
-				
+		
 	%\newline
 	\section{Appendix: Pictures} % (fold)
 		\label{sec:appendix}
