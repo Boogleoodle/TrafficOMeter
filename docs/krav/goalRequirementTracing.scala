@@ -11,9 +11,7 @@ Model(
 	Goal("AccessibleForEverybody") has (
 		Feature("Language"),
 		Feature("Android"),
-		Feature("IOS"),
-		Design("MobileApplication"),
-		MockUp("SettingsMockup")
+		Feature("IOS")
 	),
 	Goal("TravelOverview") has (
 		Spec("The user wants to have an overview over the fastest possible route to their frequently visited destinations"),
@@ -25,14 +23,10 @@ Model(
 		Feature("ShowRouteToFirstStop"),
 		Feature("MaxDistToStop"),
 		Feature("MinWaitTime"),
+		Feature("GeographicLocation"),
 		Task("ChooseTransportationMeans"),
-		MockUp("WidgetMockup"),
-		MockUp("ApplicationMockup"),
-		MockUp("TripInformationMockup"),
 		Quality("UpdateStartView"),
-		Design("Widget"),
-		Quality("GPSPosition"),
-		Feature("GeographicLocation")
+		Quality("GPSPosition")
 	),
 	Goal("MinimalUserMaintenance") has (
 		Spec("The user wants to know the total time to get to a frequently visited destinations without having to manually insert information every time"),
@@ -44,8 +38,7 @@ Model(
 		Feature("SpecifyLocationByMap"),
 		Task("AddDestination"),
 		Task("RemoveDestination"),
-		Quality("RefreshTime"),
-		MockUp("AddDestinationMockup")
+		Quality("RefreshTime")
 	),
 	Goal("UserTiedInformation") has (
 		Feature("MultiAccessibleUserData"),
