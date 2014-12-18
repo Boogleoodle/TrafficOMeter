@@ -1,0 +1,27 @@
+Model(
+  Release("later") has (
+    Feature("getPopularLocationStatistics") has (Benefit(45), Cost(128)), 
+    Feature("getPopularMeansOfTransportStatistics") has (Benefit(75), Cost(128)), 
+    Feature("getRoutesStatistics") has (Benefit(0), Cost(128)), 
+    Feature("getUserStatistics") has (Benefit(6), Cost(128)), 
+    Feature("language") has (Benefit(0), Cost(64)), 
+    Feature("multiAccessibleUserData") has (Benefit(23), Cost(64)), 
+    Feature("orderDestinations") has (Benefit(0), Cost(16)), 
+    Feature("specifyLocationByMap") has (Benefit(9), Cost(64)), 
+    Feature("specifyMeansOfTravel") has (Benefit(30), Cost(4)), 
+    Feature("viewNextOption") has (Benefit(0), Cost(8)), 
+    Resource("TeamA") has (
+      Feature("getPopularLocationStatistics") has Cost(128), 
+      Feature("getPopularMeansOfTransportStatistics") has Cost(128), 
+      Feature("getRoutesStatistics") has Cost(128), 
+      Feature("getUserStatistics") has Cost(128), 
+      Feature("language") has Cost(64), 
+      Feature("multiAccessibleUserData") has Cost(64), 
+      Feature("orderDestinations") has Cost(16), 
+      Feature("specifyLocationByMap") has Cost(64), 
+      Feature("specifyMeansOfTravel") has Cost(4), 
+      Feature("viewNextOption") has Cost(8), 
+      Cost(732)), 
+    Benefit(188), 
+    Cost(732), 
+    Order(3)))
