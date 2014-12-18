@@ -90,16 +90,19 @@ We found out that the potential users did not want too much information and that
 	
 	\section{Specification Methods/Techniques}
 	Finding the requirements is only a fraction of the requirements process. Defining and documenting them is the second step, which is known as requirements specification. This subprocess of requirements engineering involves how we want to present the requirements as well as defining what kind of requirements they are. How to represent different requirements depend on what level they are on which kind of requirement it is (data requirement, quality requirement, feature requirement etcetera). Under
-levels we explain the different levels of requirements and how these relate to our requirements.  We also explain the different techniques we used for specification. There is a short paragraph explaining each technique and then follows how we applied it, why and what the outcome was.
+levels we explain how the different levels of requirements relate to our requirements.  Later on we explain the different techniques we used for specification and what we got out of them.
 
 	\subsection{Levels}
-		It is crucial to gather requirements on the higher levels in order to understand the context.
-		\begin{itemize}
-		\item Goal level, high level requirements, often related to business goals.
-		\item Domain level, often involves what problems to be solved.
-		\item Product level, typically function requirements.
-		\item Design level, often how to solve the problems, for example algorithms to be used.
-	\end{itemize}
+
+		Considering the different project models Lauesen explains, we have mainly used the two-step approach, meaning that we focus on domain level and design level requirements.
+		\subsubsection{Goal level}
+			We used the goal level requirements in order to understand the context and what the different stakeholders expected, needed and wanted from our system.
+		\subsubsection{Domain level}
+			Our domain level requirements are task descriptions and feature requirements. These are used to show what should be possible to with the system and provide the context to the features.
+		\subsubsection{Product level}
+			The product level requirements define the features as well as the data too be included in our system.
+		\subsubsection{Design level}
+			We have not gone in on implementation issues such as how to store the user's data but rather focused on what was important for the users, such as information to be displayed.
 		
 		\subsection{Data model}
 A data model is an abstract model of what data is needed in a system. It is not necessarily a requirement but in our case we use the model as a requirement.
@@ -249,9 +252,15 @@ A data model is an abstract model of what data is needed in a system. It is not 
 				To validate our own requirements we decided to do a Goal/Domain Tracing. This means that for each goal we listed which domain requirements that implemented that specific goals. This leads to a completeness check for both the goals and the domain level requirements. We found some requirements that was not possible to fit into a existing requirement and this made us elicit new goals for our stakeholders. When grouping the requirements under a specific goal also gave us a better understanding of what that specific goal should consist of, which lead to some minor adjustment in the wording of the goals to make them clearer. We also found that one of our goals was not implemented by any of the domain requirements, which is a critical problem. Either we were missing requirements or the goal is not correct. 
 
 	\section{Release planning}
+	% mer beskrivning kanske
+	% mer jul
+	% motiverat customer borttagning
+	% bara en release och senare.
+	%
 		Release planning is (just as many other aspects in this document) vital for projects success. Basically release planning is about determining which requirements and features that should be included in which release. Determining this is NP-hard and often have more than one solution. For reference, when we performed the release planning for our project, we managed to find approximately 450000 different solutions in 2 minutes (this was of course not done by hand).
 
 		\subsection{Release planning by hand}
+		\label{sec:release_planning}
 			As our project does not contain a lot of dependencies between features it was not that hard to generate an adequate solution. However, if the number of dependencies increase, planning by hand would be much more difficult. Also as the dependencies increase in number it becomes more obvious that release planning actually is a NP-hard problem.
 
 		\subsection{Release planning with reqT}
@@ -266,7 +275,7 @@ A data model is an abstract model of what data is needed in a system. It is not 
 
 				Some other things we stumbled upon as we tried to do the release planning were that there were some limitations in reqT that we did not know of, such as a Capacity could not exceed the value 1000, this is to limit the number of possible solutions and thus limiting the calculation time. If you do exceed Capacity values of 1000, reqT can never find a solution as it only says ''Inconsistency Found''. When we lowered the Capacity values we still managed to find roughly 450000 solutions in 2 minutes. This is most likely due to the fact that there aren't many constraints between the requirements and features in our project.
 
-				The model representing the solution was somewhat horrific, and you had to break down the model in smaller instances to be able to get grip on what the solution was. All releases in the solution contained all of the features and requirements that was in the original model but with 0 cost and benefit. This means that when you tried to generate a graphical representation of the solution it was completely unreadable. Once the model had been broken down and all of the ''ghost features'' was removed the model was much easier to comprehend.
+				The model representing the solution was somewhat horrific, and you had to break down the model in smaller instances to be able to get a grip on what the solution was. All releases in the solution contained all of the features and requirements that was in the original model but some of these had 0 cost and benefit. This means that when you looked at the model in text, it was littered with requirements and features that wasn't in the release, and thus if you tried to generate a graphical representation of the solution it was completely unreadable. Once the model had been broken down and all of the ''ghost features'' was removed the model was much easier to comprehend.
 
 	\section{Future work}
 	%For next release/future
@@ -311,7 +320,7 @@ In this paragraph each group member briefly explains its individual contribution
 		\subsubsection{R2}
 		Have done the workshop with our clients where I took part in planning, execution and summarizing the results. I have also worked on some virtual windows for the user application that we presented to our clients. 
 		\subsubsection{R3}
-			CRUD-check			
+			CRUD-check. I have mostly checked our requirements and our text in System Requirements for unambiguous contents. Also a big deal of "fixing" minor stuff in the System Requirements.	
 			
 	\subsection{Emma}
 		\subsubsection{R1}
