@@ -25,10 +25,10 @@ Model(
 
 	Term("GeographicalLocation") has (
 		Spec("Consists of GPS coordinates to determine a location"),
-		Example("lat: 55.71037075564825, long: 13.208270072937012")
+		Example("lat: 55.71037075564825, lon: 13.208270072937012")
 	),
 
-	Term("Trip") has (
+	Triperm("Trip") has (
 		Spec("A specific travel between two geographical (GPS) location"), 
 		Example("Between a users current position and one of its destinations")
 	),

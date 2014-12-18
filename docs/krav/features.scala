@@ -153,7 +153,7 @@ Model(
 		),
 		Feature("MultipleDestinations") has (
 			Spec("The user shall be able to store multiple destinations"),
-			Why("It is very useful that the user can store several destinations at the same time without having to do a new search every time he or she wants to go somewhere"),
+			Why("It is very useful that the user can store several destinations at the same time without having to do a new search every time the user wants to go somewhere"),
 			Example("Multiple fields of destinations"),
 			Cost(8),
 			Stakeholder("Customer") has Benefit(4),
