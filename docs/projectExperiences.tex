@@ -59,7 +59,7 @@ The outcome of using stakeholder analysis was that we came to insight for whom w
 			\item The regional public transportation companies (Länstrafikbolagen). 
 			\item The Swedish Government\footnote{Forgotten during stakeholder analysis but added during the construction of the Context diagram, see section \ref{subsec:context}}.
 		\end{itemize}
-		
+				
 		\subsection{Similar companies}
 			In order to get inspiration and see what similar services there are today, it can be a good idea to look at competitors' or partners' services. This is not a technique in itself but is often used with for example observation.
 	
@@ -110,13 +110,18 @@ A data model is an abstract model of what data is needed in a system. It is not 
 			\subsubsection{Outcome}
 				We got clearer view on how the system would interact with the customer and what kind of data structure was needed.
 		\subsection{Context diagram} \label{subsec:context}
-		A picture of how the system fits in to/interacts with its inner domain. It is used to realize what systems/people directly interacts with the product.
+		A picture of how the system fits in to/interacts with its inner domain. It is used to realize what systems/people directly interacts with the product. The outer domain can also be included to give even better understanding of how the system fits into the surroundings.
 			\subsubsection{Application}
 			We chose the user as a starting point and reasoned about what the user needed to use the product for, from that we realized that the product needed to interact with a couple of systems. Then we reasoned about why the government wanted the product (to increase the use of public transport) which got us to realize that they would want statistics from the system.
+			
+			After release 2 we got the tip to extend the context diagram to include the outer domain as well. When we looked at which stakeholders that had not been included in the first version we saw that the product owner should have been in the inner domain. We also added Competitors and the regional public transportation administrators to the diagram.
+			
 			\subsubsection{Why chosen}
 			We wanted to get an overview of how the system interacts with the actors and who might be affected by the system.
 			\subsubsection{Outcome}
 			When we were discussing the context diagram we realized that we were missing a stakeholder that we did not find during the stakeholder analysis. The missing stakeholder was the government that wants to get statistics from the system. 
+			
+			When adding the outer domain to the context diagram we realized that the product owner should have been in the inner domain. We also added competitors as a stakeholder, something we had not thought to do before since we didn't think they affected us - but they do since if the user decide to use them instead of us the product will not be successful.
 
 		\subsection{QUPER}
 		Used for quality requirements to deal with the problem of knowing if a little better for example performance would improve the product a lot or just be unnecessary. It is a way to see clearly in what range we want our quality requirements to be/how hard we want to work to satisfy them to a certain degree.
