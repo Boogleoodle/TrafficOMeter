@@ -1,10 +1,10 @@
 Model(
 	Term("MeansOfTransportation") has (
-		Spec("Type of vehicle in which the public transport takes place"),
+		Spec("Type of vehicle in which the public transport takes place."),
 		Example("Bus, train, or ferry, or a combination of them")
 	),
 	Term("User") has (
-		Spec("An individual who uses the system"),
+		Spec("An individual who uses the system. The user consists of a number of saved destinations, a current Geographical Location and a set of selected Means of Transportation. Note: The user is not necessarily an explicit object (user account with login) it could be implicit (Information stored on the users phone). This is specification is independent from that decision. See Feature 'MultiAccessibleUserData'"),
 		Example("An individual that wants to travel between pre-set destinations")
 	),
 
@@ -28,7 +28,7 @@ Model(
 		Example("lat: 55.71037075564825, lon: 13.208270072937012")
 	),
 
-	Triperm("Trip") has (
+	Term("Trip") has (
 		Spec("A specific travel between two geographical (GPS) location"), 
 		Example("Between a users current position and one of its destinations")
 	),
