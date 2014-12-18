@@ -19,7 +19,7 @@ Model(
 			Frequency(1)
 		),
 
-		Why("The user shall not have to search for a geographical location he/she might visit multiple times."),
+		Why("The user shall not have to search for a geographical location that the user might visit multiple times."),
 		Frequency(3)
 	),
 
