@@ -59,7 +59,7 @@ We came to the insight for whom we are really making the system. This led to a m
 			\item The regional public transportation companies (Länstrafikbolagen). 
 			\item The Swedish Government\footnote{Forgotten during stakeholder analysis but added during the construction of the Context diagram, see section \ref{subsec:context}}.
 		\end{itemize}
-		
+				
 		\subsection{Similar companies}
 			In order to get inspiration and see what similar services there are today, it can be a good idea to look at competitors' or partners' services. This is not a technique in itself but is often used with for example observation.
 	
@@ -75,7 +75,7 @@ We came to the insight for whom we are really making the system. This led to a m
 		\subsubsection{Why chosen}
 		We used this method to get an idea of what a finished product might look like and to get inspiration on features to include in our solution.
 		\subsubsection{Outcome}
-		The method helped us to develop many of our system requirements and it generated questions that we could discuss with our customers to get a better final product.
+		Observing and analysing other companies' solutions to the problem helped us to develop many of our system requirements and it generated questions that we could discuss with our customers to get a better final product. The members of our team have, more or less, all used applications similar to the one we were supposed to develop. This in it self gave some domain knowledge and ideas of what could be implemented. Examples of what requirements that emerged during this phase is the maximum distance to walk and minimum time to wait at a switch.
 
 
 		\subsection{Focus group \& design workshop}
@@ -90,24 +90,27 @@ We found out that the potential users did not want too much information and that
 	
 	\section{Specification Methods/Techniques}
 	Finding the requirements is only a fraction of the requirements process. Defining and documenting them is the second step, which is known as requirements specification. This subprocess of requirements engineering involves how we want to present the requirements as well as defining what kind of requirements they are. How to represent different requirements depend on what level they are on which kind of requirement it is (data requirement, quality requirement, feature requirement etcetera). Under
-levels we explain the different levels of requirements and how these relate to our requirements.  We also explain the different techniques we used for specification. There is a short paragraph explaining each technique and then follows how we applied it, why and what the outcome was.
+levels we explain how the different levels of requirements relate to our requirements.  Later on we explain the different techniques we used for specification and what we got out of them.
 
 	\subsection{Levels}
+
 		Considering the different project models Lauesen explains, we have mainly used the two-step approach, meaning that we focus on domain level and design level requirements.
 		\subsubsection{Goal level}
 			We used the goal level requirements in order to understand the context and what the different stakeholders expected, needed and wanted from our system.
 		\subsubsection{Domain level}
-			Our domain level requirements are task descriptions and feature requirements. These are used to show what should be possible to with the system and provide a context to the features.
-		\subsubsection{Product level}, R.
-		\subsubsection{Design level}, often how to solve the problems, for example algorithms to be used.
+			Our domain level requirements are task descriptions and feature requirements. These are used to show what should be possible to with the system and provide the context to the features.
+		\subsubsection{Product level}
+			The product level requirements define the features as well as the data too be included in our system.
+		\subsubsection{Design level}
+			We have not gone in on implementation issues such as how to store the user's data but rather focused on what was important for the users, such as information to be displayed.
 		
 		\subsection{Data model}
-A data model is an abstract model of what data is needed in a system. It is not necessarily a requirement but in our case we use the model as a requirement. Data model is an efficient and unambiguous way of visualizing the data the system requires. Data models are similar in structure to E/R-diagrams which makes them more suitable for the developers.
+A data model is an abstract model of what data is needed in a system. It is not necessarily a requirement but in our case we use the model as a requirement.
 	
 		\subsubsection{Application}
-		We chose the user as a starting point and tried to investigate what kind of data that we would need to be able to give the functionality required. 
+		We chose the user as a starting point and tried to investigate what kind of data that we would need to be able to give the functionality required.
 		\subsubsection{Why chosen}
-		The data model gives us an overview of the system, together with the definitions, make it easier to show how the different parts of the system relates to each other. As we are not going to develop the system ourselves it is important that we can present the structure of the system for the developers. 
+		We used it to realize which kind of data the system would need.
 		\subsubsection{Outcome}
 	We got a lot of definitions out of putting it together since we needed to discuss what we meant by the entities in the model (coming in a data dictionary in release 2).
 
@@ -120,13 +123,18 @@ A data model is an abstract model of what data is needed in a system. It is not 
 			\subsubsection{Outcome}
 				We got clearer view on how the system would interact with the customer and what kind of data structure was needed.
 		\subsection{Context diagram} \label{subsec:context}
-		A picture of how the system fits in to/interacts with its inner domain. It is used to realize what systems/people directly interacts with the product.
+		A picture of how the system fits in to/interacts with its inner domain. It is used to realize what systems/people directly interacts with the product. The outer domain can also be included to give even better understanding of how the system fits into the surroundings.
 			\subsubsection{Application}
 			We chose the user as a starting point and reasoned about what the user needed to use the product for, from that we realized that the product needed to interact with a couple of systems. Then we reasoned about why the government wanted the product (to increase the use of public transport) which got us to realize that they would want statistics from the system.
+			
+			After release 2 we got the tip to extend the context diagram to include the outer domain as well. When we looked at which stakeholders that had not been included in the first version we saw that the product owner should have been in the inner domain. We also added Competitors and the regional public transportation administrators to the diagram.
+			
 			\subsubsection{Why chosen}
 			We wanted to get an overview of how the system interacts with the actors and who might be affected by the system.
 			\subsubsection{Outcome}
 			When we were discussing the context diagram we realized that we were missing a stakeholder that we did not find during the stakeholder analysis. The missing stakeholder was the government that wants to get statistics from the system. 
+			
+			When adding the outer domain to the context diagram we realized that the product owner should have been in the inner domain. We also added competitors as a stakeholder, something we had not thought to do before since we didn't think they affected us - but they do since if the user decide to use them instead of us the product will not be successful.
 
 		\subsection{QUPER}
 		Used for quality requirements to deal with the problem of knowing if a little better for example performance would improve the product a lot or just be unnecessary. It is a way to see clearly in what range we want our quality requirements to be/how hard we want to work to satisfy them to a certain degree.
@@ -142,12 +150,12 @@ A data model is an abstract model of what data is needed in a system. It is not 
 		
 		
 		\subsection{Task Descriptions}
-			Task descriptions specify the interactions between the program and the user.
+			Task descriptions specify the interactions between the product and the user. It is quite easy for the customer to validate since task descriptions speaks the "customer language". Task descriptions will also improve the understanding on a domain-level manner for both developers and customers.
 
 			\subsubsection{Application}
-				We went through as many functions that we could come up with and broke them down into tasks.
+				We went through as many functions that we could come up with and broke them down into tasks. 
 			\subsubsection{Why chosen}
-				Task descriptions were chosen to give a better understanding of the systems requirements.
+				Task descriptions were chosen to give a better understanding of the systems requirements in a domain-level manner.
 			\subsubsection{Outcome}	
 				In the process of describing tasks it became obvious that there were a lot more tasks than initially imagined. As a task was being described, subtasks emerged and thus an even deeper understanding of the system was acquired than previously suspected that the method would generate. There are probably more tasks to describe in the system than was done, however you have to realise where to stop. It is easy to dig very far into the tasks and thus generate a lot of paperwork.
 
@@ -284,12 +292,16 @@ If we were to continue with the project it would be beneficial to elicit more re
 	%Example, what have we learned?
 	%What could have been done differently?
 	%What we have learned related to learning objectives
+
+
+
+
 	Below we discuss reflections about the process and how the project is going. It is divided into three phases, named after the three releases.
 	
 \subsection{R1}
 While working with our project we have encountered several elicitation barriers. One that we noticed in particular is that the stakeholder cannot express what they need. We have also noticed that stakeholders can have conflicting views within themselves. Another barrier has been that our clients have suggested solutions rather than expressing their needs and demand.
 
-An obstacle we have met is that we tend to forget to use several elicitation techniques. It is easy to get hung up on just brainstorming. Our group does not only have a big domain knowledge but also consists of potential end users. This gives us a false sense of security, as we think that we ourselves incorporate the different stakeholders' opinions and experiences. A solution to both these problems is to carry out different elicitation techniques and contact different stakeholders anyway. It is important to hear everyone's opinion, since we know from experience that more input will yield better results.
+An obstacle we have met is that we tend to forget to use several elicitation techniques. It is easy to get hung up on just brainstorming. Our group does not only have a big domain knowledge but also consists of potential end users. This gives us a false sense of security, as we think that we ourselves incorporate the different stakeholders' opinions and experiences and because of this we sometime get the feeling that we already know everything that the product should have and how it should work. The problem with that is that might not be what the average user wants with the product or what the customers wants. Since we are designing the requirement specification for them it is their opinion that matters and it is their decisions that are final for the most parts. A solution to all these problems is to carry out different elicitation techniques and contact different stakeholders anyway and also to take our customers thought into account a bit more. It is important to hear everyone's opinion, since we know from experience that more input will yield better results and our task is not to decide what the product should do, our task is to deliver a requirement specification.
 
 During the initial phase of the project it has been difficult to divide the workload. This is because we needed to be on the same page regarding several matters. However, trying to work all eight together has resulted inefficiency. This is something we are working with and we will try to divide the work into smaller independent tasks. We believe that this approach will result in higher efficiency.
 \subsection{R2}
@@ -308,7 +320,7 @@ In this paragraph each group member briefly explains its individual contribution
 		\subsubsection{R2}
 		Have done the workshop with our clients where I took part in planning, execution and summarizing the results. I have also worked on some virtual windows for the user application that we presented to our clients. 
 		\subsubsection{R3}
-			CRUD-check			
+			CRUD-check. I have mostly checked our requirements and our text in System Requirements for unambiguous contents. Also a big deal of "fixing" minor stuff in the System Requirements.	
 			
 	\subsection{Emma}
 		\subsubsection{R1}
