@@ -9,12 +9,6 @@
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{float}
-\pagestyle{fancy}
-\lhead{Traffic-O-Meter}
-\rhead{Version 3.0} %\thepage}
-%\cfoot{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
 
 
 \setcounter{secnumdepth}{4}
@@ -58,12 +52,27 @@
 \begin{document}
 	\maketitle
 	\thispagestyle{empty}
-	\setcounter{page}{0}
-	\pagebreak
+	\pagestyle{empty}
+	\newpage
+	\clearpage
 	\tableofcontents
-	\thispagestyle{empty}
-	\pagebreak
-	
+	\newpage
+	\setcounter{page}{1}
+
+%=============================================================
+%Headers and footers
+%=============================================================
+\pagestyle{fancy}
+\lhead{Traffic-O-Meter}
+\chead{System Requirements}
+\rhead{Version 3.0} %\thepage}
+%\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%=============================================================
+%Start of document
+%=============================================================
 
 
 
