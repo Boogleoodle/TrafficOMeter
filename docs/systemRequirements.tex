@@ -212,9 +212,48 @@ The project goal is to develop an app and/or widget where the user can see how t
 	 To show that all goals are covered by the domain level requirements we have provided a goal-domain tracing. \\
 		\input{krav/goalRequirementTracing.tex}		
 		
-	%\newline
+	\newpage
+	\section{Release planning}
+		\begin{table}[h]
+			\begin{tabular}{|l|r|r|r|r|} \hline
+				\multicolumn{2}{|l|}{}	& \multicolumn{3}{c|}{\textbf{Benefit}} \\ \hline
+				\textbf{Feature} & \textbf{Cost} & \textbf{Cust} & \textbf{User} & \textbf{Govt} \\ \hline
+				SaveLocation	& 32 & 5 & 15 & 8 \\ 
+				GetTravelStatistics	& 128 & 2 & 0 & 25 \\
+				Fastest Trip	& 2 & 5 & 9 & 10 \\
+				SpecifyMeansOfTravel	& 4 & 4	& 9 & 4 \\
+				ShowRouteToFirstStop	& 16 & 3 & 8 & 4 \\
+				MultipleDestinations	& 8 & 4 & 7 &3 \\
+				MultipleAccessibleUserData	& 64 & 0 & 7 & 3 \\
+				RemoveDestination	& 8 & 4 & 2 & 0 \\
+				SpecifyLocationByMap	& 64 & 2 & 3 & 1 \\
+				OrderDestinations	& 16 & 5 & 0 & 0 \\
+				SeachLocations	& 64 &5 & 0 & 0 \\
+				SupportBuses	& 128 & 5 & 0 & 0 \\
+				SupportTrains	& 128 & 5 & 0 & 0 \\
+				SupportFerries	& 128 & 5 & 0 & 0 \\
+				ViewNextOption	& 8 & 4 & 0 & 0 \\
+				MaxDistToStop	& 32 & 4 & 0 & 0 \\
+				MinWaitTime	& 32 & 4 & 0 & 0 \\
+				GeographicalStartingPoint	& 32 & 3 & 0 & 0 \\
+				GetPopularLocationStatistics	& 128 & 2 & 0 & 15 \\ 
+				ChangeNameOfDestination	& 8 & 0 & 1 & 0 \\
+				KeepAccountPrivate	& 32 & 0 & 0 & 0 \\
+				Language	& 64 & 0 & 0 & 0 \\
+				GetRoutesStatistics	& 128 & 2 & 0 & 0 \\
+				ExtractDataFromProviders	& 256 & 0 & 0 & 0 \\
+				GetpopularMeansOfTransportStatistics	& 128 & 2 & 0 & 5 \\
+				GetUserStatistics	& 128 & 2 & 0 & 2 \\ \hline
+		\end{tabular}
+	\end{table}
+		
+		\input{rel_plan/r3_1.tex}
+		\input{rel_plan/r3_later.tex}
+				
+	\newpage
+
 	\section{Appendix: Pictures} % (fold)
 		\label{sec:appendix}
-		\include{appendix}
+		\input{appendix.tex}
 		% section appendix (end)	
 \end{document}
