@@ -174,7 +174,7 @@ Model(
 		Feature("MultiAccessibleUserData") has (
 			Spec("A single user shall be able to access its information from multiple devices"),
 			Why("User might want to use multiple smartphones and/or tablets, or have obtained a new smartphone or tablet"),
-			Example("The system could support a User profile and a server storage solution so that the User can get its information using	 multiple devices"),
+			Example("The system could support a User profile and a server storage solution so that the User can get its information using multiple devices"),
 			Stakeholder("User") has Benefit(7),
 			Cost(64),
 			Stakeholder("SwedishGovernment") has Benefit(3)
