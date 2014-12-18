@@ -9,7 +9,7 @@
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{Traffic-o-meter}
+\lhead{Traffic-O-Meter}
 \rhead{Version 3.0} %\thepage}
 %\cfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -88,7 +88,7 @@
 		% subsection stakeholders (end)
 	
 	\section{System Purpose} % (fold)
-	The purpose of the system is to make everyday travels an easier task for people using public transportation. The users of this application will have an easily accessible overview of how long it will take them to get to their favourite locations. These locations can be their work, home, the gym etc.
+	The purpose of the system is to make everyday travels an easier task for people using public transportation. The users of this application will have an easily accessible overview of how long it will take them to get to their favorite locations. These locations can be their work, home, the gym etcetera.
 	
 	
 The project goal is to develop an app and/or widget where the user can see how to get to their favorite destinations in the shortest time possible. The shown travel alternatives shall be adjusted according to the current position of the user, by the starting point being set to the users geographical location.
@@ -106,13 +106,13 @@ The project goal is to develop an app and/or widget where the user can see how t
 			\item[\textbf{User}] Anyone using the app.
 			\item[\textbf{GPS system}] The native GPS of the device or WI-FI location services.
 			\item[\textbf{RPTD}] Regional public transport databases, provides information regarding time tables and delays.
-			\item[\textbf{Traffic-o-meter}] This is the product.
+			\item[\textbf{TrafficOmeter}] This is the product.
 		\end{itemize}
 		\subsection{Transitions} % (fold)
 		\label{sub:transitions}
 			\subsubsection{Traffic information} % (fold)
 			\label{ssub:traffic_information}
-			This section covers the different traffic information that is sent from the regional public transport databases to the Traffic-o-meter system.
+			This section covers the different traffic information that is sent from the regional public transport databases to the TrafficOmeter system.
 			\begin{itemize}
 				\item[\textbf{Stops}] The geographical positions where it is possible to get on and off public transport.
 				\item[\textbf{GiveTimes}] The time table for the routes included in the updated trips.
@@ -216,46 +216,7 @@ The project goal is to develop an app and/or widget where the user can see how t
 	\section{Goal-Domain Tracing}
 	 To show that all goals are covered by the domain level requirements we have provided a goal-domain tracing. \\
 		\input{krav/goalRequirementTracing.tex}		
-
-	\section{Release planning}
-		\begin{table}[h]
-			\begin{tabular}{|l|r|r|r|r|} \hline
-				\multicolumn{2}{|l|}{}	& \multicolumn{3}{c|}{\textbf{Benefit}} \\ \hline
-				\textbf{Feature} & \textbf{Cost} & \textbf{Cust} & \textbf{User} & \textbf{Govt} \\ \hline
-				SaveLocation	& 32 & 5 & 15 & 8 \\ 
-				GetTravelStatistics	& 128 & 2 & 0 & 25 \\
-				Fastest Trip	& 2 & 5 & 9 & 10 \\
-				SpecifyMeansOfTravel	& 4 & 4	& 9 & 4 \\
-				ShowRouteToFirstStop	& 16 & 3 & 8 & 4 \\
-				MultipleDestinations	& 8 & 4 & 7 &3 \\
-				MultipleAccessibleUserData	& 64 & 0 & 7 & 3 \\
-				RemoveDestination	& 8 & 4 & 2 & 0 \\
-				SpecifyLocationByMap	& 64 & 2 & 3 & 1 \\
-				OrderDestinations	& 16 & 5 & 0 & 0 \\
-				SeachLocations	& 64 &5 & 0 & 0 \\
-				SupportBuses	& 128 & 5 & 0 & 0 \\
-				SupportTrains	& 128 & 5 & 0 & 0 \\
-				SupportFerries	& 128 & 5 & 0 & 0 \\
-				ViewNextOption	& 8 & 4 & 0 & 0 \\
-				MaxDistToStop	& 32 & 4 & 0 & 0 \\
-				MinWaitTime	& 32 & 4 & 0 & 0 \\
-				GeographicalStartingPoint	& 32 & 3 & 0 & 0 \\
-				GetPopularLocationStatistics	& 128 & 2 & 0 & 15 \\ 
-				ChangeNameOfDestination	& 8 & 0 & 1 & 0 \\
-				KeepAccountPrivate	& 32 & 0 & 0 & 0 \\
-				Language	& 64 & 0 & 0 & 0 \\
-				GetRoutesStatistics	& 128 & 2 & 0 & 0 \\
-				ExtractDataFromProviders	& 256 & 0 & 0 & 0 \\
-				GetpopularMeansOfTransportStatistics	& 128 & 2 & 0 & 5 \\
-				GetUserStatistics	& 128 & 2 & 0 & 2 \\ \hline
-		\end{tabular}
-	\end{table}
-
-		\input{rel_plan/rel_plan.tex}
-%		\input{rel_plan/r3r1.tex}
-%		\input{rel_plan/r3r2.tex}
-%		\input{rel_plan/r3rlater.tex}
-				
+		
 	%\newline
 	\section{Appendix: Pictures} % (fold)
 		\label{sec:appendix}
