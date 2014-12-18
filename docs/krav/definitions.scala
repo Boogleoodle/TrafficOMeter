@@ -1,7 +1,7 @@
 Model(
 	Term("MeansOfTransportation") has (
 		Spec("Type of vehicle in which the public transport takes place"),
-		Example("Bus, train, or ferry.")
+		Example("Bus, train, or ferry, or a combination of them")
 	),
 	Term("User") has (
 		Spec("An individual who uses the system"),
@@ -24,8 +24,8 @@ Model(
 	),
 
 	Term("GeographicalLocation") has (
-		Spec("Consists of GPS coordinates to determain a location"),
-		Example("lat: 55.71037075564825, lon: 13.208270072937012")
+		Spec("Consists of GPS coordinates to determine a location"),
+		Example("lat: 55.71037075564825, long: 13.208270072937012")
 	),
 
 	Term("Trip") has (
@@ -50,6 +50,6 @@ Model(
 
 	Term("Sub-line") has (
 		Spec("A subset of a line of transportation that is part of a bigger 'route'"), 
-		Example("Bus 3, stop #4 to stop #9")
+		Example("Bus 3, from Lund C to Universitetssjukhuset")
 	)
 )
