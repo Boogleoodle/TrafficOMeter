@@ -244,9 +244,15 @@ A data model is an abstract model of what data is needed in a system. It is not 
 				To validate our own requirements we decided to do a Goal/Domain Tracing. This means that for each goal we listed which domain requirements that implemented that specific goals. This leads to a completeness check for both the goals and the domain level requirements. We found some requirements that was not possible to fit into a existing requirement and this made us elicit new goals for our stakeholders. When grouping the requirements under a specific goal also gave us a better understanding of what that specific goal should consist of, which lead to some minor adjustment in the wording of the goals to make them clearer. We also found that one of our goals was not implemented by any of the domain requirements, which is a critical problem. Either we were missing requirements or the goal is not correct. 
 
 	\section{Release planning}
+	% mer beskrivning kanske
+	% mer jul
+	% motiverat customer borttagning
+	% bara en release och senare.
+	%
 		Release planning is (just as many other aspects in this document) vital for projects success. Basically release planning is about determining which requirements and features that should be included in which release. Determining this is NP-hard and often have more than one solution. For reference, when we performed the release planning for our project, we managed to find approximately 450000 different solutions in 2 minutes (this was of course not done by hand).
 
 		\subsection{Release planning by hand}
+		\label{sec:release_planning}
 			As our project does not contain a lot of dependencies between features it was not that hard to generate an adequate solution. However, if the number of dependencies increase, planning by hand would be much more difficult. Also as the dependencies increase in number it becomes more obvious that release planning actually is a NP-hard problem.
 
 		\subsection{Release planning with reqT}
@@ -261,7 +267,7 @@ A data model is an abstract model of what data is needed in a system. It is not 
 
 				Some other things we stumbled upon as we tried to do the release planning were that there were some limitations in reqT that we did not know of, such as a Capacity could not exceed the value 1000, this is to limit the number of possible solutions and thus limiting the calculation time. If you do exceed Capacity values of 1000, reqT can never find a solution as it only says ''Inconsistency Found''. When we lowered the Capacity values we still managed to find roughly 450000 solutions in 2 minutes. This is most likely due to the fact that there aren't many constraints between the requirements and features in our project.
 
-				The model representing the solution was somewhat horrific, and you had to break down the model in smaller instances to be able to get grip on what the solution was. All releases in the solution contained all of the features and requirements that was in the original model but with 0 cost and benefit. This means that when you tried to generate a graphical representation of the solution it was completely unreadable. Once the model had been broken down and all of the ''ghost features'' was removed the model was much easier to comprehend.
+				The model representing the solution was somewhat horrific, and you had to break down the model in smaller instances to be able to get a grip on what the solution was. All releases in the solution contained all of the features and requirements that was in the original model but some of these had 0 cost and benefit. This means that when you looked at the model in text, it was littered with requirements and features that wasn't in the release, and thus if you tried to generate a graphical representation of the solution it was completely unreadable. Once the model had been broken down and all of the ''ghost features'' was removed the model was much easier to comprehend.
 
 	\section{Future work}
 	%For next release/future
