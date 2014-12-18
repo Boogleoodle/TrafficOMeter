@@ -118,7 +118,7 @@ Model(
 			Stakeholder("SwedishGovernment") has Benefit(1)
 		),
 		Feature("SpecifyMeansOfTravel") has (
-			Spec("The User shall be able to specify which of the supported means of transportation it would like to use and then the system shall use the selected means of transportation"),
+			Spec("The user shall be able to specify which of the supported means of transportation it would like to use and then the system shall use the selected means of transportation"),
 			Why("Not all users want to use the same means of travel"),
 			Example("This can be implemented using a settings dialog"),
 			Cost(4),
@@ -135,7 +135,7 @@ Model(
 		),
 		Feature("ChangeNameOnDestination") has (
 			Spec("It shall be possible to change the name of a destination"),
-			Why("To make it easier to tell the different destinations apart a User might want to change the name of a destination. For example, a User want to change the name of the destination that correlates to the users work to the name: WORK" ),
+			Why("To make it easier to tell the different destinations apart a user might want to change the name of a destination. For example, a user want to change the name of the destination that correlates to the users work to the name: WORK" ),
 			Example("An EDIT button besides the field for the name of the destination"),
 			Cost(8),
 			Stakeholder("User") has Benefit(1),
@@ -174,7 +174,7 @@ Model(
 		Feature("MultiAccessibleUserData") has (
 			Spec("A single user shall be able to access its information from multiple devices"),
 			Why("User might want to use multiple smartphones and/or tablets, or have obtained a new smartphone or tablet"),
-			Example("The system could support a User profile and a server storage solution so that the User can get its information using multiple devices"),
+			Example("The system could support a user profile and a server storage solution so that the user can get its information using multiple devices"),
 			Stakeholder("User") has Benefit(7),
 			Cost(64),
 			Stakeholder("SwedishGovernment") has Benefit(3)
