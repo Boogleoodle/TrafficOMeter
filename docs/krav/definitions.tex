@@ -3,7 +3,7 @@
 \begin{lstlisting}
 Term MeansOfTransportation
 	Spec Type of vehicle in which the public transport takes place
-	Example Bus, train, or ferry.
+	Example Bus, train, or ferry, or a combination of them
 Term User
 	Spec An individual who uses the system
 	Example An individual that wants to travel between pre-set destinations
@@ -15,9 +15,9 @@ Term Time
 	Example Means of transportation A departs at time B
 Term LineOfTransportation
 	Spec A set of 'stop's that is served by the same vehicle. There is one line for each direction between the stops.
-	Example Bus 6 in Lund, Bus 171 between Malmoe and Lund
+	Example Bus 6 in Lund towards S:t Lars, Bus 171 between Malmoe and Lund
 Term GeographicalLocation
-	Spec Consists of GPS coordinates to determain a location
+	Spec Consists of GPS coordinates to determine a location
 	Example lat: 55.71037075564825, lon: 13.208270072937012
 Term Trip
 	Spec A specific travel between two geographical (GPS) location
@@ -33,6 +33,6 @@ Term Timetable
 	Example Bus A departs at time X hours and Y minutes direction Z
 Term Sub-line
 	Spec A subset of a line of transportation that is part of a bigger 'route'
-	Example Bus 3, stop #4 to stop #9
+	Example Bus 3, from Lund C to Universitetssjukhuset
 
 \end{lstlisting}

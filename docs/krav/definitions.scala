@@ -28,7 +28,7 @@ Model(
 		Example("lat: 55.71037075564825, lon: 13.208270072937012")
 	),
 
-	Triperm("Trip") has (
+	Term("Trip") has (
 		Spec("A specific travel between two geographical (GPS) location"), 
 		Example("Between a users current position and one of its destinations")
 	),
