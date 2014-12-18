@@ -20,7 +20,7 @@ Model(
 
 	Term("LineOfTransportation") has (
 		Spec("A set of 'stop's that is served by the same vehicle. There is one line for each direction between the stops."), 
-		Example("Bus 6 in Lund, Bus 171 between Malmoe and Lund")
+		Example("Bus 6 in Lund towards S:t Lars, Bus 171 between Malmoe and Lund")
 	),
 
 	Term("GeographicalLocation") has (
