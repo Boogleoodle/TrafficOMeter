@@ -4,6 +4,8 @@
 \usepackage{hyperref}
 \usepackage{hhline}
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\usepackage{fancyhdr}
+
 
 \title{Course Evaluation ETS170 Version 1.0}
 \author{Group D\\ Mattias Eklund, Philip Holgersson, Emma Holmberg Ohlsson,\\ Hannes Johansson, Johan Mattsson, Alexander Nässlander\\Martin Richter, Fredrik Åkerberg}
@@ -12,10 +14,28 @@
 \begin{document}
 	\maketitle
 	\thispagestyle{empty}
-	\setcounter{page}{0}
-	\pagebreak
+	\pagestyle{empty}
+	\newpage
+	\clearpage
 	\tableofcontents
-	\pagebreak
+	\newpage
+	\setcounter{page}{1}
+
+%=============================================================
+%Headers and footers
+%=============================================================
+\pagestyle{fancy}
+\lhead{Traffic-O-Meter}
+\chead{Course Evaluation ETS170}
+\rhead{Version 1.0} %\thepage}
+%\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%=============================================================
+%Start of document
+%=============================================================
+
 	
 	\section{About this document}
 	In this document we evaluate the course and give recommendations for improvement.
