@@ -3,8 +3,10 @@
 \usepackage[english]{babel}
 \usepackage{hyperref}
 \usepackage{hhline}
+\usepackage{graphics}
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
 \usepackage{fancyhdr}
+\usepackage{float}
 
 
 \title{Project Experiences version 3.0 \\ The Traffic-o-meter}
@@ -222,7 +224,9 @@ A data model is an abstract model of what data is needed in a system. It is not 
 				
 				This CRUD-matrix was done to validate the system we are customers to (Boogle) since it was one of the criteria in their validation checklist.
 			
-	\begin{center}
+	\begin{figure}[H]
+		\centering		
+			\resizebox{\columnwidth}{!}{
 		
 		
 			\begin{tabular}{|l||c|c|c|c|c|}
@@ -254,8 +258,9 @@ A data model is an abstract model of what data is needed in a system. It is not 
 			\textbf{MISSING} & & (C) & (R) \textbf{D} (O) & \textbf{D} & \textbf{O} \\ 
 			\hline 
 			\end{tabular} 
-	
-		\end{center}
+			}
+		\end{figure}
+
 			After our CRUD-check of the Boogle Calendar system we looked at the different missing parts. Of the six missing parts we decided that we don't think that it is the system's job to be able to create external calendars, have an overview of all event planners or look at (read) one event planner. The other parts we found missing were sent to the developers as critical issues.
 
 			
@@ -327,11 +332,11 @@ Between the first two releases we worked closer to more stakeholders, not only o
 
 %\subsection{R3}
 
-For the third release we have been working a lot with the comments we have gotten from our project handler and our customers. We have also validated release two that we got from the group that we are customers to, boogleoodle, and we have done a release plan for our product. 
+For the third release we worked a lot with the comments we got from our project handler and our customers. We also validated release two that we got from the group that we are customers to, Boogle Calendar, and we did a release plan for our product. 
 
-Fixing the comments has taken quite some time to do. Not because there were a lot of them, but because we wanted to do them as good as possible. Also, some of them we have had to ask about once more because we did not understand what the comment was about. 
+Fixing the comments took quite some time to do. Not because there were a lot of them, but because we wanted to do them as good as possible. Also, some of them we had to ask about once more because we did not understand what the comment was about. 
 
-Validating the boogleoodle requirement specification was not easy. It was hard to identify all the fields in the validation checklist that we got and to find out if the specification lived up to them. We first did the validation individually and then some of us sat together and merged our different opinions into one final validation report. This way of doing the validation incorporated every member in the group in some way but it did not make the work with our own requirement specification come completely to a halt. Also, because the sub-part of the group that finalized the report could discuss a lot the result was quite good. The drawback is that some of us had to do the validation multiple times and lost some time when they could have worked with our project instead. 
+Validating the Boogle Calendar requirement specification was not easy. It was hard to identify all the fields in the validation checklist that we got and to find out if the specification lived up to them. We first did the validation individually in our spare time and during our next work session some of us sat together and merged our different opinions into one final validation report. This way of doing the validation incorporated every member in the group in some way. Furthermore, it gave us the opportunity to both work on the validation and our own project in the same time. Also, because the sub-part of the group that finalized the report could discuss a lot the result was quite good. The drawback is that some of us had to do the validation multiple times and lost some time when they could have worked with our project instead. 
 
 Release planning turned out to be quite hard as well, but more on this in section \ref{sec:release_planning}, Release Planning.
 
