@@ -40,21 +40,24 @@
 
 	
 	\section{About this document}
-We have done a project in the course requirements engineering. The project consisted of two parts, one part where we produced a requirements specification for another group and one part where we were clients to another group. The bigger part was making a system requirements specification. For the actual requirements specification, check out the document systemRequirements.pdf. This report describes the process used, techniques chosen and why, learning outcomes and a personal statement from each team member on their individual contribution.
+We have done a project in the course Requirements Engineering. The project has consisted of two parts, one part where we produced a requirements specification for a system and one part where we were clients to another group writing requirements for our system. The larger part was making the system requirements specification. For the actual requirements specification, see the document systemRequirements.pdf. This report describes the process used, techniques and why they were chosen, learning outcomes and a personal statement from each team member on their individual contribution.
 
 	\section{Elicitation Methods/Techniques}
 	%Description of the techniques
 	%Why we have chosen these methods, what did we want from the different 
-Lauesen describes elicitation as "the process of finding and formulating requirements". Elicitation is used for identifying the core values of the project as well as desired features and functions. Identifying requirements seems like a rather simple task but there are several issues that cause a severe threat to the project success. For example that a client cannot express what they need or that they try to give a solution instead of explaining what problem they want solved. These problems are called elicitation barriers. To overcome the elicitation barriers we use elicitation techniques. The best way to overcome the elicitation barriers is to use several elicitation techniques and getting input from different stakeholders. An elicitation technique is a well defined method for researching a specific topic. Some methods that can be used as elicitation techniques are focus group, design workshop or stakeholder analysis. Exactly which elicitation techniques to use depends on the context. In our project we used a few different techniques to approach the problem from different angles. This section explains the techniques we used and how they applied to our project.
+Lauesen describes elicitation as "the process of finding and formulating requirements". Elicitation is used for identifying the core values of the project as well as desired features and functions. Identifying requirements seems like a rather simple task but there are several issues that cause a severe threat to the project success. For example that a client cannot express what they need or that they try to give a solution instead of explaining what problem they want solved. These problems are called elicitation barriers. The best way to overcome the elicitation barriers is to use several elicitation techniques and to get input from different stakeholders.
+
+	Some methods that can be used as elicitation techniques are focus group, design workshop or stakeholder analysis. Exactly which elicitation techniques to use depends on the context. In our project we used a few different techniques to approach the problem from different angles. This section explains the techniques we used and how they applied to our project.
 	\subsection{Brainstorming}
 Brainstorming is a technique where the participants toss around words or ideas that they have. In a typical brainstorming session there is a high tolerance of suggestions and no idea or thought is discarded or neglected. Brainstorming can be used frequently throughout the project.
 		\subsubsection{Application}
-We used brainstorming mainly in the beginning in the project in order to get a clear idea of the problem we were facing. The process was done in iterations since every session raised new questions that needed to be addressed. The first iterations gave a wider outline of the project and the latter were more detail oriented. Not all sessions were structured and might have been more of group discussions rather than brainstorming.
+We used brainstorming mainly in the beginning of the project in order to get a clear idea of the problem we were facing. The process was done in iterations since every session raised new questions that needed to be addressed. The first iterations gave a wider outline of the project and the latter were more detail oriented. Not all sessions were structured and might have been more of group discussions rather than brainstorming.
+
 		\subsubsection{Why chosen}
 Brainstorming is a good method to use in the beginning of a project to get started. One reason for this is that brainstorming is a good way to get a grip of the current situation in a project and get an idea of the problem at hand. It is an easy to use method that does not require a lot of preparation or material. It is quite fast and the result is direct. Just a couple of people from the project group can brainstorm for 10 minutes on a topic and then share with the rest of the group what they came up with. 
 
 		\subsubsection{Outcome}
-		 We chose this method to get a better overview of what other techniques we would need to use later in the project and get a good foundation from which to progress further in our elicitation. Other than a more concrete idea, the brainstorming also yielded some requirements for the system, such as that it should consist of both an app and a widget. We also realised that we would need to do some research and ask the potential end users what sort of functionality they would want the product to have. We also realised that we would need to have some sort of workshop with the customers to get them to better explain their needs. It also helped us to decide on the idea for the project in which we are clients, Boogle Calender.
+		 We chose this method to get a better overview of what other techniques we would need to use later in the project and get a good foundation from which to progress further in our elicitation. Other than a more concrete idea, the brainstorming also yielded some requirements for the system, such as that it should consist of both an app and a widget. We also realised that we would need to do some research and ask the potential end users what sort of functionality they would want the service to have. We also realised that we would need to have some sort of workshop with the customers to get them to better explain their needs. It also helped us to decide on the idea for the project in which we are clients, Boogle Calender.
 
 		\subsection{Stakeholder analysis}
  This method is used to identify the people or organizations who are needed to ensure the success of the project. It is important not only to identify the stakeholders but also to find their interests and goals with the project. It can be of good help to have a set of questions you want answers to when you do the stakeholder analysis.
@@ -62,7 +65,7 @@ Brainstorming is a good method to use in the beginning of a project to get start
 		\begin{itemize}
 			\item Who are the stakeholders?
 			\item What goals do they see for the system?
-			\item Why would they like to contribute?
+			\item Why would they want to contribute?
 			\item What risks and costs do they see?
 			\item What kind of solutions and suppliers do they see?
 		\end{itemize}
@@ -82,6 +85,9 @@ We came to the insight for whom we are really making the system. This led to a m
 			\item The Swedish Government\footnote{Forgotten during stakeholder analysis but added during the construction of the Context diagram, see section \ref{subsec:context}}.
 		\end{itemize}
 				
+				
+		After the second release we also found that similar systems, our competitors, might be counted as a stakeholder since if the users use their systems instead our project will not be a success.
+		
 		\subsection{Similar companies}
 			In order to get inspiration and see what similar services there are today, it can be a good idea to look at competitors' or partners' services. This is not a technique in itself but is often used with for example observation.
 	
@@ -108,7 +114,7 @@ We came to the insight for whom we are really making the system. This led to a m
 		\subsubsection{Why chosen}
 We used this method in order to get input from potential users. It was important that the participants could be objective and had not heard about the project before, so we contacted people that were not taking the course.
 		\subsubsection{Outcome}
-We found out that the potential users did not want too much information and that a maximum of 3 destinations is enough to display. Their prototypes focused mainly on when the first departure is and where to go from here, rather than the final destination or total travel time. We also learned that it was quite important for the users that the service would be smart, meaning that it should learn what is your home/office/school. Another desired function was that the destinations showed varied depending on the current position of the phone. This last request was something we brought up with our clients and something they strongly did not want. Since we are doing this firstly for our clients, we chose to satisfy them rather than potential users.
+We found out that the potential users did not want too much information and that a maximum of 3 destinations is enough to display. Their prototypes focused mainly on when the first departure is and where to go from here, rather than the final destination or total travel time. We also learned that it was quite important for the users that the service would be smart, meaning that it should learn what is your home/office/school. Another desired function was that the destinations showed varied depending on the current position of the phone. This last request was something we brought up with our clients and something they strongly did not want. Since we are doing this firstly for our clients, we chose to satisfy them rather than potential users. Due to the project's scope we did not add any requirements for a smart service. However, this is something we would want to explore more in a future release.
 	
 	\section{Specification Methods/Techniques}
 	Finding the requirements is only a fraction of the requirements process. Defining and documenting them is the second step, which is known as requirements specification. This subprocess of requirements engineering involves how we want to present the requirements as well as defining what kind of requirements they are. How to represent different requirements depend on what level they are on which kind of requirement it is (data requirement, quality requirement, feature requirement etcetera). Under
@@ -122,9 +128,9 @@ levels we explain how the different levels of requirements relate to our require
 		\subsubsection{Domain level}
 			Our domain level requirements are task descriptions and feature requirements. These are used to show what should be possible to with the system and provide the context to the features.
 		\subsubsection{Product level}
-			The product level requirements define the features as well as the data too be included in our system.
+			The product level requirements define the functions as well as the data too be included in our system.
 		\subsubsection{Design level}
-			We have not gone in on implementation issues such as how to store the user's data but rather focused on what was important for the users, such as information to be displayed.
+			We have not gone into implementation issues such as how to store the user's data but rather focused on what was important for the users, such as which information to display.
 		
 		\subsection{Data model}
 A data model is an abstract model of what data is needed in a system. It is not necessarily a requirement but in our case we use the model as a requirement.
@@ -137,7 +143,7 @@ A data model is an abstract model of what data is needed in a system. It is not 
 	We got a lot of definitions out of putting it together since we needed to discuss what we meant by the entities in the model (coming in a data dictionary in release 2).
 
 		\subsection{Virtual Windows}
-			A Virtual Window is basically a graphic screen with no actually functions or menus. It is used for visualizing the System's data so that the user and the developer can relate to it in a good manner. It can be used for developing the user interface.
+			A Virtual Window is basically a graphic screen with no actually functions or menus. It is used for visualizing the System's data so that the user and the developer can relate to it in a good manner.
 			\subsubsection{Application}
 				We used Virtual Widows to create a simple data model for the Application that the user interacts with the System. With the Virtual Windows and the Design workshop a suitable screen prototype could be made.
 			\subsubsection{Why chosen}
@@ -145,7 +151,7 @@ A data model is an abstract model of what data is needed in a system. It is not 
 			\subsubsection{Outcome}
 				We got clearer view on how the system would interact with the customer and what kind of data structure was needed.
 		\subsection{Context diagram} \label{subsec:context}
-		A picture of how the system fits in to/interacts with its inner domain. It is used to realize what systems/people directly interacts with the product. The outer domain can also be included to give even better understanding of how the system fits into the surroundings.
+		A picture of how the system fits in to/interacts with its inner domain. It is used to realize what systems/people directly interacts with the product. The outer domain can also be included to give an even better understanding of how the system fits into the surroundings.
 			\subsubsection{Application}
 			We chose the user as a starting point and reasoned about what the user needed to use the product for, from that we realized that the product needed to interact with a couple of systems. Then we reasoned about why the government wanted the product (to increase the use of public transport) which got us to realize that they would want statistics from the system.
 			
@@ -168,8 +174,7 @@ A data model is an abstract model of what data is needed in a system. It is not 
 			The breakpoints seems the most useful and would have worked with or without the rest of the QUPER model. We have incorporated both the breakpoints and the barriers on some requirements.
 
 			\subsubsection{Outcome}
-			We would have liked to use the entire QUPER method on at least one of our quality requirements but because of the problems discussed above we had to settle for just specifying the breakpoints.		
-		
+			We would have liked to use the entire QUPER method on several quality requirements but because of the problems discussed above we decided to only use it for a few and only the applicable parts.		
 		
 		\subsection{Task Descriptions}
 			Task descriptions specify the interactions between the product and the user. It is quite easy for the customer to validate since task descriptions speaks the "customer language". Task descriptions will also improve the understanding on a domain-level manner for both developers and customers.
@@ -269,12 +274,16 @@ A data model is an abstract model of what data is needed in a system. It is not 
 				Before sending in the last release we will try to solve the most critical issues that the customers found to improve our system as much as possible.
 				 			
 			\subsection{Validating with customer checklist}
-				We got a checklist from the group that design the requirement specification for our product, Boogle Calendar. We checked what was missing or not and prioritized the different validation checks. It was a good experience since we could get a clearer overview of what they had made of the project and we got the chance to reflect and give constructive feedback to the group. We could really see the benefit of validating the requirement specification, since in a project in the "real world" validation of the requirement specification would happen more often. This will give the customer and the developer an acknowledgement of what is finished and a chance to lead the project in the right direction.
+				We got a checklist from the group that design the requirement specification for our product, Boogle Calendar. We checked what was missing or not and prioritized the different validation checks. It was a good experience since we could get a clearer overview of what they had made of the project, and we got the chance to reflect and give constructive feedback so that we could make sure that we got the product we wanted. We could really see the benefit of validating the requirement specification, since in a project in the "real world" validation of the requirement specification would happen more often. This will give the customer and the developer an acknowledgment of what is finished and a chance to lead the project in the right direction.
 
 			\subsection{Goal-Domain tracing}
 				%HANNES LEVERERAR!
 				%Tänk på: adapt the validation to the context and provide rationale for the chosen validation techniques.
-				To validate our own requirements we decided to do a Goal/Domain Tracing. This means that for each goal we listed which domain requirements that implemented that specific goals. This leads to a completeness check for both the goals and the domain level requirements. We found some requirements that was not possible to fit into a existing requirement and this made us elicit new goals for our stakeholders. When grouping the requirements under a specific goal also gave us a better understanding of what that specific goal should consist of, which lead to some minor adjustment in the wording of the goals to make them clearer. We also found that one of our goals was not implemented by any of the domain requirements, which is a critical problem. Either we were missing requirements or the goal is not correct. 
+				To validate our own requirements we decided to do a Goal/Domain Tracing. This means that for each goal we listed which domain requirements that implemented that specific goals. This leads to a completeness check for both the goals and the domain level requirements. We found some requirements that was not possible to fit into a existing requirement and this made us elicit new goals for our stakeholders. When grouping the requirements under a specific goal it gave us a better understanding of what that specific goal should consist of, which lead to some minor adjustment in the wording of the goals to make them clearer. We also found that one of our goals was not implemented by any of the domain requirements, which is a critical problem. Either we were missing requirements or the goal is not correct. As this was one core Goal for one of the stakeholders we decided that the goal was correct and that we were missing a few requirements. After some adding and refactoring of some of the requirements we ended up with a more complete system. 
+				
+				\subsection{Experiences}
+				Validation, both as developers and customers, gave us a lot of good feedback and we felt that it improved the quality of our Requirements Specification. During the validation process we got the chance to break down the project and look at specific parts by them self. This made it easier for us in the requirements team to disregard all the domain knowledge that we had gathered after working with the project for a long time. The validation report provided by our customer also gave us a lot to work with. It was apparent that some requirements that were obvious to us was not so clear when read by another party. So the most interesting results from the checklist was perhaps not the part where the customer gave feedback on things that they deemed needed clarification but the parts where their comment showed us that the had misunderstood or misinterpreted something about the system. The fact that they thought that the system worked in a way (that was not the way we intended it to) exposed the fact that there was a level of ambiguity in the Requirements Specification. This is very dangerous, and if we and the customer do not look the same way on the specification the validation might be incomplete and not be correct according to the customer expectations. Misunderstandings are never a good thing. In our case we tried clarify all the sections of the Requirements Specification where we found any indication of ambiguity. Mainly by rewriting the text and giving more examples. 
+
 
 	\section{Release planning}
 	\label{sec:release_planning}
@@ -283,25 +292,30 @@ A data model is an abstract model of what data is needed in a system. It is not 
 	% motiverat customer borttagning
 	% bara en release och senare.
 	%
-		Release planning is (just as many other aspects in this document) vital for projects success. Basically release planning is about determining which requirements and features that should be included in which release. Determining this is NP-hard and often have more than one solution. For reference, when we performed the release planning for our project, we managed to find approximately 450000 different solutions in 2 minutes (this was of course not done by hand).
 
-		\subsection{Release planning by hand}
+
+		Release planning is a vital part for a project's success. Basically release planning is about determining which requirements and features that should be included in which release. Determining this is NP-hard and often have more than one solution.
 		
-			As our project does not contain a lot of dependencies between features it was not that hard to generate an adequate solution. However, if the number of dependencies increase, planning by hand would be much more difficult. Also as the dependencies increase in number it becomes more obvious that release planning actually is a NP-hard problem.
+		\subsection{Why chosen}
+		There are different methods of performing release planning, either by hand or using some sort of tool. However if the project is complex and contains many requirements it is almost impossible to do it by hand. We decided to try doing it by hand first and quickly realised the task was too complex. Below we describe the different techniques.
 
-		\subsection{Release planning with reqT}
-			Release planning with reqT is not a valid method if you only plan to do it once and the project isn't that complex. However, as for the most project you will have multiple releases over a long period of time, and keeping track of what requirement or feature that has or has not been implemented is a major task. This can however be made somewhat simpler with reqT if you keep track of the current status of the requirements and features in the project.
 
-			It is not unusual that you do not stick to the plans that has been laid out. This can be both positive and negative, positive if you manage to get more things done than what was originally planned, negative if you did not manage to accomplish what was originally planned. When this happens it is necessary to reschedule for the next release. This cumbersome task can be managed quite easily with reqT.
+			\subsubsection{Release planning by hand}
+			\label{sec:release_planning}
+			As our project does not contain a lot of dependencies between features it was not that hard to generate an adequate solution. However, if the number of dependencies increase, planning by hand would be much more difficult. As the dependencies increase in number it becomes more obvious that release planning actually is a NP-hard problem.
 
-			\subsubsection{Our experiences with reqT}
-				Initially the work load for the people that are in charge of the release planning is quite high. All requirements that should be included in the release planning has to be specified, given a cost to implement from each development team, given a benefit for each stakeholder, and constraints such as feature and requirement precedences much be entered. This is usually provided from other part of the project and thus the people responsible for the release planning doesn't have to collect this information from the required sources. However it still has to be entered into the model. This is not a problem if done continuously throughout the project.
+			\subsubsection{Release planning with software}
+			Release planning with a release planning software have several advantages. Firstly, release planning is seldom done as an isolated event and having a software that is integrated with the one for handling requirements will greatly ease the planning. Secondly, release planning is always done several times over the project and by using a software one can update the release planning if new requirements are added, requirements removed or if any problems occur during a the implementation of a release. In general, using a software to perform the release planning it becomes more flexible and powerful, even if it might sometimes be a hurdle to overcome in the beginning. For our release planning we chose to use reqT as we already used this software to manage our requirements.
 
-				The problem we faced here was that we only performed the release planning once and at the end of the project. Up to this point all the requirements had been specified by different people, in different small models and could not easily be tracked and managed. This was very likely due to lack of understanding of the reqT tool in the group. If we were to do this again we would most likely have structured the requirements differently as to make tasks such as release planning easier.
+			\subsubsection{Our experiences with reqT} %TA BORT HELA SUBSUBSECTION?!
+				All requirements that should be included in the release planning has to be specified, given a cost to implement from each development team, given a benefit for each stakeholder, and constraints such as feature and requirement precedences much be entered. This is not a problem if done continuously throughout the project.
 
-				Some other things we stumbled upon as we tried to do the release planning were that there were some limitations in reqT that we did not know of, such as a Capacity could not exceed the value 1000, this is to limit the number of possible solutions and thus limiting the calculation time. If you do exceed Capacity values of 1000, reqT can never find a solution as it only says ''Inconsistency Found''. When we lowered the Capacity values we still managed to find roughly 450000 solutions in 2 minutes. This is most likely due to the fact that there aren't many constraints between the requirements and features in our project.
-
-				The model representing the solution was somewhat horrific, and you had to break down the model in smaller instances to be able to get a grip on what the solution was. All releases in the solution contained all of the features and requirements that was in the original model but some of these had 0 cost and benefit. This means that when you looked at the model in text, it was littered with requirements and features that wasn't in the release, and thus if you tried to generate a graphical representation of the solution it was completely unreadable. Once the model had been broken down and all of the ''ghost features'' was removed the model was much easier to comprehend.
+		\subsection{Outcome}
+		
+		Doing the release planning gave a clearer view of what the prioritization of the different requirements really meant. However we encountered a few problems along the way. Since we did prioritize the requirements with different methods for different stakeholders, it became difficult to make a release planning covering all stakeholders. We solved this by removing the benefits from the stakeholder that did not use the 100-dollar method. This could result in a misleading release plan, since not all stakeholders' benefits will be taken into account. Another problem that we encountered that could result in a misleading release plan is that some of the stakeholders might not really know what requirements they deem important, or may not take into account what other parts need at all. It may also be that their knowledge of the system is not enough to give a proper prioritization. This could be solved by having a wide selection of stakeholders with different benefits from the system, leading to a more balanced release plan because they are all pulling in their own direction. 
+%FRÅN HÄR, ÄNDRA? Jag ser definitivt benefits över att planera mer än en release framåt.		
+		In our experience it is hard to maximize more than one release at the time in reqT, which lead to us only planning one proper release and one release containing all the other requirements that did not fit in the first. We do not see this as a problem for this project since it is not necessary for us to plan more than one release ahead, although it would be very convenient to cover all releases in one planning session. Planning all releases in one session is in most cases not possible, since release planning is a continuous work and there might emerge new requirements or other problems along the way.				
+				
 
 	\section{Future work}
 	%For next release/future
@@ -310,7 +324,7 @@ If we were to continue with the project it would be beneficial to elicit more re
 	Even though we did some mock ups and had a design workshop, it could be beneficial to create an interactive prototype that we could show for our client and users. An interactive prototype enables a tester of the prototype to really understand how the system should work and also give good feedback on improvements.
 	\subsection*{Risk analysis}
 	In this project we have to large part ignored risk analysis. Risk analysis could be used as an elicitation technique in order to identify high risk areas and ways to minimize the risk.
-	\subsection{Cost/benefit analysis}
+	\subsection*{Cost/benefit analysis}
 	Even though this has been an integrated part of different stages, it would be a good idea to do a more formal cost/benefit analysis with more time on our hands. A cost/benefit analysis would greatly improve our quality our requirements as we could identify which requirements to focus on.
 
 	\section{General Reflections}
@@ -319,27 +333,23 @@ If we were to continue with the project it would be beneficial to elicit more re
 	%What could have been done differently?
 	%What we have learned related to learning objectives
 
-	Below we discuss reflections about the process and how the project is going/went. Reflections on specific methods can be found under respective section. The reflections here are more general, concerning project process etcetera.
+	Below we discuss reflections about the process and how the project has went. Reflections on specific methods can be found under respective section. The reflections here are more general, concerning project process etcetera.
 
 While working with our project we have encountered several elicitation barriers. One that we noticed in particular is that the stakeholder cannot express what they need. We have also noticed that stakeholders can have conflicting views within themselves. Another barrier has been that our clients have suggested solutions rather than expressing their needs and demand.
 
-An obstacle we have met is that we tend to forget to use several elicitation techniques. It is easy to get hung up on just brainstorming. Our group does not only have a big domain knowledge but also consists of potential end users. This gives us a false sense of security, as we think that we ourselves incorporate the different stakeholders' opinions and experiences and because of this we sometime get the feeling that we already know everything that the product should have and how it should work. The problem with that is that might not be what the average user wants with the product or what the customers wants. Since we are designing the requirement specification for them it is their opinion that matters and it is their decisions that are final for the most parts. A solution to all these problems is to carry out different elicitation techniques and contact different stakeholders anyway and also to take our customers thought into account a bit more. It is important to hear everyone's opinion, since we know from experience that more input will yield better results and our task is not to decide what the product should do, our task is to deliver a requirement specification.
+Another obstacle we have met is that we tend to forget to use several elicitation techniques. It is easy to get hung up on just brainstorming. Our group does not only have a big domain knowledge but also consists of potential end users. This gives us a false sense of security, as we think that we ourselves incorporate the different stakeholders' opinions and experiences and because of this we sometime get the feeling that we already know everything that the product should have and how it should work. The problem with this is that might not be what the average user wants with the product or what the customers wants. Since we are designing the requirement specification for the users it is their opinion that matters and it is their decisions that are final for the most parts. A solution to these problems is to carry out different elicitation techniques and contact different stakeholders. It is important to hear everyone's opinion, since we know from experience that more input will yield better results and our task is not to decide what the product should do, our task is to deliver a requirement specification.
 
-During the initial phase of the project it has been difficult to divide the workload. This is because we needed to be on the same page regarding several matters. However, trying to work all eight together has resulted in inefficiency. We tried to solve this problem by divide the work into smaller independent tasks. We believed that this approach would result in higher efficiency. Looking back on our work, after we divided the work individually or in smaller groups, we could see that the number of things that had been done increased and it has led to more concrete tasks to do and a better result. This was very positive. However, some of the time we earned from this was lost again due to checking what other members had done and also changing the some texts or requirement that did not fit in with the rest etcetera. This double maintenances problem did fortunately not cost as much as the time we gained and in the end the overall efficiency was increased.
+During the initial phase of the project it was difficult to divide the workload. This is because we needed to be on the same page regarding several matters. However, trying to work all eight together has resulted in inefficiency. We tried to solve this problem by divide the work into smaller independent tasks. We believed that this approach would result in higher efficiency. Looking back on our work, after we divided the work individually or in smaller groups, we could see that the number of things that had been done increased and it has led to more concrete tasks to do and a better result. This was very positive. However, some of the time we earned from this was lost again due to checking what other members had done and also changing the some texts or requirement that did not fit in with the rest etcetera. This double maintenances problem did fortunately not cost as much as the time we gained and in the end the overall efficiency was increased.
 
-%R2
 Between the first two releases we worked closer to more stakeholders, not only our clients but potential users as well. When working with users as well we realized that their wishes sometimes collide with the wishes of our clients. Since the project is for our clients, it is more important to satisfy them, but still letting them know that the users might think otherwise.
 
+For the third release we worked a lot with the comments we got from our project supervisor and our customers. We also validated release two that we got from the group that we are customers to, Boogle Calendar. We also did a release plan for our product. Release planning turned out to be quite hard as well, see section \ref{sec:release_planning} for further detatils.
 
-%\subsection{R3}
+Validating the Boogle Calendar requirement specification was not easy. It was hard to identify all the fields in the validation checklist that we got and to find out if the specification lived up to them. We first did the validation individually and during our next work session some of us sat together and merged our different opinions into one final validation report. This way of doing the validation incorporated every member in the group in some way. Furthermore, it gave us the opportunity to both work on the validation and our own project in the same time. Also, because the sub-part of the group that finalized the report could discuss a lot, the result was quite good. The drawback is that some of us had to do the validation multiple times and lost some time when they could have worked with our project instead. 
 
-For the third release we worked a lot with the comments we got from our project handler and our customers. We also validated release two that we got from the group that we are customers to, Boogle Calendar, and we did a release plan for our product. 
+The customer validation of Traffic-o-meter gave us a different point of view of our requirements specification which lead to that we understood that all parts were not as clear as they could be. For example the customer did a CRUD-matrix of all the entities in the data model/definitions and found some missing actions. They specifically said that they did not find any tasks for creating and updating the User. But to us this was not a problem as we saw the User as the actual person using the application, and not a user account that needs to be created and updated (we decided to leave this solution to the developers as a user account might not be the most efficient solution). This was obviously not as clear as it should have been and we therefore decided to make an extra note explaining our thoughts on this. The goal of the added note was both to explain the User a bit more in detail but also to make the reader of the document to understand our reasoning when taking the decision. 
 
-Fixing the comments took quite some time to do. Not because there were a lot of them, but because we wanted to do them as good as possible. Also, some of them we had to ask about once more because we did not understand what the comment was about. 
-
-Validating the Boogle Calendar requirement specification was not easy. It was hard to identify all the fields in the validation checklist that we got and to find out if the specification lived up to them. We first did the validation individually in our spare time and during our next work session some of us sat together and merged our different opinions into one final validation report. This way of doing the validation incorporated every member in the group in some way. Furthermore, it gave us the opportunity to both work on the validation and our own project in the same time. Also, because the sub-part of the group that finalized the report could discuss a lot the result was quite good. The drawback is that some of us had to do the validation multiple times and lost some time when they could have worked with our project instead. 
-
-Release planning turned out to be quite hard as well, but more on this in section \ref{sec:release_planning}, Release Planning.
+Over all the project has been a learning experience and we are satisfied with the result. We feel that some parts of our project could need some more work, which are quality requirements and release planning. These are the parts we would focus on if we had a future release.
 
 	\section{Personal statements}
 In this paragraph each group member briefly explains its individual contributions to the project result.
@@ -374,7 +384,6 @@ In this paragraph each group member briefly explains its individual contribution
 		\subsubsection{R2}
 		Have worked on our with the requirements in reqT as well as correcting/clarifying them.  
 		\subsubsection{R3}
-		Validation, stakeholders
 		For this release I have been working with validation of our own requirements by doing a goal-domain tracing. I have also done a lot of corrections of our requirements according to the comments from the validation report. 
 	
 	
@@ -393,7 +402,7 @@ In this paragraph each group member briefly explains its individual contribution
 		\subsubsection{R2}
 		I planned the workshop and lead it together with Alexander. Have had contact with our suppliers and also took part in their workshop. Also helped out with clarifying some requirements and updating project experiences.
 		\subsubsection{R3}
-			presentation
+			For the final release cycle I did the presentation with Philip as well as working with the project experience. 
 	
 	\subsection{Mattias}
 		\subsubsection{R1}
@@ -405,7 +414,7 @@ In this paragraph each group member briefly explains its individual contribution
 
 	\subsection{Philip}
 		\subsubsection{R1}
-	I have mostly been writing in this document and participated in discussions. I've also handled a lot of the contact to and from our costumer group and the group we are customers to.
+	I have mostly been writing in this document and participated in discussions. I've also handled a lot of the contact to and from our customer group and the group we are customers to.
 		\subsubsection{R2}
 		Been working a bit with the design requirements and I have been working with putting requirements in the right section and I've been editing requirements to be easier to understand and more specified and fixed minor bugs
 		\subsubsection{R3}

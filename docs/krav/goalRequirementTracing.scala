@@ -1,22 +1,20 @@
 Model(
 	Goal("MoreTravel") has (
-		Spec("Increase the use of public transportation by making it a more effortless to find travel connections")
-		),
+		Quality("UpdateStartView")
+	),
 	Goal("UserTravelStatistics") has (
-		Spec("The government wants statistics relevant for research purposes, to improve future infrastructure"),
-		Feature("ExtractStatistics"),
-		Feature("GetPopularStatistics"),
+		Feature("GetPopularMeansOfTransportStatistics"),
+		Feature("GetPopularLocationStatistics"),
+		Feature("GetUserStatistics"),
+		Feature("GetTravelStatistics"),
 		Feature("GetRoutesStatistics")
 	),
 	Goal("AccessibleForEverybody") has (
 		Feature("Language"),
 		Feature("Android"),
-		Feature("IOS"),
-		Design("MobileApplication"),
-		MockUp("SettingsMockup")
+		Feature("IOS")
 	),
 	Goal("TravelOverview") has (
-		Spec("The user wants to have an overview over the fastest possible route to their frequently visited destinations"),
 		Feature("SpecifyMeansOfTravel"),
 		Feature("OrderDestinations"),
 		Feature("ViewNextOption"),
@@ -26,17 +24,11 @@ Model(
 		Feature("MaxDistToStop"),
 		Feature("MinWaitTime"),
 		Task("ChooseTransportationMeans"),
-		MockUp("WidgetMockup"),
-		MockUp("ApplicationMockup"),
-		MockUp("TripInformationMockup"),
-		Quality("UpdateStartView"),
-		Design("Widget"),
 		Quality("GPSPosition"),
-		Feature("GeographicLocation")
+		Quality("MeanTimeToCalculateTrip")
 	),
 	Goal("MinimalUserMaintenance") has (
-		Spec("The user wants to know the total time to get to a frequently visited destinations without having to manually insert information every time"),
-		Feature("SearchDestination"),
+		Feature("SpecifyLocationByAddress"),
 		Feature("ChangeNameOnDestination"),
 		Feature("DeleteDestination"),
 		Feature("MultipleDestinations"),
@@ -44,8 +36,7 @@ Model(
 		Feature("SpecifyLocationByMap"),
 		Task("AddDestination"),
 		Task("RemoveDestination"),
-		Quality("RefreshTime"),
-		MockUp("AddDestinationMockup")
+		Quality("MeanTimeToRefreshTrips")
 	),
 	Goal("UserTiedInformation") has (
 		Feature("MultiAccessibleUserData"),
@@ -53,7 +44,6 @@ Model(
 		Quality("UserIntegrity")
 	),
 	Goal("ReturnOnInvestment") has (
-		Spec("The product needs to create enough value for the users for the product owner to get a return on their investment"),
 		Quality("RequestCapacity"),
 		Quality("Uptime")
 	),
